@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load  i18n %}
+{% block content %}
+<div class="content-split">
+    <div class="navigation">
+        <a href="{% url 'med-services'%}">{% trans 'Медицинские услуги' %}</a>
+        <a href="{% url 'rules'%}" >{% trans 'Правила санатория' %}</a>
+        <a href="{% url 'gobmp'%}" class='selected'>{% trans 'Путевки по ГОБМП' %}</a>
+    </div>
+    <div class="rules">
+        <span class="Title">{% trans 'Аккредитация' %}:</span>
+        <div class="new-frame">
+            <div class="rule-plates">
+                {% for post in posts %}
+                <div class="rule-block">
+                    
+                    <a href="{% url 'accredit_detail' pid=post.pk %}">
+                        <img src="../../media/{{post.image}}">
+                    </a>
+                    <h3>{{ post.title }}</h3>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
