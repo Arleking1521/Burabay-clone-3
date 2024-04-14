@@ -31,6 +31,10 @@
     --swiper-navigation-size:10px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 button{
     font-weight: normal;
 }
@@ -85,7 +89,6 @@ header{
     position: fixed;
     width: 100%;
     z-index: 2;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .main-header{
@@ -110,6 +113,11 @@ header{
     padding: 10px 0px;
     z-index: 2;
     max-height: 72px;
+    transition: 0.3s;
+}
+
+.scrolled{
+    transform: translateY(-75px);
 }
 
 /* header:hover .sub-header{
@@ -150,6 +158,34 @@ li{
 .menu{
     display: flex;
     align-items: center;
+}
+
+.menu a:last-child{
+    margin-right: 0px;
+}
+
+.socials-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.socials-header img{
+    width: 26px;
+    display: block;
+    padding: 0px;
+    transition: 0.3s;
+}
+
+.socials-header img:hover{
+    filter: brightness(1.2);
+}
+
+.socials-header a{
+    border-radius: 8px;
+    margin: 5px 0;
 }
 
 .sign_in{
@@ -229,7 +265,6 @@ li{
     align-items: center;
     justify-content:center;
     width: 80px;
-    margin-right: 20px;
 }
 
 .logo{
@@ -386,7 +421,7 @@ li{
     color: white;
     font-size: 46px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin: 0px;
 }
 .banner-text{
     width: 50%;
@@ -1202,7 +1237,7 @@ width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 20px;
+    margin: 0 5px;
   }
 
   .new-review{
@@ -1287,6 +1322,43 @@ width: 30%;
     margin: 0px;
   }
 
+  #top-button{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 4;
+    border: none;
+    outline: none;
+    background-color: var(--logo-color);
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 0px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    width: 0;
+    height: 0;
+    transition: 0.3s;
+  }
+
+  #top-button img{
+    width: 0px;
+    display: block;
+    transform: rotate(90deg);
+    
+  }
+
+  .hidden{
+    display: block !important;
+    opacity: 1 !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 10px !important;
+  }
+
+  .hidden img{
+    width: 30px !important;
+  }
+
   .person-photo {
     width: 100%;
     height: auto;
@@ -1338,6 +1410,10 @@ width: 30%;
         display: none;
     }
 
+    #top-button{
+        display: none !important;
+    }
+
     .logo{
         display: block;
     }
@@ -1373,6 +1449,10 @@ width: 30%;
 
     .content{
         padding-top: 100px;
+    }
+
+    .socials-header{
+        display: none;
     }
 
     .main-header{
