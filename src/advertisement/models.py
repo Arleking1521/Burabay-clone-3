@@ -12,6 +12,6 @@ class Files(models.Model):
     ads=models.ForeignKey(Ads, on_delete=models.CASCADE)
     name = models.CharField(verbose_name = 'Название файла')
     file = models.FileField(verbose_name='Файл', upload_to='docs/')
-    date = models.DateTimeField(auto_now=timezone.now)
+    date = models.DateTimeField(default=timezone.now, verbose_name='Дата публикации')
     def __str__(self) -> str:
         return f'{self.name}: ({self.date})'
