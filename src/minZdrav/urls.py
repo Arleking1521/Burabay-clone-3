@@ -46,6 +46,7 @@ urlpatterns += i18n_patterns(
     path('download/<str:file_name>/', download_file, name='download_file'), #Скачивание файлов
     path('activate/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/', activate, name='activate'), #страница активации аккаунта
 
+    path('accreditation/', TemplateView.as_view(template_name='dopPages/accreditation.html'), name='accreditation'),
     path('gobmp/', TemplateView.as_view(template_name='dopPages/gobmp.html'), name='gobmp'), #получение услуг по ГОБМП
     path('scientific-developments/', TemplateView.as_view(template_name='dopPages/scientificDev.html'), name='sci-dev'), #Научные достижения
     path('plans/', TemplateView.as_view(template_name='dopPages/plans.html'), name='plans'), #Планы

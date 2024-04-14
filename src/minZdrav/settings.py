@@ -74,7 +74,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'minZdrav.urls'
 
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
