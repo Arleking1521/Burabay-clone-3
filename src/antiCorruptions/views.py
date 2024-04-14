@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import AntiCorruption
 # Create your views here.
 def antiCorList(request):
-    files = AntiCorruption.objects.all()
+    files = AntiCorruption.objects.order_by('id')
     return render(request, 'antiCorPages/antiCorList.html', {'files':files})
 
 def file_detail(request, fid):

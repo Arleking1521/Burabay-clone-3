@@ -4,7 +4,7 @@ from .models import ProvActs
 # Create your views here.
 
 def provActs(request):
-    rights = ProvActs.objects.all()
+    rights = ProvActs.objects.order_by('id')
     rights_list = []
     for right in rights:
         info_parts = right.description.split('\n')

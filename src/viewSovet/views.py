@@ -3,7 +3,7 @@ from .models import ViewSovet
 # Create your views here.
 
 def viewSovet(request):
-    files = ViewSovet.objects.all()
+    files = ViewSovet.objects.order_by('id')
     return render(request, 'viewSovet/viewSovet.html', {'files':files})
 
 def file_detail(request, fid):

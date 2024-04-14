@@ -4,7 +4,7 @@ from .models import PacientInfo
 # Create your views here.
 
 def pacInfo_list(request):
-    rules = PacientInfo.objects.all()
+    rules = PacientInfo.objects.order_by('id')
     rules_list = []
     for rule in rules:
         info_parts = rule.info.split('\n')

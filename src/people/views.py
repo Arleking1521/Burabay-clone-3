@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import People
 # Create your views here.
 def people_list(request):
-    posts = People.objects.all()
+    posts = People.objects.order_by('id')
     print('people : ', posts)
     return render(request, 'people/NIIPeople.html', {'people':posts})
 

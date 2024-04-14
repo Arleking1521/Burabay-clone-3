@@ -4,7 +4,7 @@ from .models import Reviews, Answer
 from django.core.mail import send_mail
 # Create your views here.
 def review_list(request):
-    reviews = Reviews.objects.all()
+    reviews = Reviews.objects.order_by('-date')
     for review in reviews:
         answer = Answer.objects.filter(review_id = review.pk)
         review.answer = answer

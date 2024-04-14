@@ -3,7 +3,7 @@ from .models import WorkersInfo
 # Create your views here.
 
 def workersInfo(request):
-    workers = WorkersInfo.objects.all()
+    workers = WorkersInfo.objects.order_by('id')
     workers_list=[]
     for worker in workers:
         worker_data  = {

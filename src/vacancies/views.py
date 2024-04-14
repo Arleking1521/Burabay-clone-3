@@ -4,7 +4,7 @@ from .models import Vacancies, CompetitionInfo
 # Create your views here.
 def VacancyInfo(request):
     infos = CompetitionInfo.objects.order_by('-id').first()
-    datas = Vacancies.objects.all()
+    datas = Vacancies.objects.order_by('id')
     vacancies_list = []
     for data in datas:
         requirement_parts = data.requirement.split('\n')

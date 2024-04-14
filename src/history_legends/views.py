@@ -4,7 +4,7 @@ from .models import History
 # Create your views here.
 
 def history_list(request):
-    histories = History.objects.all()
+    histories = History.objects.order_by('id')
     history_list = []
     for history in histories:
         info_parts = history.info.split('\n')
