@@ -1,4 +1,4 @@
- const swiper = new Swiper('.sw', {
+const swiper = new Swiper('.sw', {
     // Optional parameters
     loop: true,
     autoplay:{
@@ -73,21 +73,4 @@ function show_files_name(target) {
       fileItem.textContent = fileName;
       selectedFilesDiv.appendChild(fileItem);
   }
-}
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 72 || document.documentElement.scrollTop > 72) {
-    document.getElementById("sub-header").classList.add('scrolled');
-    document.getElementById("top-button").classList.add('hidden');
-  } else {
-    document.getElementById("sub-header").classList.remove('scrolled');
-    document.getElementById("top-button").classList.remove('hidden');
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
 }

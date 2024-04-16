@@ -47,14 +47,14 @@ urlpatterns += i18n_patterns(
     path('activate/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/', activate, name='activate'), #страница активации аккаунта
 
     path('accreditation/', include('accreditation.urls')),
+    path('ceo-blog/', include('ceoblog.urls')),
+    path('people/', include('people.urls')),
     path('gobmp/', TemplateView.as_view(template_name='dopPages/gobmp.html'), name='gobmp'), #получение услуг по ГОБМП
     path('scientific-developments/', TemplateView.as_view(template_name='dopPages/scientificDev.html'), name='sci-dev'), #Научные достижения
     path('plans/', TemplateView.as_view(template_name='dopPages/plans.html'), name='plans'), #Планы
     path('quality-management-standard/', TemplateView.as_view(template_name='dopPages/managment_standart.html'), name='managment_standart'), #Стандарты менеджмента качества
-    path('strategic-development/', TemplateView.as_view(template_name='dopPages/strategic_development.html'), name='srategic-dev'), #Стратегическое развитие
-    path('ceo-blog/', include('ceoblog.urls')),
+    path('strategic-development/', include('strategicDevelopment.urls')), #Стратегическое развитие
     path('achievments/', TemplateView.as_view(template_name='dopPages/Achievments.html'), name='achievments'),
-    path('people/', include('people.urls')),
     path('uvo/', TemplateView.as_view(template_name='dopPages/UVO.html'), name='uvo'),
     path('schedule-of-childrens-shifts/', TemplateView.as_view(template_name='dopPages/kidsSchedule.html'), name='kidsSchedule'),
     path('media-galery/', TemplateView.as_view(template_name='dopPages/mediagallery.html'), name='mediagallery'),

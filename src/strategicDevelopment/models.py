@@ -1,18 +1,9 @@
-from django.utils import timezone
 from django.db import models
 
 # Create your models here.
-class Ads(models.Model):
-    title = models.CharField(verbose_name = 'Заголовок объявления')
-    
-    def __str__(self) -> str:
-        return f'{self.title}'
-    
-class Files(models.Model):
-    ads=models.ForeignKey(Ads, on_delete=models.CASCADE)
+class StrategicDev(models.Model):
     name = models.CharField(verbose_name = 'Название файла')
     file = models.FileField(verbose_name='Файл', upload_to='docs/')
-    date = models.DateTimeField(default=timezone.now, verbose_name='Дата публикации')
     type = models.CharField(max_length = 6, blank=True, null=True )
 
     def save(self, *args, **kwargs):
@@ -22,4 +13,4 @@ class Files(models.Model):
         super().save(*args, **kwargs)
         
     def __str__(self) -> str:
-        return f'{self.name}: ({self.date})'
+        return f'{self.name}'

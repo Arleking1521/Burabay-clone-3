@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'ceoblog',
     'people',
     'accreditation',
+    'strategicDevelopment',
 ]
 
 MIDDLEWARE = [
