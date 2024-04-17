@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load  i18n %}
+{% block content %}
+<div class="content-split">
+    <div class="navigation">
+        <a href="{% url 'vacancies'%}">Вакансии</a>
+        <a href="{% url 'ethicsRegulations'%}">Положение об этике</a>
+        <a href="{% url 'laborProtection' %}">Охрана труда</a>
+    </div>
+    <div class="rules">        
+        <h2 class="Title">Положение об этике</h2>
+        <div class="rule-plates">
+            
+            
+            <table >
+                
+                <tr>
+                    <th>{% trans 'Название' %}</th> <th>{% trans 'Скачать' %}</th> 
+                </tr>
+                {% for post in ethics %}
+                    <tr>
+                        <td>{{post.name}} </td> <td><a href="{% url 'download_file' did=post.pk %}">Скачать</a></td> 
+                    </tr>
+                {% endfor %}
+            </table>
+            
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

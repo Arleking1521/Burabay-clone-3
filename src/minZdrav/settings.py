@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'people',
     'accreditation',
     'strategicDevelopment',
+    'ethica',
 ]
 
 MIDDLEWARE = [
