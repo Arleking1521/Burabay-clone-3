@@ -583,6 +583,31 @@ li{
     border-radius: 8px;
 }
 
+.nii_information{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nii_information h2{
+    color: var(--logo-color);
+}
+
+.nii_information p{
+    text-align: center;
+}
+
+.nii_information img{
+    width: 50px;
+}
+
+.nii{
+    align-items: start;
+    margin: 20px 0;
+}
+
 .phrase{
     margin-bottom: 20px;
 }
@@ -917,6 +942,7 @@ footer{
     padding: 5px 30px;
     margin: 20px 0;
     box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
 .new-frame .new-frame{
@@ -1334,7 +1360,6 @@ width: 30%;
     border-radius: 8px;
     padding: 0px;
     border-radius: 50%;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
     width: 0;
     height: 0;
     transition: 0.3s;
@@ -1353,6 +1378,7 @@ width: 30%;
     width: auto !important;
     height: auto !important;
     padding: 10px !important;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1) !important;
   }
 
   .hidden img{
