@@ -3,17 +3,12 @@
 {% block content %}
 <div class="content-split">
     <div class="navigation">
-        <a href="{% url 'viewSovet'%}" class="selected">{% trans 'Наблюдательный совет' %}</a>
-        <a href="{% url 'histories'%}">{% trans 'История' %}</a>
-        <a href="{% url 'ceo-info' %}">{% trans 'Руководитель' %}</a>
-        <a href="{% url 'vacancies'%}">{% trans 'Вакансии' %}</a>
-        <a href="{% url 'orgStruct'%}">{% trans 'Организационная структура' %}</a>
-        <a href="{% url 'reviews'%}">{% trans 'Отзывы' %}</a>
-        <a href="{% url 'contacts'%}">{% trans 'Контакты' %}</a>
-        <a href="{% url 'rights-acts'%}">{% trans 'Правовые акты' %}</a>
-        <a href="{% url 'workers-info'%}">{% trans 'Сведения о работниках' %}</a>
+        <a href="{% url 'strategic-dev'%}" >{% trans 'Стратегическое развитие' %}</a>
         <a href="{% url 'antiCor'%}">{% trans 'Противодействие коррупции' %}</a>
-        <a href="{% url 'ads'%}">{% trans 'Протокол итогов' %}</a>
+        <a href="{% url 'ads'%}">{% trans 'Государственные закупки' %}</a>
+        <a href="{% url 'managment_standart'%}">{% trans 'Стандарт менеджемента' %}</a>
+        <a href="{% url 'viewSovet'%}" class='selected'>{% trans 'Наблюдательный совет' %}</a>
+        <a href="{% url 'accreditation'%}">{% trans 'Аккредитация' %}</a>
     </div>
     <div class="rules">
         <span class="Title"> {% trans 'Наблюдательный совет' %} </span>

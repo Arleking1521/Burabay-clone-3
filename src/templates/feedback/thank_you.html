@@ -1,5 +1,13 @@
 {% extends 'base.html' %}
-
+{%load i18n%}
 {% block content %}
-<p>Спасибо за обращение. Ждите ответа на почту.</p>
+
+
+<div class="content-split">
+    <div class="navigation">
+        <a href="{% url 'blogCEO'%}" >{% trans 'Блог Руководителя' %}</a>
+        <a href="{% url 'appeal'%}" class='selected'>{% trans 'Для Обращений' %}</a>
+    </div>
+        <p>Спасибо за обращение. Ждите ответа на почту.</p>
+</div>
 {% endblock %}

@@ -1,0 +1,12 @@
+from django.db import models
+from django.utils import timezone
+
+# Create your models here.
+class Mediagallery(models.Model):
+    name = models.CharField(verbose_name= "Название фотографии")
+    file = models.FileField(verbose_name='Файл', upload_to='mediagallery/')
+    date = models.TimeField(default=timezone.now)
+
+    def __str__(self) -> str:
+        return f'{self.name}'
+    

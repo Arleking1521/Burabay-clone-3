@@ -1,20 +1,8 @@
 {% extends 'base.html' %}
 {% load  i18n %}
 {% block content %}
-<div class="content-split">
-    <div class="navigation">
-        <a href="{% url 'viewSovet'%}">{% trans 'Наблюдательный совет' %}</a>
-                <a href="{% url 'histories'%}">{% trans 'История' %}</a>
-                <a href="{% url 'ceo-info' %}">{% trans 'Руководитель' %}</a>
-                <a href="{% url 'vacancies'%}">{% trans 'Вакансии' %}</a>
-                <a href="{% url 'orgStruct'%}">{% trans 'Организационная структура' %}</a>
-                <a href="{% url 'reviews'%}">{% trans 'Отзывы' %}</a>
-                <a href="{% url 'contacts'%}" class = "selected">{% trans 'Контакты' %}</a>
-                <a href="{% url 'rights-acts'%}">{% trans 'Правовые акты' %}</a>
-                <a href="{% url 'workers-info'%}">{% trans 'Сведения о работниках' %}</a>
-                <a href="{% url 'antiCor'%}">{% trans 'Противодействие коррупции' %}</a>
-                <a href="{% url 'ads'%}">{% trans 'Протокол итогов' %}</a>
-    </div>
+<div class="content-inner">
+    
     <div class="rules">        
         <div class="rule-plates">
             <h2 class="Title">{% trans 'Контакты' %}</h2>

@@ -3,15 +3,15 @@
 {% block content %}
 <div class="content-split">
     <div class="navigation">
-        <a href="{% url 'med-services'%}">{% trans 'Медицинские услуги' %}</a>
-        <a href="{% url 'rules'%}" >{% trans 'Правила санатория' %}</a>
-        <a href="{% url 'gobmp'%}" class='selected'>{% trans 'Путевки по ГОБМП' %}</a>
+        <a href="{% url 'sci-dev'%}" class='selected'>Научные разработки</a>
+        <a href="{% url 'plans'%}">Планы</a>
+        <a href="{% url 'achievments'%}">Достижения</a>
     </div>
     <div class="rules">
         <span class="Title">{% trans 'Механизм получения путевки по ГОБМП' %}:</span>
         {% comment %} <div class="new-frame">
             <div class="rule-plates">
-                <h2>{% trans 'Права пациентов' %}</h2>
+                <h2>{% trans 'Научные разработки' %}</h2>
                 {% for rule in rules %}
                 <div class="rule-block">
                     <h3>{{ rule.title }}</h3>

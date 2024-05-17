@@ -1,10 +1,8 @@
 from modeltranslation.translator import register, TranslationOptions
-from .models import CeoDatas, Education
+from .models import CeoDatas
 
 @register(CeoDatas)
 class CeoDatasTranslationoptions(TranslationOptions):
-    fields = ( 'name', 'dateOfBirth', 'scientific', 'work_ex', 'additionally', 'awards', 'sertificates', 'publications')
+    fields = ( 'name', 'dateOfBirth', 'scientific', 'awards', 'sertificates', 'publications', 'positions', 'education')
 
-@register(Education)
-class EducationsTranslationoptions(TranslationOptions):
-    fields = ( 'university', 'info')
+

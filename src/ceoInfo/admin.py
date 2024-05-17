@@ -1,13 +1,9 @@
 from django.contrib import admin
-from .models import CeoDatas,Education
+from .models import CeoDatas
 from modeltranslation.admin import TranslationAdmin
 
 # Register your models here.
 
 @admin.register(CeoDatas)
 class CeoDatasAdmin(TranslationAdmin):
-    list_display = ( 'name', 'dateOfBirth', 'scientific', 'work_ex', 'additionally', 'awards', 'sertificates', 'publications')
-
-@admin.register(Education)
-class EducationAdmin(TranslationAdmin):
-    list_display = ( 'university', 'info')
+    list_display = ( 'name', 'dateOfBirth', 'scientific', 'awards', 'sertificates', 'publications', 'positions', 'education')

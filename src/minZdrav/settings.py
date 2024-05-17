@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'accreditation',
     'strategicDevelopment',
     'ethica',
+    'mediagallery',
 ]
 
 MIDDLEWARE = [

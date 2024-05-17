@@ -3,17 +3,8 @@
 {% block content %}
 <div class="content-split">
     <div class="navigation">
-        <a href="{% url 'viewSovet'%}">{% trans 'Наблюдательный совет' %}</a>
-                <a href="{% url 'histories'%}">{% trans 'История' %}</a>
-                <a href="{% url 'ceo-info' %}" class = "selected">{% trans 'Руководитель' %}</a>
-                <a href="{% url 'vacancies'%}">{% trans 'Вакансии' %}</a>
-                <a href="{% url 'orgStruct'%}">{% trans 'Организационная структура' %}</a>
-                <a href="{% url 'reviews'%}">{% trans 'Отзывы' %}</a>
-                <a href="{% url 'contacts'%}">{% trans 'Контакты' %}</a>
-                <a href="{% url 'rights-acts'%}">{% trans 'Правовые акты' %}</a>
-                <a href="{% url 'workers-info'%}">{% trans 'Сведения о работниках' %}</a>
-                <a href="{% url 'antiCor'%}">{% trans 'Противодействие коррупции' %}</a>
-                <a href="{% url 'ads'%}">{% trans 'Протокол итогов' %}</a>
+        <a href="{% url 'ceo-info'%}" class='selected'> Руководство</a>
+        <a href="{% url 'workers-info'%}">Информация о сотрудниках</a>
     </div>
     <div class="rules">
         <span class="Title">{% trans 'Сведения о руководителе' %}</span>
@@ -37,14 +28,11 @@
                 <div class="rule-block">
                     {% if datas.edu_parts %}
                     <h3>{% trans 'Образование' %}:</h3>
+                    <ul>
                     {% for part in datas.edu_parts %}
-                        <p><b>{{ part.university }}</b></p>
-                        <ul>
-                            {% for i in part.info %}
-                                <li>{{ i }}</li>
-                            {% endfor %}
-                        </ul>
+                        <li>{{ part }}</li>
                     {% endfor %}
+                    </ul>
                     {% endif %}
                 </div>
                 <div class="rule-block">
@@ -57,16 +45,7 @@
                     </ul>
                     {% endif %}
                 </div>
-                <div class="rule-block">
-                    {% if datas.work_parts %}
-                    <h3>{% trans 'Опыт работы' %}:</h3>
-                    <ul>
-                        {% for part in datas.work_parts %}
-                            <li>{{ part }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </div>
+                
                 <div class="rule-block">
                     {% if datas.add_parts %}
                     <h3>{% trans 'Дополнительно' %}:</h3>
@@ -106,6 +85,16 @@
                     
                     <ul>
                         {% for part in datas.public_parts %}
+                            <li>{{ part }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+                <div class="rule-block">
+                    {% if datas.positions %}
+                    <h3>{% trans 'Должности' %}:</h3>
+                    <ul>
+                        {% for part in datas.positions %}
                             <li>{{ part }}</li>
                         {% endfor %}
                     </ul>

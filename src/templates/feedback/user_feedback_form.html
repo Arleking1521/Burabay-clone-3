@@ -1,17 +1,23 @@
 {% extends 'base.html' %}
 {%load i18n%}
 {% block content %}
-<div class="form-card">
-    <form method="post" class="login-card">
-        {% csrf_token %}
-        <label for="id_author">{%trans 'Ваше имя'%}:</label>
-        {{ form.name }}
-        <label for="id_email">{%trans 'Email'%}:</label>
-        {{ form.email }}
-        <label for="id_review">{%trans 'Ваш отзыв'%}:</label>
-        {{ form.message }}
-        
-        <button class="btn" type="submit">{%trans 'Отправить отзыв'%}</button>
-    </form>
+<div class="content-split">
+    <div class="navigation">
+        <a href="{% url 'blogCEO'%}" >{% trans 'Блог Руководителя' %}</a>
+        <a href="{% url 'appeal'%}" class='selected'>{% trans 'Для Обращений' %}</a>
+    </div>
+    <div class="form-card">
+        <form method="post" class="login-card">
+            {% csrf_token %}
+            <label for="id_author">{%trans 'Ваше имя'%}:</label>
+            {{ form.name }}
+            <label for="id_email">{%trans 'Email'%}:</label>
+            {{ form.email }}
+            <label for="id_review">{%trans 'Ваш отзыв'%}:</label>
+            {{ form.message }}
+            
+            <button class="btn" type="submit">{%trans 'Отправить отзыв'%}</button>
+        </form>
+    </div>
 </div>
 {% endblock %}
