@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     'strategicDevelopment',
     'ethica',
     'mediagallery',
+    'strategic_partners',
 ]
 
 MIDDLEWARE = [

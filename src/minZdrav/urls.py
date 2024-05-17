@@ -51,6 +51,7 @@ urlpatterns += i18n_patterns(
     path('people/', include('people.urls')),
     path('ethics-regulations/', include('ethica.urls')),
     path('media-galery/', include('mediagallery.urls')),
+    path('strategic-partners/', include('strategic_partners.urls')),
     path('strategic-development/', include('strategicDevelopment.urls')), #Стратегическое развитие
     path('gobmp/', TemplateView.as_view(template_name='infoPages/gobmp.html'), name='gobmp'), #получение услуг по ГОБМП
     path('scientific-developments/', TemplateView.as_view(template_name='dopPages/scientificDev.html'), name='sci-dev'), #Научные достижения
@@ -59,7 +60,6 @@ urlpatterns += i18n_patterns(
     path('achievments/', TemplateView.as_view(template_name='dopPages/Achievments.html'), name='achievments'),
     path('uvo/', TemplateView.as_view(template_name='dopPages/UVO.html'), name='uvo'),
     path('schedule-of-childrens-shifts/', TemplateView.as_view(template_name='dopPages/kidsSchedule.html'), name='kidsSchedule'),
-    path('strategic-partners/', TemplateView.as_view(template_name='dopPages/strategicPartners.html'), name='strategic_partners'),
     path('labor-protection/', TemplateView.as_view(template_name='dopPages/laborProtection.html'), name='laborProtection'),
     path('leisure/', TemplateView.as_view(template_name='dopPages/leisure.html'), name='leisure'),
     path('transit/', TemplateView.as_view(template_name='dopPages/transit.html'), name='transit'),
