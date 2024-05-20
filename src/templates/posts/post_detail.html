@@ -6,27 +6,49 @@
         <h1 class="fame-header">{{post.title}}</h1>
         <p style="font-weight: 300; font-size: 15px;">{%trans 'Опубликовано'%}: <b>{{post.author.name}}</b></p>
         <p class="big_content">{{post.content}}</p>
-        {% for att in attachments %}
-        {% if att.type == 'img' %}
+        <div class="big-pics">
+            {% comment %} {% for att in attachments %}
+            {% if att.type == 'img' %}
             <div class="big_pic">
-                <img src="/media/{{att.file}}" alt="" width="100%">
+                <img src="/media/{{att.file}}" alt="" height="100%">
             </div>
-        {% else %}
+            {% else %}
             <div class="documents">
                 <iframe src="/media/{{att.file}}"></iframe>
             </div>
-        {% endif %}
-        {% endfor %}
+            {% endif %}
+            {% endfor %} {% endcomment %}
+            <div class="swiper sw2">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    {% for att in attachments %}
+                    {% if att.type == 'img' %}
+                    <div class="swiper-slide ssl"><img
+                            src="/media/{{att.file}}" alt="" height="400px"></div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination pag"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- If we need navigation buttons -->
+            </div>
+        </div>
+
         <p class="date mg-b">{{post.date}}</p>
     </div>
     <div class="comments">
-    {% for comms in comments %}
+        {% for comms in comments %}
         <div class="comment-card">
             <p class="comment-username">{{comms.author}}</p>
             <p class="comment-time">{{comms.time_stamp}}</p>
-            <p class="comment-body">{{comms.content}}</p> 
+            <p class="comment-body">{{comms.content}}</p>
         </div>
         {% endfor %}
     </div>
-</div> 
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../static/script.js"></script>
 {% endblock %}

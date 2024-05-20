@@ -27,3 +27,6 @@ class PostAttachment(models.Model):
             self.type = 'doc'
         
         super().save(*args, **kwargs)
+
+    def __str__(self) -> str:
+        return f'{self.post}'

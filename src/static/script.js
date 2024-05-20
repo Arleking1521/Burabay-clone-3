@@ -13,6 +13,25 @@ const swiper = new Swiper('.sw', {
     },
 });
 
+const swiper2 = new Swiper('.sw2', {
+  // Optional parameters
+  loop: true,
+  // autoplay:{
+  //     delay: 3000,
+  // },
+
+  // If we need pagination
+  pagination: {
+    el: '.pag',
+    clickable: true,
+    type: 'bullets',
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 const swiper1 = new Swiper('.sw1', {
   // Optional parameters
   loop: true,

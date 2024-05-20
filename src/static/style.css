@@ -75,7 +75,21 @@ a:hover{
     content: '>';
 }
 
-.swiper-button-next:hover, .swiper-button-prev:hover{
+.swiper-button-next1:hover, .swiper-button-prev1:hover{
+    color: rgb(0, 0, 0) !important;
+}
+
+.swiper-button-next1:after, .swiper-button-prev1:after{
+    font-size: 30px !important;
+}
+
+.swiper-button-next1, .swiper-button-prev1{
+    transition: 0.3s;
+    font-size: 10px;
+    content: '>';
+}
+
+.swiper-button-next1:hover, .swiper-button-prev1:hover{
     color: rgba(0, 0, 0, 0.2) !important;
 }
 
@@ -963,6 +977,51 @@ footer{
     box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
 }
 
+.news-list{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.news-item{
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.news-item:hover{
+    transform: scale(1.03);
+}
+
+
+.news-date{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    padding: 10px 10px 0px 10px;
+}
+
+.news-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0 10px 15px 10px;
+}
+
+.news-pic{
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin-bottom: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 8px 8px 0 0;
+}
+
 .date{
 margin: 0;
 font-size: 14px;
@@ -1257,6 +1316,8 @@ width: 30%;
     font-weight: bold;
   }
 
+  
+
   .lang{
     border: none;
     font-weight: 600;
@@ -1319,6 +1380,38 @@ width: 30%;
 
   .reg-mob{
     display: none;
+  }
+
+  .big_pic{
+    height: 500px;
+    width: 50%;
+  }
+
+  .big_pic img{
+    display: block;
+  }
+
+  .sw2{
+    width: 70%;
+    margin: 30px 0;
+  }
+  .ssl{
+    width: 100%;
+    display: flex !important;
+    align-self: center !important;
+    justify-content: center !important;
+  }
+
+  .ssl img{
+    border-radius: 8px;
+  }
+  
+  .big-pics{
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
 
   .person{
@@ -1585,7 +1678,9 @@ width: 30%;
   }
 
   @media screen and (max-width:768px){
-
+    .news-list{
+        grid-template-columns: 30% 30% 30%;
+    }
     .ceo-info{
         flex-direction: column;
     }
@@ -1686,6 +1781,9 @@ width: 30%;
   }
 
   @media screen and (max-width:725px){
+    .news-list{
+        grid-template-columns: 45% 45%;
+    }
     
     .banner{
         background-size: 300%;
@@ -1728,6 +1826,9 @@ width: 30%;
   }
 
   @media screen and (max-width:450px) {
+    .news-list{
+        grid-template-columns: 45% 45%;
+    }
     .nii_information h2{
         font-size: 16px;
     }
