@@ -105,7 +105,7 @@ DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'minzdrav',
+        'NAME': 'burabay_mzrk',
         'USER': 'userdb',
         'PASSWORD': 'DB_pass8811',
         'HOST': 'localhost',
