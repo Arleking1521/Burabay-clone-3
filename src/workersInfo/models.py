@@ -8,7 +8,8 @@ class WorkersInfo(models.Model):
     sertificates = models.TextField(verbose_name = 'Сертификат специалиста')
 
     class Meta:
-        verbose_name_plural = "О сотрудниках"
+        verbose_name_plural = "Сотрудники"
+        verbose_name='Сотрудник'
 
     def __str__ (self) -> str:
         return f'{self.name}: {self.post}'

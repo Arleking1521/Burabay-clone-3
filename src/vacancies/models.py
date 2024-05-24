@@ -8,6 +8,7 @@ class Vacancies(models.Model):
     requirement = models.TextField(verbose_name = 'Требования')
     class Meta:
         verbose_name_plural = "Вакансии"
+        verbose_name='Вакансия'
     def __str__ (self) -> str:
         return f'{self.vacancy}'
     
@@ -20,6 +21,7 @@ class CompetitionInfo(models.Model):
     additionally = models.TextField(verbose_name = 'Дополнительная информация')
 
     class Meta:
-        verbose_name_plural = "Информация о куонкурсе"
+        verbose_name_plural = "Информация о конкурсе"
+        verbose_name='Информация'
 
 
