@@ -7,8 +7,12 @@
             {% csrf_token %}
             <label for="id_title">{%trans 'Заголовок'%}:</label>
             {{ form.title }}
+            <label for="id_title">{%trans 'Заголовок'%}:</label>
+            {{ form.title_kk }}
             <label for="id_content">{%trans 'Информация'%}:</label>
             {{ form.content }}
+            <label for="id_content">{%trans 'Информация'%}:</label>
+            {{ form.content_kk }}
             <label for="file-upload-input" class="btn mg-b custom-file-upload" >{%trans 'Выбрать файл'%}</label>
             <div style="display: none;">
                 {{ form.images }}
