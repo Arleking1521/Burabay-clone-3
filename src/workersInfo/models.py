@@ -7,6 +7,9 @@ class WorkersInfo(models.Model):
     work_exp = models.CharField(verbose_name = 'Стаж')
     sertificates = models.TextField(verbose_name = 'Сертификат специалиста')
 
+    class Meta:
+        verbose_name_plural = "О сотрудниках"
+
     def __str__ (self) -> str:
         return f'{self.name}: {self.post}'
     

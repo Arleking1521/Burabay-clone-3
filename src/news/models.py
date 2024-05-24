@@ -8,7 +8,8 @@ class Post(models.Model):
     title = models.CharField(max_length = 1000, verbose_name='Заголовок')
     date = models.DateTimeField(default=timezone.now, verbose_name='Дата')
     content = models.TextField(verbose_name='Контент')
-
+    class Meta:
+        verbose_name_plural = "Публикации"
     def __str__(self) -> str:
         return f'{self.title}: {self.content} ({self.date})'
 # Create your models here.
@@ -27,6 +28,7 @@ class PostAttachment(models.Model):
             self.type = 'doc'
         
         super().save(*args, **kwargs)
-
+    class Meta:
+        verbose_name_plural = "Файлы"
     def __str__(self) -> str:
         return f'{self.post}'

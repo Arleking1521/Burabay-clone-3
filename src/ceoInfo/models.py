@@ -11,6 +11,9 @@ class CeoDatas(models.Model):
     publications = models.TextField(verbose_name = 'Публикации')
     photo = models.FileField(verbose_name= 'Фото руководителя', upload_to='images/')
     education = models.TextField(verbose_name = 'Образование')
+
+    class Meta:
+        verbose_name_plural = "Информация о руководителе"
     def __str__ (self) -> str:
         return f'{self.name}'
     

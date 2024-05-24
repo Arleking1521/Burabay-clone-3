@@ -6,6 +6,9 @@ class AboutInfo(models.Model):
     LDO = models.TextField(verbose_name = 'Лечебно-Диагностическое отделение')
     file = models.FileField(verbose_name='Файл с описанием', upload_to='docs/')
 
+    class Meta:
+        verbose_name_plural = "Информация о НИИ"
+
     def __str__ (self) -> str:
         return f'О НИИ Курортологии'
 
