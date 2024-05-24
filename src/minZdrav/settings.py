@@ -77,6 +77,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CSRF_COOKIE_DOMAIN = 'burabay-mzrk.kz'
+
 ROOT_URLCONF = 'minZdrav.urls'
 
 TEMPLATES = [
