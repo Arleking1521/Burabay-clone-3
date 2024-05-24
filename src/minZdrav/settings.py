@@ -180,3 +180,5 @@ LOGOUT_URL = 'login'
 
 LOGIN_URL = 'login'
 # Application definition
+
+AUTH_USER_MODEL = 'logRegisPages.CustomUser'

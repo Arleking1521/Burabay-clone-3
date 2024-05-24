@@ -14,4 +14,5 @@ class CustomUser(AbstractUser):
     def __str__ (self) -> str:
         return f'{self.name} {self.surename}: {self.email}'
     
+    
 
