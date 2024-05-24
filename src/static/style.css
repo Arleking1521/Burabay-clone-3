@@ -1142,10 +1142,7 @@ width: 30%;
     text-align: left;
     border-bottom: 1px solid lightgray;
     padding: 10px 20px;
-  }
-
-  .rule-plates table th{
-    background-color: rgb(250, 250, 250);
+    background-color: white;
   }
 
   .rule-plates table th:first-child{
