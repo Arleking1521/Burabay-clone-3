@@ -13,7 +13,8 @@ class Ethica(models.Model):
         super().save(*args, **kwargs)
         
     class Meta:
-        verbose_name_plural = "Положение об этике"
+        verbose_name_plural = "Документы об этике"
+        verbose_name='Документ'
 
     def __str__(self) -> str:
         return f'{self.name}'

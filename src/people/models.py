@@ -12,5 +12,6 @@ class People(models.Model):
 
     class Meta:
         verbose_name_plural = "Люди"
+        verbose_name='Человек'
     def __str__(self) -> str:
         return f'{self.name}'

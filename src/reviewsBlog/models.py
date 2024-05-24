@@ -9,6 +9,7 @@ class Reviews(models.Model):
 
     class Meta:
         verbose_name_plural = "Отзывы"
+        verbose_name='Отзыв'
 
     def __str__(self) -> str:
         return f'{self.author}: {self.IIN} ({self.date})'
@@ -19,5 +20,6 @@ class Answer(models.Model):
     date = models.DateTimeField(auto_now=timezone.now)
     class Meta:
         verbose_name_plural = "Ответы на отзывы"
+        verbose_name='Ответ на отзыв'
     def __str__(self) -> str:
         return f'{self.review.author}: {self.answer} ({self.date})'

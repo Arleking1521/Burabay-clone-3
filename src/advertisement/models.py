@@ -26,5 +26,6 @@ class Files(models.Model):
         
     class Meta:
         verbose_name_plural = "файлы и объявления"
+        verbose_name='файл или объявление'
     def __str__(self) -> str:
         return f'{self.name}: ({self.date})'

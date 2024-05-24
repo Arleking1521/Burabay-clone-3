@@ -6,7 +6,8 @@ class AntiCorruption(models.Model):
     file = models.FileField(verbose_name='Файл', upload_to='docs/')
     
     class Meta:
-        verbose_name_plural = "Противодействие коррупции"
+        verbose_name_plural = "Документы"
+        verbose_name='Документ'
 
     def __str__(self) -> str:
         return f'{self.title}: {self.file}'

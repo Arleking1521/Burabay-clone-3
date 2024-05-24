@@ -11,6 +11,7 @@ class Managers(models.Model):
 
     class Meta:
         verbose_name_plural = "Руководители"
+        verbose_name='Руководитель'
 
     def __str__ (self) -> str:
         return f'{self.name}: {self.post}'
@@ -21,6 +22,7 @@ class Contacts(models.Model):
 
     class Meta:
         verbose_name_plural = "Контакты НИИ"
+        verbose_name='Контакт'
 
     def __str__ (self) -> str:
         return f'{self.title}: {self.info}'

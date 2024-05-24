@@ -7,6 +7,7 @@ class History(models.Model):
 
     class Meta:
         verbose_name_plural = "Истории и легенды"
+        verbose_name='История или легенда'
 
     def __str__ (self) -> str:
         return f'{self.title}: {self.info}'

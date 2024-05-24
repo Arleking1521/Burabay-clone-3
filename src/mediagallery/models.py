@@ -9,6 +9,7 @@ class Mediagallery(models.Model):
 
     class Meta:
         verbose_name_plural = "Фотографии"
+        verbose_name='Фото'
 
     def __str__(self) -> str:
         return f'{self.name}'

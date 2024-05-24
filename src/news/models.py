@@ -10,6 +10,7 @@ class Post(models.Model):
     content = models.TextField(verbose_name='Контент')
     class Meta:
         verbose_name_plural = "Публикации"
+        verbose_name='Публикация'
     def __str__(self) -> str:
         return f'{self.title}: {self.content} ({self.date})'
 # Create your models here.
@@ -28,7 +29,10 @@ class PostAttachment(models.Model):
             self.type = 'doc'
         
         super().save(*args, **kwargs)
+        
     class Meta:
         verbose_name_plural = "Файлы"
+        verbose_name='Файлы'
+
     def __str__(self) -> str:
         return f'{self.post}'

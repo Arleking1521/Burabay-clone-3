@@ -14,6 +14,8 @@ class CeoDatas(models.Model):
 
     class Meta:
         verbose_name_plural = "Информация о руководителе"
+        verbose_name='Руководитель'
+
     def __str__ (self) -> str:
         return f'{self.name}'
     

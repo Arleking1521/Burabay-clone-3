@@ -8,5 +8,6 @@ class UserFeedback(models.Model):
 
     class Meta:
         verbose_name_plural = "Обращения"
+        verbose_name='Обращение'
     def __str__(self):
         return self.name

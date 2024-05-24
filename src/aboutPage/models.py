@@ -8,6 +8,7 @@ class AboutInfo(models.Model):
 
     class Meta:
         verbose_name_plural = "Информация о НИИ"
+        verbose_name='Информация'
 
     def __str__ (self) -> str:
         return f'О НИИ Курортологии'

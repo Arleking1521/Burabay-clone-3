@@ -7,7 +7,8 @@ class Accreditation(models.Model):
     file = models.FileField(verbose_name='Документ', upload_to='docs/')
 
     class Meta:
-        verbose_name_plural = "Аккредитация"
+        verbose_name_plural = "Аккредитации"
+        verbose_name='Аккредитация'
 
     def __str__ (self) -> str:
         return f'{self.title}'

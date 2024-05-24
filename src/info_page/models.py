@@ -8,6 +8,7 @@ class PacientInfo(models.Model):
 
     class Meta:
         verbose_name_plural = "Правила"
+        verbose_name='Правило'
 
     def __str__ (self) -> str:
         return f'{self.title}: {self.info}'

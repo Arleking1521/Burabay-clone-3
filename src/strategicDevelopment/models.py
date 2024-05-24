@@ -13,6 +13,7 @@ class StrategicDev(models.Model):
         super().save(*args, **kwargs)
         
     class Meta:
-        verbose_name_plural = "Файлы о развитии"
+        verbose_name_plural = "Документы о развитии"
+        verbose_name='Документ'
     def __str__(self) -> str:
         return f'{self.name}'
