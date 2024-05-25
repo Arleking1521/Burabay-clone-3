@@ -5,13 +5,13 @@
         <h1>{%trans 'Новое объявление'%}</h1>
         <form method="post" enctype="multipart/form-data" class="login-card">
             {% csrf_token %}
-            <label for="id_title">{%trans 'Заголовок'%}:</label>
+            <label for="id_title">{%trans 'Заголовок на русском'%}:</label>
             {{ form.title }}
-            <label for="id_title">{%trans 'Заголовок'%}:</label>
+            <label for="id_title">{%trans 'Заголовок на казахском'%}:</label>
             {{ form.title_kk }}
-            <label for="id_content">{%trans 'Информация'%}:</label>
+            <label for="id_content">{%trans 'Информация на русском'%}:</label>
             {{ form.content }}
-            <label for="id_content">{%trans 'Информация'%}:</label>
+            <label for="id_content">{%trans 'Информация на казахском'%}:</label>
             {{ form.content_kk }}
             <label for="file-upload-input" class="btn mg-b custom-file-upload" >{%trans 'Выбрать файл'%}</label>
             <div style="display: none;">
