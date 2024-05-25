@@ -11,21 +11,22 @@
         <span class="Title">{%trans 'Сведения о квалификации медицинских работников'%} с высшим медицинским образованием</span>
         
         <div class="rule-plates">
-            <table >
-                <tr>
-                    <th>{% trans 'ФИО' %}</th> <th>{% trans 'Должность' %}</th> <th>{%trans 'Стаж'%}</th> <th>{%trans 'Сертификат специалиста'%}</th>
-                </tr>
-                {% for worker in workers %}
+            <div class="tables">
+                <table >
                     <tr>
-                        <td>{{worker.name}}</td> <td>{{worker.post}}</td> <td>{{worker.work_exp}}</td> <td>
-                            {%for serts in worker.sertificates%}
-                                {{serts}}
-                            {%endfor%}
-                        </td>
+                        <th>{% trans 'ФИО' %}</th> <th>{% trans 'Должность' %}</th> <th>{%trans 'Стаж'%}</th> <th>{%trans 'Сертификат специалиста'%}</th>
                     </tr>
-                {% endfor %}
-            </table>
-
+                    {% for worker in workers %}
+                        <tr>
+                            <td>{{worker.name}}</td> <td>{{worker.post}}</td> <td>{{worker.work_exp}}</td> <td>
+                                {%for serts in worker.sertificates%}
+                                    {{serts}}
+                                {%endfor%}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
         </div>
     </div>
     

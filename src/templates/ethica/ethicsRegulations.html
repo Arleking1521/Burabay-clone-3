@@ -11,18 +11,20 @@
         <h2 class="Title">Положение об этике</h2>
         <div class="rule-plates">
             
-            
-            <table >
+            <div class="tables">
+                <table >
                 
-                <tr>
-                    <th>{% trans 'Название' %}</th> <th>{% trans 'Скачать' %}</th> 
-                </tr>
-                {% for post in ethics %}
                     <tr>
-                        <td>{{post.name}} </td> <td><a href="{% url 'download_file' did=post.pk %}">Скачать</a></td> 
+                        <th>{% trans 'Название' %}</th> <th>{% trans 'Скачать' %}</th> 
                     </tr>
-                {% endfor %}
-            </table>
+                    {% for post in ethics %}
+                        <tr>
+                            <td>{{post.name}} </td> <td><a href="{% url 'download_file' did=post.pk %}">Скачать</a></td> 
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            
             
         </div>
     </div>
