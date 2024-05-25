@@ -76,8 +76,7 @@
                     {% get_available_languages as LANGUAGES %}
                     {% get_language_info_list for LANGUAGES as languages %}
                     {% for language in languages %}
-                    <button class="lang" type="submit" name="language" value="{{ language.code }}" {% if
-                        language.code==LANGUAGE_CODE %}disabled style="cursor: auto;" {% endif %}>
+                    <button class="lang" type="submit" name="language" value="{{ language.code }}" {% if language.code==LANGUAGE_CODE %} disabled style="cursor: auto;" {% endif %}>
                         {% if language.code == 'ru' %}
                         RU
                         {% elif language.code == 'kk' %}
@@ -173,8 +172,7 @@
             {% get_available_languages as LANGUAGES %}
             {% get_language_info_list for LANGUAGES as languages %}
             {% for language in languages %}
-            <button class="lang" type="submit" name="language" value="{{ language.code }}" {% if
-                language.code==LANGUAGE_CODE %}disabled style="cursor: auto;" {% endif %}>
+            <button class="lang" type="submit" name="language" value="{{ language.code }}" {% if language.code==LANGUAGE_CODE %}disabled style="cursor: auto;" {% endif %}>
                 {% if language.code == 'ru' %}
                 RU
                 {% elif language.code == 'kk' %}
