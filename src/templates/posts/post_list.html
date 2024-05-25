@@ -27,7 +27,7 @@
 
         </div> {% endcomment %}
         <a class="news-item" href="{% url 'new_detail' pid=post.pk %}">
-            <div class="news-pic" {% if post.att.type == 'img' %} style="background-image: url(/media/{{post.att.file}});" {% else %} style="background-image: url(../../static/assets/logo2.png);" {%endif%}>
+            <div class="news-pic" {% if post.att.type == 'img' %} style="background-image: url(/media/{{post.att.file}});" {% else %} style="background-image: url(../../static/assets/no-content-banner.jpg);" {%endif%}>
             </div>
             <p class="news-date">{{post.date}}</p>
             <p class="news-title">{{post.title}}</p>

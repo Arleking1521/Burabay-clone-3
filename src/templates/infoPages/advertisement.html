@@ -14,18 +14,19 @@
         <div class="rule-plates">
             {% for ad in ads %}
             <h2 class="Title">{{ad.title}}</h2>
-            <table >
+            <div class="tables">
+                <table >
                 
-                <tr>
-                    <th>{% trans 'Название' %}</th> <th>{% trans 'Скачать' %}</th> 
-                </tr>
-                {% for file in ad.files %}
                     <tr>
-                        <td>{{file.name}} {{file.date}}</td> <td><a href="{% url 'download_file' file_id=file.pk %}">Скачать</a></td> 
+                        <th>{% trans 'Название' %}</th> <th>{% trans 'Скачать' %}</th> 
                     </tr>
-                {% endfor %}
-            </table>
-            
+                    {% for file in ad.files %}
+                        <tr>
+                            <td>{{file.name}} {{file.date}}</td> <td><a href="{% url 'download_file' file_id=file.pk %}">Скачать</a></td> 
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
             {% endfor %}
         </div>
     </div>
