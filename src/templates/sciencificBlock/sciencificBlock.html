@@ -2,9 +2,11 @@
 
 {% block content %}
 <div class="content-inner">
-    <span class="Title"> Научный  </span>
+    <span class="Title"> {{science.name}} </span>
+    {%if science.info%}
     <div class="sci_doc">
         <iframe src="/media/{{science.info}}" class="sci_block"></iframe>
     </div>
+    {%endif%}
 </div>
 {% endblock %}
