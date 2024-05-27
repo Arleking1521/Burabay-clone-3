@@ -8,3 +8,12 @@ class OrgStruct(models.Model):
         verbose_name='Схема'
     def __str__(self) -> str:
         return f'Организационная структура'
+    
+class Departments(models.Model):
+    name = models.CharField(verbose_name='Название отдела')
+    info = models.TextField(verbose_name='Информация об отделе')
+    class Meta:
+        verbose_name_plural = "Отделы"
+        verbose_name='Отдел'
+    def __str__(self) -> str:
+        return f'{self.name}'
