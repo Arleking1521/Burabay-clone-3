@@ -51,6 +51,7 @@ urlpatterns += i18n_patterns(
     path('people/', include('people.urls')),
     path('ethics-regulations/', include('ethica.urls')),
     path('media-galery/', include('mediagallery.urls')),
+    path('sciencific-block/', include('scienceBlock.urls')),
     path('strategic-partners/', include('strategic_partners.urls')),
     path('strategic-development/', include('strategicDevelopment.urls')), #Стратегическое развитие
     path('gobmp/', TemplateView.as_view(template_name='infoPages/gobmp.html'), name='gobmp'), #получение услуг по ГОБМП

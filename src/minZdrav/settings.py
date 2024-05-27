@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'ethica',
     'mediagallery',
     'strategic_partners',
+    'scienceBlock',
 ]
 
 MIDDLEWARE = [
