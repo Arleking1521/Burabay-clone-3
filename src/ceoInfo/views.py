@@ -1,7 +1,6 @@
 from django.shortcuts import render
 
 from .models import CeoDatas
-
 # Create your views here.
 def ceoInfo(request):
     datas = CeoDatas.objects.order_by('-id').first()
