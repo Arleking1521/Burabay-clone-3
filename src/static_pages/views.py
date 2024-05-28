@@ -5,7 +5,7 @@ from ceoInfo.models import CeoDatas
 
 def index(request):
     content = index_page.objects.order_by('-id').first()
-    ceo_datas = CeoDatas.objects.order_by('-id').first()
+    ceo_datas = CeoDatas.objects.order_by('id').first()
     return render(request, 'MainPage/index.html', {'content': content, "ceo": ceo_datas})
 
 def site_map(request):
