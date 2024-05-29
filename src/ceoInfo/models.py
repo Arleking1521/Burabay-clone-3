@@ -5,6 +5,7 @@ class CeoDatas(models.Model):
     name = models.CharField(verbose_name = 'Имя руководителя')
     dateOfBirth = models.CharField(verbose_name = 'Дата рождания')
     scientific = models.TextField(verbose_name = 'Научная степень', blank=True)
+    work = models.TextField(verbose_name = 'Трудовая деятельность', blank=True)
     positions = models.TextField(verbose_name = 'Должности', blank=True)
     awards = models.TextField(verbose_name = 'Награды', blank=True)
     sertificates = models.TextField(verbose_name = 'Сертификаты', blank=True)

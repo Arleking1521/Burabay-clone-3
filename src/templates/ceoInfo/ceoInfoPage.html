@@ -46,7 +46,16 @@
                         </ul>
                         {% endif %}
                     </div>
-                    
+                    <div class="rule-block">
+                        {% if data.work %}
+                        <h3>{% trans 'Трудовая деятельность' %}:</h3>
+                        <ul>
+                        {% for part in data.work %}
+                            <li>{{ part }}</li>
+                        {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
                     <div class="rule-block">
                         {% if data.add_parts %}
                         <h3>{% trans 'Дополнительно' %}:</h3>

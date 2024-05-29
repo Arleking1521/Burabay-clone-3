@@ -11,6 +11,7 @@ def ceoInfo(request):
             'date_of_birth' : data.dateOfBirth if data.dateOfBirth else None,
             'edu_parts': data.education.split('\n') if data.education else None,
             'spec_parts':  data.scientific.split('\n') if data.scientific else None,
+            'work': data.work.split('\n') if data.work else None,
             'positions':  data.positions.split('\n') if data.positions else None,
             'awards_parts':  data.awards.split('\n') if data.awards else None,
             'sertif_parts':  data.sertificates.split('\n') if data.sertificates else None,
