@@ -1059,6 +1059,7 @@ footer{
     border-radius: 8px 8px 0 0;
 }
 
+
 .date{
 margin: 0;
 font-size: 0.875rem;
@@ -1734,11 +1735,15 @@ width: 30%;
         align-items: center;
     }
 
-    .news-pic{
+    .news-picture{
         width: 90%;
         margin-bottom: 10px;
         border-radius: 8px;
     }
+    .news-picture img{
+        border-radius: 8px;
+    }
+
 
     .question-inner .info{
         width: 50%;
