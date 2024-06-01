@@ -9,6 +9,10 @@ class PostCeo(models.Model):
     date = models.DateTimeField(default=timezone.now)
     content = models.TextField(verbose_name='Content')
 
+    class Meta:
+        verbose_name_plural = "Посты руководителя"
+        verbose_name='Пост'
+
     def __str__(self) -> str:
         return f'{self.title}: {self.content} ({self.date})'
 # Create your models here.

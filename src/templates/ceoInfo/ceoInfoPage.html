@@ -8,101 +8,112 @@
     </div>
     <div class="rules">
         <span class="Title">{% trans 'Сведения о руководителе' %}</span>
-        <div class="new-frame">
-            {% if not datas %}
-            {%else%}
-            <div class="ceo-info">
-                <div class="photo">
-                    <img src="../../media/{{datas.photo}}" alt="">
+        {%for data in datas%}
+            <div class="new-frame">
+                {% if not data %}
+                {%else%}
+                <div class="ceo-info">
+                    <div class="photo">
+                        <img src="../../media/{{data.photo}}" alt="">
+                    </div>
+                    
+                    {% if data.name and data.date_of_birth %}
+                    <span>
+                        <h1>{{data.name}}</h1>
+                        <h2>{{data.date_of_birth}}</h2>
+                    </span>
+                    
                 </div>
-                
-                {% if datas.name and datas.date_of_birth %}
-                <span>
-                    <h1>{{datas.name}}</h1>
-                    <h2>{{datas.date_of_birth}}</h2>
-                </span>
-                
+                {% endif %}
+                <div class="rule-plates">
+                    <div class="rule-block">
+                        {% if data.edu_parts %}
+                        <h3>{% trans 'Образование' %}:</h3>
+                        <ul>
+                        {% for part in data.edu_parts %}
+                            <li>{{ part }}</li>
+                        {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                    <div class="rule-block">
+                        {% if data.spec_parts %}
+                        <h3>{% trans 'Научная степень' %}:</h3>
+                        <ul>
+                        {% for part in data.spec_parts %}
+                            <li>{{ part }}</li>
+                        {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                    <div class="rule-block">
+                        {% if data.work %}
+                        <h3>{% trans 'Трудовая деятельность' %}:</h3>
+                        <ul>
+                        {% for part in data.work %}
+                            <li>{{ part }}</li>
+                        {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                    <div class="rule-block">
+                        {% if data.add_parts %}
+                        <h3>{% trans 'Дополнительно' %}:</h3>
+                        
+                        <ul>
+                            {% for part in data.add_parts %}
+                                <li>{{ part }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                    <div class="rule-block">
+                        {% if data.awards_parts %}
+                        <h3>{% trans 'Награды' %}:</h3>
+                        
+                        <ul>
+                            {% for part in data.awards_parts %}
+                                <li>{{ part }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                    <div class="rule-block">
+                        {% if data.sertif_parts %}
+                        <h3>{% trans 'Сертификаты' %}:</h3>
+                        
+                        <ul>
+                            {% for part in data.sertif_parts %}
+                                <li>{{ part }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                    <div class="rule-block">
+                        {% if data.public_parts %}
+                        <h3>{% trans 'Публикации' %}:</h3>
+                        
+                        <ul>
+                            {% for part in data.public_parts %}
+                                <li>{{ part }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                    <div class="rule-block">
+                        {% if data.positions %}
+                        <h3>{% trans 'Должности' %}:</h3>
+                        <ul>
+                            {% for part in data.positions %}
+                                <li>{{ part }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
             </div>
-            {% endif %}
-            <div class="rule-plates">
-                <div class="rule-block">
-                    {% if datas.edu_parts %}
-                    <h3>{% trans 'Образование' %}:</h3>
-                    <ul>
-                    {% for part in datas.edu_parts %}
-                        <li>{{ part }}</li>
-                    {% endfor %}
-                    </ul>
-                    {% endif %}
-                </div>
-                <div class="rule-block">
-                    {% if datas.spec_parts %}
-                    <h3>{% trans 'Научная степень' %}:</h3>
-                    <ul>
-                    {% for part in datas.spec_parts %}
-                        <li>{{ part }}</li>
-                    {% endfor %}
-                    </ul>
-                    {% endif %}
-                </div>
-                
-                <div class="rule-block">
-                    {% if datas.add_parts %}
-                    <h3>{% trans 'Дополнительно' %}:</h3>
-                    
-                    <ul>
-                        {% for part in datas.add_parts %}
-                            <li>{{ part }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </div>
-                <div class="rule-block">
-                    {% if datas.awards_parts %}
-                    <h3>{% trans 'Награды' %}:</h3>
-                    
-                    <ul>
-                        {% for part in datas.awards_parts %}
-                            <li>{{ part }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </div>
-                <div class="rule-block">
-                    {% if datas.sertif_parts %}
-                    <h3>{% trans 'Сертификаты' %}:</h3>
-                    
-                    <ul>
-                        {% for part in datas.sertif_parts %}
-                            <li>{{ part }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </div>
-                <div class="rule-block">
-                    {% if datas.public_parts %}
-                    <h3>{% trans 'Публикации' %}:</h3>
-                    
-                    <ul>
-                        {% for part in datas.public_parts %}
-                            <li>{{ part }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </div>
-                <div class="rule-block">
-                    {% if datas.positions %}
-                    <h3>{% trans 'Должности' %}:</h3>
-                    <ul>
-                        {% for part in datas.positions %}
-                            <li>{{ part }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </div>
-            </div>
-            {% endif %}
-        </div>
+        {%endfor%}
     </div>
 </div> 
 {% endblock %}

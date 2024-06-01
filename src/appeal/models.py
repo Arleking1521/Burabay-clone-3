@@ -6,5 +6,8 @@ class UserFeedback(models.Model):
     email = models.EmailField()
     message = models.TextField()
 
+    class Meta:
+        verbose_name_plural = "Обращения"
+        verbose_name='Обращение'
     def __str__(self):
         return self.name

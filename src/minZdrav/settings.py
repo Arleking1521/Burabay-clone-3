@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'ethica',
     'mediagallery',
     'strategic_partners',
+    'scienceBlock',
 ]
 
 MIDDLEWARE = [
@@ -76,6 +77,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CSRF_COOKIE_DOMAIN = 'burabay-mzrk.kz'
+CSRF_TRUSTED_ORIGINS = ['https://burabay-mzrk.kz', 'https://www.burabay-mzrk.kz']
 
 ROOT_URLCONF = 'minZdrav.urls'
 
@@ -177,3 +181,5 @@ LOGOUT_URL = 'login'
 
 LOGIN_URL = 'login'
 # Application definition
+
+AUTH_USER_MODEL = 'logRegisPages.CustomUser'

@@ -27,7 +27,14 @@ def post_list(request):
 def post_detail(request, pid):
     post = Post.objects.get(id = pid)
     attachments = PostAttachment.objects.filter(post_id = pid)
-    return render(request, 'posts/post_detail.html', {'post':post, 'attachments': attachments})
+
+    post_data = {
+        'author': post.author,
+        'title': post.title,
+        'date': post.date,
+        'content': post.content.split('\n'),
+    }
+    return render(request, 'posts/post_detail.html', {'post':post_data, 'attachments': attachments})
 
 def post_new(request):
     if request.method == 'POST':

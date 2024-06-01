@@ -9,6 +9,19 @@
             <img src="/media/{{file.file}}"></img>
         </div>
         {% endif %}
+        <div class="section-list">
+            {% if deps %}
+            {% for dep in deps %}
+            <button class="accordion">{{dep.name}}</button>
+            <div class="panel">
+                {% for info in dep.info %}
+                    <p>{{info}}</p>
+                {% endfor %}
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
     </div>
-</div> 
+</div>
+<script src="/static/accordion.js"></script>
 {% endblock %}

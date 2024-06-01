@@ -4,13 +4,19 @@ from django.db import models
 class CeoDatas(models.Model):
     name = models.CharField(verbose_name = 'Имя руководителя')
     dateOfBirth = models.CharField(verbose_name = 'Дата рождания')
-    scientific = models.TextField(verbose_name = 'Научная степень')
-    positions = models.TextField(verbose_name = 'Должности')
-    awards = models.TextField(verbose_name = 'Награды')
-    sertificates = models.TextField(verbose_name = 'Сертификаты')
-    publications = models.TextField(verbose_name = 'Публикации')
+    scientific = models.TextField(verbose_name = 'Научная степень', blank=True)
+    work = models.TextField(verbose_name = 'Трудовая деятельность', blank=True)
+    positions = models.TextField(verbose_name = 'Должности', blank=True)
+    awards = models.TextField(verbose_name = 'Награды', blank=True)
+    sertificates = models.TextField(verbose_name = 'Сертификаты', blank=True)
+    publications = models.TextField(verbose_name = 'Публикации', blank=True)
     photo = models.FileField(verbose_name= 'Фото руководителя', upload_to='images/')
     education = models.TextField(verbose_name = 'Образование')
+
+    class Meta:
+        verbose_name_plural = "Информация о руководителе"
+        verbose_name='Руководитель'
+
     def __str__ (self) -> str:
         return f'{self.name}'
     

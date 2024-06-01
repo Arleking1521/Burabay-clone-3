@@ -7,6 +7,10 @@ class Mediagallery(models.Model):
     file = models.FileField(verbose_name='Файл', upload_to='mediagallery/')
     date = models.TimeField(default=timezone.now)
 
+    class Meta:
+        verbose_name_plural = "Фотографии"
+        verbose_name='Фото'
+
     def __str__(self) -> str:
         return f'{self.name}'
     

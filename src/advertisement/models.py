@@ -5,6 +5,9 @@ from django.db import models
 class Ads(models.Model):
     title = models.CharField(verbose_name = 'Заголовок объявления')
     
+    class Meta:
+        verbose_name_plural = "Группа объявлений"
+
     def __str__(self) -> str:
         return f'{self.title}'
     
@@ -21,5 +24,8 @@ class Files(models.Model):
         self.type = file_extension
         super().save(*args, **kwargs)
         
+    class Meta:
+        verbose_name_plural = "файлы и объявления"
+        verbose_name='файл или объявление'
     def __str__(self) -> str:
         return f'{self.name}: ({self.date})'

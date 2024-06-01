@@ -4,7 +4,11 @@
 <div class="content-inner">
     <span class="Title"> {{post.title}} </span>
     <div class="documents">
+        {% if post.type == 'doc' %}
         <iframe src="/media/{{post.file}}"></iframe>
+        {%else%}
+        <img src="/media/{{post.file}}"></img>
+        {%endif%}
     </div>
 </div>
 {% endblock %}

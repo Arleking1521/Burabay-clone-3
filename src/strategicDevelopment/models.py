@@ -12,5 +12,8 @@ class StrategicDev(models.Model):
         self.type = file_extension
         super().save(*args, **kwargs)
         
+    class Meta:
+        verbose_name_plural = "Документы о развитии"
+        verbose_name='Документ'
     def __str__(self) -> str:
         return f'{self.name}'

@@ -1,20 +1,22 @@
 from django.shortcuts import render
 
 from .models import CeoDatas
-
 # Create your views here.
 def ceoInfo(request):
-    datas = CeoDatas.objects.order_by('-id').first()
-    
-    ceo_data = {
-        'name': datas.name if datas else None,
-        'date_of_birth' : datas.dateOfBirth if datas else None,
-        'edu_parts': datas.education.split('\n') if datas else None,
-        'spec_parts':  datas.scientific.split('\n') if datas else None,
-        'positions':  datas.positions.split('\n') if datas else None,
-        'awards_parts':  datas.awards.split('\n') if datas else None,
-        'sertif_parts':  datas.sertificates.split('\n') if datas else None,
-        'public_parts':  datas.publications.split('\n') if datas else None,
-        'photo': datas.photo if datas else None,
-    }
-    return render(request, 'ceoInfo/ceoInfoPage.html', {'datas': ceo_data})
+    datas = CeoDatas.objects.order_by('id')
+    ceo_list=[]
+    for data in datas:
+        ceo_data = {
+            'name': data.name if data.name else None,
+            'date_of_birth' : data.dateOfBirth if data.dateOfBirth else None,
+            'edu_parts': data.education.split('\n') if data.education else None,
+            'spec_parts':  data.scientific.split('\n') if data.scientific else None,
+            'work': data.work.split('\n') if data.work else None,
+            'positions':  data.positions.split('\n') if data.positions else None,
+            'awards_parts':  data.awards.split('\n') if data.awards else None,
+            'sertif_parts':  data.sertificates.split('\n') if data.sertificates else None,
+            'public_parts':  data.publications.split('\n') if data.publications else None,
+            'photo': data.photo if data.photo else None,
+        }
+        ceo_list.append(ceo_data)
+    return render(request, 'ceoInfo/ceoInfoPage.html', {'datas': ceo_list})
