@@ -7,6 +7,7 @@
     --main-color1:#09cfa8;
     --main-color2: #006ac7;
     --logo-color: #0FA093;
+    --logo-color-opacity: #0fa094bb;
     --swiper-pagination-color: var(--main-color2);
     --swiper-pagination-left: auto;
     --swiper-pagination-right: 8px;
@@ -131,6 +132,23 @@ header{
     z-index: 3;
     border-bottom: 1px solid lightgray;
 }
+
+.header-title{
+    width: 50%;
+}
+
+.header-title a{
+    text-transform: uppercase;
+    color: var(--bl);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header-title a:hover{
+    color: var(--bl);
+}
+
+
 .sub-header{
     background: var(--logo-color);
     position: relative;
@@ -139,7 +157,7 @@ header{
     justify-content: center;
     padding: 10px 0px;
     z-index: 2;
-    max-height: 72px;
+    height: 52px;
     transition: 0.3s;
 }
 
@@ -155,6 +173,7 @@ header{
     position: relative;
     width: 80%;
     display: flex;
+    height: 100%;
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
@@ -180,15 +199,6 @@ header{
 
 li{
     margin: 20px 0;
-}
-
-.menu{
-    display: flex;
-    align-items: center;
-}
-
-.menu a:last-child{
-    margin-right: 0px;
 }
 
 .socials-header{
@@ -265,7 +275,10 @@ li{
     border: none;
 }
 
-
+.poem {
+    width: 100%;
+    text-align: right;
+}
 
 .mg-l{
     margin-left: 20px;
@@ -339,18 +352,6 @@ li{
 }
 
 
-.menu a{
-    margin: 5px 25px 5px 0px;
-    text-decoration: none;
-    color: var(--bl);
-    font-size: 15px;
-    transition: 0.3s;
-}
-.menu a:hover{
-    color: gray;
-}
-
-
 .dropmenu {
     position: relative;
     display: inline-block;
@@ -383,10 +384,14 @@ li{
     display: none;
     position: absolute;
     background-color: white;
-    width: 145%;
     z-index: 4;
     border-radius: 10px;
     box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    width: 140%;
+}
+
+.wide{
+    width: auto;
 }
 
 .dropbtn{
@@ -413,13 +418,17 @@ li{
     text-decoration: none;
     display: block;
     margin: 0;
-    padding: 12px 10px;
+    padding: 12px 10px 12px 10px;
     font-size: 14px;
     border-radius: 10px;
     background: linear-gradient(135deg, rgb(234, 234, 234) 0%, rgb(247, 247, 247) 70% , rgb(255, 255, 255) 100%);
     background-size: 1000%;
     background-position-x: right;
     transition: 0.2s;
+}
+
+.multicol a{
+    padding: 12px 70px 12px 10px;
 }
 
 .dropcontent a:hover {
@@ -429,7 +438,8 @@ li{
 
 
 .dropmenu:hover .dropcontent {
-    display: block;
+    display: grid;
+    grid-template-columns: auto auto;
     animation-name: menuframe;
     animation-duration: 0.3s;
 }
@@ -1150,6 +1160,22 @@ width: 30%;
       border-radius: 8px;
       box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.1);  
   }
+  .sci_doc{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+}
+  .sci_block{
+    width: 80%;
+    height: 550px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.1);  
+}
+
 
   .content{
     padding-top: 172px;
