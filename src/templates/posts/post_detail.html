@@ -10,7 +10,18 @@
                 <p>{{info_part}}</p>
             {% endfor %}</p>
         <div class="big-pics">
-            <div class="swiper sw2">
+            {% comment %} {% for att in attachments %}
+            {% if att.type == 'img' %}
+            <div class="big_pic">
+                <img src="/media/{{att.file}}" alt="" height="100%">
+            </div>
+            {% else %}
+            <div class="documents">
+                <iframe src="/media/{{att.file}}"></iframe>
+            </div>
+            {% endif %}
+            {% endfor %} {% endcomment %}
+            <div class="swiper sw2 full-sw">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -27,6 +38,14 @@
                 <div class="swiper-button-next"></div>
                 <!-- If we need navigation buttons -->
             </div>
+        </div>
+        <div class="mobile-news-pic">
+            {% for att in attachments %}
+                {% if att.type == 'img' %}
+                    <div class="news-picture"><img
+                    src="/media/{{att.file}}" alt="" width="100%"></div>
+                {% endif %}
+            {% endfor %}
         </div>
 
         <p class="date mg-b">{{post.date}}</p>
