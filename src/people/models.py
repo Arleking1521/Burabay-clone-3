@@ -11,7 +11,25 @@ class People(models.Model):
     teacher=models.BooleanField(verbose_name='Педагог')
 
     class Meta:
-        verbose_name_plural = "Люди"
+        verbose_name_plural = "Персонал"
         verbose_name='Человек'
     def __str__(self) -> str:
         return f'{self.name}'
+    
+class Doctors(models.Model):
+    title = models.CharField(verbose_name='Заголовок')
+    content = models.TextField(verbose_name='Основной текст')
+    class Meta:
+        verbose_name_plural = "Информация о врачах"
+        verbose_name='Информация о врачах'
+    def __str__(self) -> str:
+        return f'{self.title}'
+
+class Teachers(models.Model):
+    title = models.CharField(verbose_name='Заголовок')
+    content = models.TextField(verbose_name='Основной текст')
+    class Meta:
+        verbose_name_plural = "Информация о педагогах"
+        verbose_name='Информация о педагогах'
+    def __str__(self) -> str:
+        return f'{self.title}'

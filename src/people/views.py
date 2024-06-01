@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import People
+from .models import *
 # Create your views here.
 def people_list(request):
     posts = People.objects.order_by('id')
@@ -7,12 +7,20 @@ def people_list(request):
     return render(request, 'people/NIIPeople.html', {'people':posts})
 
 def doctor_list(request):
-    posts = People.objects.filter(doctor=True)
-    return render(request, 'people/doctors.html', {'doctors':posts})
+    posts = Doctors.objects.order_by('id').first()
+    datas = {
+        'title': posts.title if posts else None,
+        'content': posts.content.split('\n') if posts else None,
+    }
+    return render(request, 'people/doctors.html', {'datas':datas})
 
 def teacher_list(request):
-    posts = People.objects.filter(teacher=True)
-    return render(request, 'people/teachers.html', {'teachers':posts})
+    posts = Teachers.objects.order_by('id').first()
+    datas = {
+        'title': posts.title if posts else None,
+        'content': posts.content.split('\n') if posts else None,
+    }
+    return render(request, 'people/teachers.html', {'datas':datas})
 
 def people_detail(request, pid):
     post = People.objects.get(id = pid)

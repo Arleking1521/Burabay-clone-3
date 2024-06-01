@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import People
+from .models import *
 from modeltranslation.admin import TranslationAdmin
 
 # Register your models here.
@@ -7,3 +7,11 @@ from modeltranslation.admin import TranslationAdmin
 @admin.register(People)
 class PeopleAdmin(TranslationAdmin):
     list_display = ( 'post',)
+
+@admin.register(Doctors)
+class DoctorsAdmin(TranslationAdmin):
+    list_display = ( 'title', 'content')
+
+@admin.register(Teachers)
+class TeachersAdmin(TranslationAdmin):
+    list_display = ( 'title', 'content')
