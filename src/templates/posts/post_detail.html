@@ -18,7 +18,7 @@
             </div>
             {% endif %}
             {% endfor %} {% endcomment %}
-            <div class="swiper sw2">
+            <div class="swiper sw2 full-sw">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -35,6 +35,14 @@
                 <div class="swiper-button-next"></div>
                 <!-- If we need navigation buttons -->
             </div>
+        </div>
+        <div class="mobile-news-pic">
+            {% for att in attachments %}
+                {% if att.type == 'img' %}
+                    <div class="news-pic"><img
+                    src="/media/{{att.file}}" alt=""></div>
+                {% endif %}
+            {% endfor %}
         </div>
 
         <p class="date mg-b">{{post.date}}</p>
