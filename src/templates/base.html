@@ -132,12 +132,12 @@
                 </div>
                 <div class="dropmenu">
                     <a class="rubric" href="{% url 'med-services'%}" class="dropbtn">Медицинские услуги</a>
-                    <div class="dropcontent">
+                    <!-- <div class="dropcontent">
                         <div>
                             <a href="{% url 'med-services'%}">Платные услуги</a>
                             <a href="{% url 'error505'%}">Образовательная деятельность</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="dropmenu">
                     <a class="rubric" href="{% url 'strategic_partners'%}">Стратегические партнеры</a>
@@ -161,10 +161,10 @@
                     </div>
                 </div>
                 <div class="dropmenu">
-                    <a class="rubric" href="{% url 'people'%}"">Персонал</a>
+                    <a class="rubric" href="{% url 'doctors' %}">Персонал</a>
                     <div class="dropcontent">
                         <div>
-                            <a href="{% url 'people'%}">Лица НИИ</a>
+                            <!-- <a href="{% url 'people'%}">Лица НИИ</a> -->
                             <a href="{% url 'doctors' %}">Наши врачи</a>
                             <a href="{% url 'teachers'%}">Наши педагоги</a>
                         </div>
@@ -174,7 +174,7 @@
                     <a class="rubric" href="{% url 'error505'%}" ">Досуг</a>
                 </div>
                 <div class="dropmenu">
-                    <a href="{% url 'people'%}" class="rubric">Обратная связь</a>
+                    <a href="{% url 'blogCEO'%}" class="rubric">Обратная связь</a>
                     <div class="dropcontent">
                         <div>
                             <a href="{% url 'blogCEO'%}">{% trans 'Блог Руководителя' %}</a>
