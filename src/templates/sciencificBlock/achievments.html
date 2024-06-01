@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load  i18n %}
+{% block content %}
+<div class="content-split">
+    <div class="navigation">
+        <a href="{% url 'science'%}" class="selected">Научные разработки</a>
+        <a href="{% url 'error505'%}">Научно-технический совет</a>
+        <a href="{% url 'error505'%}">Планы</a>
+        <a href="{% url 'error505'%}">Достижения</a>
+    </div>
+    <div class="rules">
+        <span class="Title">{% trans 'Научные исследования и научно-методическое обеспечение в сфере курортологии и восстановительного лечения' %}:</span>
+        
+        <div class="rule-plates">
+            <ul>
+                {% for data in datas %}
+                    <li>
+                        {{data.title}}
+                        {%if data.addInfo%}
+                        <div class="rule-block">
+                            <ul>
+                            {% for info in data.addInfo %}
+                                <li>{{ info }}</li>
+                            {% endfor %}
+                            </ul>
+                        </div>
+                        {%endif%}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
