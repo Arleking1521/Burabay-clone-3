@@ -4,7 +4,7 @@
 
 <div class="news-plates">
     <div class="new-review">
-        <h1>{% trans 'Новости' %}</h1>
+        <span class="Title">{% trans 'Новости' %}</span>
         {% if user.is_authenticated and user.is_staff %}
         <a href="{% url 'new_new' %}" class="btn2"> {% trans 'Добавить объявление' %}</a>
         {% endif %}

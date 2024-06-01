@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-
 :root{
     --bl: #2f2f2f;
     --main-color1:#09cfa8;
@@ -66,7 +65,7 @@ a:hover{
 }
 
 .swiper-button-next:after, .swiper-button-prev:after{
-    font-size: 30px !important;
+    font-size: px !important;
 }
 
 .swiper-button-next, .swiper-button-prev{
@@ -107,7 +106,8 @@ a:hover{
 
 body{
     color: var(--bl);
-    font-family: "Nunito Sans", sans-serif;
+    /* font-family: "Nunito Sans", sans-serif; */
+    font-family: "Roboto", sans-serif;
     margin: 0;
     background-color: ghostwhite;
 }
@@ -165,7 +165,7 @@ header{
 }
 
 .rubric{
-    font-size: 12px;
+    font-size: 0.75rem;
     text-decoration: none;
     color: white;
     align-self: center;
@@ -223,6 +223,33 @@ li{
 
 .sign_in a{
     margin: 0px 0px 0px 20px;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.menu a{
+    padding: 30px 20px 30px 20px;
+    width: 20%;
+    text-align: start;
+    background-color: rgba(248, 248, 255, 0.3);
+    font-size: 1.75rem;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.menu a:hover{
+    background-color: var(--logo-color-opacity);
+    transform: scale(1.1);
 }
 
 .btn{
@@ -446,7 +473,7 @@ li{
 .banner-content{
     width: 100%;
     color: white;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-transform: uppercase;
     margin: 0px;
 }
@@ -502,7 +529,7 @@ li{
 .review-text{
     width: 90%;
     margin: 10px;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .login-card label{
@@ -533,7 +560,7 @@ li{
     height: 40px;
     margin-bottom: 20px;
     padding: 0 10px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: lighter;
     transition: 0.5s;
     resize: none;
@@ -584,7 +611,7 @@ li{
 }
 
 .login-card span button{
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -606,13 +633,13 @@ li{
 }
 
 .header{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
     margin: 0;
 }
 
 .header2{
-    font-size: 32px;
+    font-size: 2rem;
     margin: 5px 0 30px 0;
 }
 
@@ -775,7 +802,7 @@ footer{
     padding: 16px;
     color: transparent;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
   }
@@ -959,7 +986,7 @@ footer{
 
 .news-plates h1{
     margin: 0;
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 .new-frame{
@@ -1001,7 +1028,7 @@ footer{
 .news-date{
     margin-top: 0;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 0.875rem;
     padding: 10px 10px 0px 10px;
 }
 
@@ -1024,7 +1051,7 @@ footer{
 
 .date{
 margin: 0;
-font-size: 14px;
+font-size: 0.875rem;
 text-decoration: underline;
 }
 
@@ -1040,13 +1067,13 @@ text-decoration: underline;
 }
 
 .frame-header{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
 .frame-header-block p{
     margin: 8px auto 8px auto;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .frame-header-block{
@@ -1066,7 +1093,7 @@ text-decoration: underline;
   
   
 .Title{
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 700;
     margin: 10px 0;
 }
@@ -1158,7 +1185,7 @@ width: 30%;
   }
 
   .table-title{
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .content-split{
@@ -1236,7 +1263,7 @@ width: 30%;
   .site_map div span{
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 1.125rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1361,7 +1388,7 @@ width: 30%;
 
   .anticor-list{
     margin: 5px 0;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .lang-mobile{
@@ -1502,6 +1529,38 @@ width: 30%;
     grid-template-columns: 33.333% 33.333% 33.333%;
   }
 
+  /* Accordion style */
+
+  .accordion {
+    background-color: var(--logo-color);
+    color: white;
+    font-size: 1.125rem;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 8px;
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .active_acc, .accordion:hover {
+    transform: scale(1.01);
+  }
+  .panel {
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    padding: 0 18px;
+    margin: 0px auto 20px auto;
+    background-color: white;
+    width: calc(100% - 52px);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: 0px 0px 8px 8px;
+  }
+
   @media screen and (max-width:1440px){
     .main-header{
         padding: 10px 5%;
@@ -1533,7 +1592,10 @@ width: 30%;
 
 
   @media screen and (max-width:1300px){
-    .menu{
+    html{
+        font-size: 14px;
+    }
+    .header-title{
         display: none;
     }
 
@@ -1594,7 +1656,7 @@ width: 30%;
     }
 
     .banner-content{
-        font-size: 30px;
+        font-size: 2.145rem;
     }
     .swiper-button-next, .swiper-button-prev{
         display: none !important;
@@ -1602,7 +1664,12 @@ width: 30%;
   }
 
   @media screen and (max-width:1024px){
-    
+    .news-list{
+        grid-template-columns: 30% 30% 30%;
+    }
+    .menu{
+        display: none;
+    }
     .map-button{
         width: 25%;
     }
@@ -1675,8 +1742,9 @@ width: 30%;
   }
 
   @media screen and (max-width:768px){
+    
     .news-list{
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 45% 45%;
     }
     .ceo-info{
         flex-direction: column;
@@ -1709,7 +1777,12 @@ width: 30%;
     .reg-mob{
         display: block;
       }
-    
+    .rules{
+        padding: 10px 0px;
+    }
+    .new-frame{
+        padding: 0px 20px;
+    }
     .lang-mobile button{
         background: var(--logo-color);
         color: white;
@@ -1779,7 +1852,7 @@ width: 30%;
 
   @media screen and (max-width:725px){
     .news-list{
-        grid-template-columns: 45% 45%;
+        grid-template-columns: 100%;
     }
     
     .banner{
@@ -1823,14 +1896,11 @@ width: 30%;
   }
 
   @media screen and (max-width:450px) {
-    .news-list{
-        grid-template-columns: 45% 45%;
-    }
     .nii_information h2{
-        font-size: 16px;
+        font-size: 1.145rem;
     }
     .nii_information p{
-        font-size: 14px;
+        font-size: 1rem;
     }
 
     .links-cols{
@@ -1838,7 +1908,7 @@ width: 30%;
     }
     .col-first{
         width: 100%;
-        font-size: 14px;
+        font-size: 1rem;
     }
     .col-second{
         width: 100%;   
@@ -1857,7 +1927,7 @@ width: 30%;
         width: 10%;
     }
     .Title{
-        font-size: 30px;
+        font-size: 2rem;
     }
     .map-button span{
         display: none;
@@ -1865,15 +1935,15 @@ width: 30%;
 
     .frame-btn a{
         width: 20%;
-        font-size: 14px;
+        font-size: 1rem;
         text-align: center;
     }
 
     .ceo-info span h1{
-        font-size: 24px;
+        font-size: 1.7rem;
     }
     .ceo-info span h2{
-        font-size: 20px;
+        font-size: 1.45rem;
     }
   }
   
