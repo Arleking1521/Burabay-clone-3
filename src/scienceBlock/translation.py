@@ -5,10 +5,7 @@ from .models import *
 class ScienceInfoTranslationoptions(TranslationOptions):
     fields = ( 'name', )
 
-@register(AddInfo)
-class AddInfoTranslationoptions(TranslationOptions):
-    fields = ( 'content', )
 
 @register(Science)
 class ScienceTranslationoptions(TranslationOptions):
-    fields = ( 'title', 'addInfo')
+    fields = ( 'title', 'addInfoTitle', 'addInfo')

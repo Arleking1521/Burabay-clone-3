@@ -8,15 +8,13 @@ def scienceInfo(request):
     return render(request, 'sciencificBlock/sciencificBlock.html', {'science':info})
 
 def science(request):
-    infos = Science.objects.all()
-    
+    infos = Science.objects.order_by('id')
     datas = []
     for info in infos:
-        addInfos = info.addInfo.all()  # Извлечение всех связанных объектов AddInfo
-        
         data = {
-            'title': info.title,
-            'addInfo': addInfos
+            'title': info.title if info.title else None,
+            'addInfoTitle': info.addInfoTitle if info.addInfoTitle else None,
+            'addInfo': info.addInfo.split('\n') if info.addInfo else None,
         }
         datas.append(data)
     

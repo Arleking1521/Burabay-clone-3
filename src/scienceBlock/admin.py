@@ -1,13 +1,11 @@
 from django.contrib import admin
 from .models import *
+from modeltranslation.admin import TranslationAdmin
 # Register your models here.
 
-class AddInfoAdmin(admin.ModelAdmin):
-    pass
-
-class ScienceAdmin(admin.ModelAdmin):
-    filter_horizontal = ('addInfo_ru', 'addInfo_kk')  # Множественный выбор для поля Frame
 
 admin.site.register(ScienceInfo)
-admin.site.register(AddInfo, AddInfoAdmin)
-admin.site.register(Science, ScienceAdmin)
+
+@admin.register(Science)
+class ScienceAdmin(TranslationAdmin):
+    list_display = ( 'title', 'addInfoTitle', 'addInfo')

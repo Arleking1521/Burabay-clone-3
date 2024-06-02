@@ -16,7 +16,10 @@
                 {% for data in datas %}
                     <li>
                         {{data.title}}
-                        {%if data.addInfo%}
+                        {%if data.addInfoTitle%}
+                            <p>{{data.addInfoTitle}}</p>
+                        {%endif%}
+                        {%if data.addInfo %}
                         <div class="rule-block">
                             <ul>
                             {% for info in data.addInfo %}
