@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load  i18n %}
+{% block content %}
+<div class="content-split">
+    <div class="navigation">
+        <a href="{% url 'science'%}" >Научные разработки</a>
+        <a href="{% url 'scienceSovet'%}" class="selected">Научно-технический совет</a>
+        <a href="{% url 'error505'%}">Планы</a>
+        <a href="{% url 'error505'%}">Достижения</a>
+    </div>
+    <div class="rules">
+        {%if datas.title%}
+        <span class="Title">{{datas.title}}</span>
+        {%endif%}
+        <div class="rule-plates">
+            {%if datas.content %}
+            <div class="rule-block">
+                {% for info in datas.content %}
+                    <p>{{ info }}</p>
+                {% endfor %}
+            </div>
+            {%endif%}
+        </div>
+    </div>
+</div>
+{% endblock %}

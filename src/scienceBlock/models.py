@@ -25,3 +25,23 @@ class Science(models.Model):
 
     def __str__(self) -> str:
         return f'{self.title}'
+    
+class ScienceSovet(models.Model):
+    title = models.TextField(verbose_name='Заголовок Совета')
+    content = models.TextField(verbose_name='Основная информация', blank=True)
+    class Meta:
+        verbose_name_plural = "Научно-Технический Совет"
+        verbose_name='Информация'
+
+    def __str__(self) -> str:
+        return f'{self.title}'
+    
+class SciencePlans(models.Model):
+    title = models.TextField(verbose_name='Заголовок Совета')
+    content = models.TextField(verbose_name='Основная информация', blank=True)
+    class Meta:
+        verbose_name_plural = "Научные планы"
+        verbose_name='Информация'
+
+    def __str__(self) -> str:
+        return f'{self.title}'

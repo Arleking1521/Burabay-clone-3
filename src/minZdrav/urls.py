@@ -57,7 +57,6 @@ urlpatterns += i18n_patterns(
     path('strategic-development/', include('strategicDevelopment.urls')), #Стратегическое развитие
     path('gobmp/', TemplateView.as_view(template_name='infoPages/gobmp.html'), name='gobmp'), #получение услуг по ГОБМП
     path('scientific-developments/', TemplateView.as_view(template_name='dopPages/scientificDev.html'), name='sci-dev'), #Научные достижения
-    path('plans/', TemplateView.as_view(template_name='dopPages/plans.html'), name='plans'), #Планы
     path('quality-management-standard/', TemplateView.as_view(template_name='dopPages/managment_standart.html'), name='managment_standart'), #Стандарты менеджмента качества
     path('achievments/', TemplateView.as_view(template_name='dopPages/Achievments.html'), name='achievments'),
     path('uvo/', TemplateView.as_view(template_name='dopPages/UVO.html'), name='uvo'),

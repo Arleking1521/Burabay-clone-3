@@ -19,3 +19,22 @@ def science(request):
         datas.append(data)
     
     return render(request, 'sciencificBlock/achievments.html', {'datas': datas})
+
+
+def scienceSovet(request):
+    infos = ScienceSovet.objects.order_by('id').first()
+    datas = {
+        'title': infos.title if infos else None,
+        'content': infos.content.split('\n') if infos else None,
+    }
+    
+    return render(request, 'sciencificBlock/scienceSovet.html', {'datas': datas})
+
+def sciencePlans(request):
+    infos = SciencePlans.objects.order_by('id').first()
+    datas = {
+        'title': infos.title if infos else None,
+        'content': infos.content.split('\n') if infos else None,
+    }
+    
+    return render(request, 'sciencificBlock/sciencePlans.html', {'datas': datas})

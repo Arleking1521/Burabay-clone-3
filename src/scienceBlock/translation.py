@@ -9,3 +9,12 @@ class ScienceInfoTranslationoptions(TranslationOptions):
 @register(Science)
 class ScienceTranslationoptions(TranslationOptions):
     fields = ( 'title', 'addInfoTitle', 'addInfo')
+
+@register(ScienceSovet)
+class ScienceSovetTranslationoptions(TranslationOptions):
+    fields = ( 'title', 'content')
+
+
+@register(SciencePlans)
+class SciencePlansTranslationoptions(TranslationOptions):
+    fields = ( 'title', 'content')
