@@ -65,6 +65,7 @@ INSTALLED_APPS = [
     'mediagallery',
     'strategic_partners',
     'scienceBlock',
+    'booking',
 ]
 
 MIDDLEWARE = [

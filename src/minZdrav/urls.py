@@ -21,7 +21,7 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     path('news/', include('news.urls')), #Новости
     path('new-news/', post_new, name = 'new_new'), #Новые новости
-    path('med-services/', include('medServices.urls')), #Медицинские услуги (пока что)
+    path('medicine/', include('medServices.urls')), #Медицинские услуги (пока что)
     path('rules/', include('info_page.urls')), #Правила санатория
     path('viewSovet/', include('viewSovet.urls')), #Наблюдательный совет
     path('contacts/', include('contact_pages.urls')), #контакты
@@ -51,7 +51,8 @@ urlpatterns += i18n_patterns(
     path('people/', include('people.urls')),
     path('ethics-regulations/', include('ethica.urls')),
     path('media-galery/', include('mediagallery.urls')),
-    path('science/', include('scienceBlock.urls')),
+    path('science/', include('scienceBlock.urls')),    
+    path('booking/', include('booking.urls')),
     path('strategic-partners/', include('strategic_partners.urls')),
     path('strategic-development/', include('strategicDevelopment.urls')), #Стратегическое развитие
     path('gobmp/', TemplateView.as_view(template_name='infoPages/gobmp.html'), name='gobmp'), #получение услуг по ГОБМП

@@ -10,3 +10,12 @@ class MedServices(models.Model):
 
     def __str__(self) -> str:
         return f'Медицинские услуги'
+    
+class Medicine(models.Model):
+    title = models.CharField(verbose_name='Заголовок')
+    content = models.TextField(verbose_name='Основной текст')
+    class Meta:
+        verbose_name_plural = "Медицина"
+        verbose_name='Информация о медицине'
+    def __str__(self) -> str:
+        return f'{self.title}'
