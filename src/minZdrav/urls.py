@@ -13,12 +13,13 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ru/',include('static_pages.urls')),
+    
     path('i18n/', include('django.conf.urls.i18n')),
     
     
 ]
 urlpatterns += i18n_patterns(
+    path('',include('static_pages.urls')),
     path('news/', include('news.urls')), #Новости
     path('new-news/', post_new, name = 'new_new'), #Новые новости
     path('medicine/', include('medServices.urls')), #Медицинские услуги (пока что)
