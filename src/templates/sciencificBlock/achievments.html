@@ -10,27 +10,28 @@
     </div>
     <div class="rules">
         <span class="Title">{% trans 'Научные исследования и научно-методическое обеспечение в сфере курортологии и восстановительного лечения' %}:</span>
-        
-        <div class="rule-plates">
-            <ul>
-                {% for data in datas %}
-                    <li>
-                        {{data.title}}
-                        {%if data.addInfoTitle%}
-                            <p style = "padding-left : 75px">{{data.addInfoTitle}}</p>
-                        {%endif%}
-                        {%if data.addInfo %}
-                        <div class="rule-block">
-                            <ul>
-                            {% for info in data.addInfo %}
-                                <li>{{ info }}</li>
-                            {% endfor %}
-                            </ul>
-                        </div>
-                        {%endif%}
-                    </li>
-                {% endfor %}
-            </ul>
+        <div class="new-frame">
+            <div class="rule-plates">
+                <ul>
+                    {% for data in datas %}
+                        <li>
+                            {{data.title}}
+                            {%if data.addInfoTitle%}
+                                <p style = "padding-left : 75px">{{data.addInfoTitle}}</p>
+                            {%endif%}
+                            {%if data.addInfo %}
+                            <div class="rule-block">
+                                <ul>
+                                {% for info in data.addInfo %}
+                                    <li>{{ info }}</li>
+                                {% endfor %}
+                                </ul>
+                            </div>
+                            {%endif%}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
     </div>
 </div>

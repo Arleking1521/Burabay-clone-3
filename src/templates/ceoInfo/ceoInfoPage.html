@@ -3,8 +3,16 @@
 {% block content %}
 <div class="content-split">
     <div class="navigation">
+        <a href="{% url 'viewSovet'%}">{% trans 'Наблюдательный совет' %}</a>
         <a href="{% url 'ceo-info'%}" class='selected'> Руководство</a>
-        <a href="{% url 'workers-info'%}">Информация о сотрудниках</a>
+        <a href="{% url 'orgStruct' %}">{% trans 'Структура' %}</a>
+        <a href="{% url 'error505' %}">Кадровая политика</a>
+        <a href="{% url 'strategic-dev'%}">{% trans 'Стратегическое развитие' %}</a>
+        <a href="{% url 'ads'%}">{% trans 'Государственные закупки' %}</a>
+        <a href="{% url 'managment_standart'%}">{% trans 'Стандарт менеджемента' %}</a>
+        <a href="{% url 'antiCor'%}">{% trans 'Противодействие коррупции' %}</a>
+        <a href="{% url 'accreditation'%}">{% trans 'Аккредитация' %}</a>
+        <a href="{% url 'error505' %}">Охрана труда</a>
     </div>
     <div class="rules">
         <span class="Title">{% trans 'Сведения о руководителе' %}</span>
