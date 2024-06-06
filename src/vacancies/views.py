@@ -16,11 +16,11 @@ def VacancyInfo(request):
     
     info = {
         'compAddress' : infos.compAddress if infos else None,
-        'enterpriseAddress ': infos.enterpriseAddress if infos else None,
-        'description' : infos.description.split('\n') if infos else None,
-        'addmisions': infos.addmisions.split('\n') if infos else None,
-        'documents': infos.documents.split('\n') if infos else None,
-        'additionally': infos.additionally.split('\n') if infos else None,
+        'enterpriseAddress ': infos.enterpriseAddress if infos.enterpriseAddress else None,
+        'description' : infos.description.split('\n') if infos.description else None,
+        'addmisions': infos.addmisions.split('\n') if infos.addmisions else None,
+        'documents': infos.documents.split('\n') if infos.documents else None,
+        'additionally': infos.additionally.split('\n') if infos.additionally else None,
     }
         
     return render(request, 'infoPages/vacancyPage.html', {'datas': vacancies_list, 'info': info})

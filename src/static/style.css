@@ -1950,13 +1950,6 @@ width: 30%;
   }
 
   @media screen and (max-width:450px) {
-    .nii_information h2{
-        font-size: 1.145rem;
-    }
-    .nii_information p{
-        font-size: 1rem;
-    }
-
     .links-cols{
         flex-direction: column;
     }
@@ -1998,6 +1991,12 @@ width: 30%;
     }
     .ceo-info span h2{
         font-size: 1.45rem;
+    }
+    .nii_information h2{
+        font-size: 1.145rem;
+    }
+    .nii_information p{
+        font-size: 1rem;
     }
   }
   
