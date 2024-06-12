@@ -9,6 +9,7 @@ def ceoInfo(request):
         ceo_data = {
             'name': data.name if data.name else None,
             'date_of_birth' : data.dateOfBirth if data.dateOfBirth else None,
+            'post' : data.post if data.post else None,
             'edu_parts': data.education.split('\n') if data.education else None,
             'spec_parts':  data.scientific.split('\n') if data.scientific else None,
             'work': data.work.split('\n') if data.work else None,

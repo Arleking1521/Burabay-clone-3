@@ -3,6 +3,6 @@ from .models import CeoDatas
 
 @register(CeoDatas)
 class CeoDatasTranslationoptions(TranslationOptions):
-    fields = ( 'name', 'dateOfBirth', 'scientific', 'work', 'awards', 'sertificates', 'publications', 'positions', 'education')
+    fields = ( 'name', 'dateOfBirth', 'post', 'scientific', 'work', 'awards', 'sertificates', 'publications', 'positions', 'education')
 
 

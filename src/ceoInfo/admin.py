@@ -6,4 +6,4 @@ from modeltranslation.admin import TranslationAdmin
 
 @admin.register(CeoDatas)
 class CeoDatasAdmin(TranslationAdmin):
-    list_display = ( 'name', 'dateOfBirth', 'scientific', 'awards', 'sertificates', 'publications', 'positions', 'education')
+    list_display = ( 'name', 'dateOfBirth', 'post', 'scientific', 'awards', 'sertificates', 'publications', 'positions', 'education')
