@@ -39,7 +39,7 @@
                     {% endfor %}
                 </ul>
             {% endif %}
-            {% if datas and data.requirement_parts %}
+            {% if datas %}
             <p><u>{%trans 'Требование к участникам конкурса'%}:</u></p>
                 {% for data in datas %}
                     <p><b>{{data.vacancy}}:</b></p>
