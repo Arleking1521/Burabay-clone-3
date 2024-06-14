@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'strategic_partners',
     'scienceBlock',
     'booking',
+    'gobmp',
 ]
 
 MIDDLEWARE = [

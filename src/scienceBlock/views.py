@@ -3,11 +3,11 @@ from .models import *
 # Create your views here.
 
 def scienceInfo(request):
-    info = ScienceInfo.objects.order_by('-id').first()
+    info = ScienceAchievments.objects.order_by('-id').first()
 
-    return render(request, 'sciencificBlock/sciencificBlock.html', {'science':info})
+    return render(request, 'sciencificBlock/scienceAcievments.html', {'science':info})
 
-def science(request):
+def scienceDev(request):
     infos = Science.objects.order_by('id')
     datas = []
     for info in infos:
@@ -18,7 +18,7 @@ def science(request):
         }
         datas.append(data)
     
-    return render(request, 'sciencificBlock/achievments.html', {'datas': datas})
+    return render(request, 'sciencificBlock/scienceDev.html', {'datas': datas})
 
 
 def scienceSovet(request):

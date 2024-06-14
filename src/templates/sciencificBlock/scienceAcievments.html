@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="content-split">
+    <div class="navigation">
+        <a href="{% url 'science'%}">Научные разработки</a>
+        <a href="{% url 'scienceSovet'%}">Научно-технический совет</a>
+        <a href="{% url 'plans'%}">Планы</a>
+        <a href="{% url 'science_achievments'%}" class="selected">Достижения</a>
+    </div>
+    <div class="rules">
+        {%if science.name%}
+        <span class="Title"> {{science.name}} </span>
+        {%endif%}
+        <div class="rule-plates">
+            <div class="new-frame">
+    
+                {%if science.info%}
+                <div class="sci_doc">
+                    <iframe src="/media/{{science.info}}" class="sci_block"></iframe>
+                </div>
+                {%endif%}          
+            </div>            
+        </div>          
+    </div>
+</div>
+{% endblock %}

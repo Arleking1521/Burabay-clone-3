@@ -1,7 +1,7 @@
 from modeltranslation.translator import register, TranslationOptions
 from .models import *
 
-@register(ScienceInfo)
+@register(ScienceAchievments)
 class ScienceInfoTranslationoptions(TranslationOptions):
     fields = ( 'name', )
 

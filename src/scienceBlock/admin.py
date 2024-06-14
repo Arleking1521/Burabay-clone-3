@@ -4,7 +4,6 @@ from modeltranslation.admin import TranslationAdmin
 # Register your models here.
 
 
-admin.site.register(ScienceInfo)
 
 @admin.register(Science)
 class ScienceAdmin(TranslationAdmin):
@@ -17,3 +16,7 @@ class ScienceSovetAdmin(TranslationAdmin):
 @admin.register(SciencePlans)
 class SciencePlansAdmin(TranslationAdmin):
     list_display = ( 'title', 'content')
+
+@admin.register(ScienceAchievments)
+class ScienceAchievmentsAdmin(TranslationAdmin):
+    list_display = ( 'name',)
