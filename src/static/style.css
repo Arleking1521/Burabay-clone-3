@@ -647,6 +647,21 @@ li{
     border-radius: 8px;
     box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.1);
     font-size: 1.1rem;
+    border-left: 10px solid var(--logo-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ban span{
+    width: 85%;
+    text-align: justify;
+}
+
+.ban a{
+    width: 9%;
+    text-align: center;
 }
 
 .header{
