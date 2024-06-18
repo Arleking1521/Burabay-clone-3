@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{%load i18n%}
+{% block content %}
+<div class="content-inner">
+    <div class="documents">
+        <p>{{data.title}}</p>
+        <iframe src="/media/{{data.file}}"></iframe>
+    </div>
+</div>
+{% endblock %}

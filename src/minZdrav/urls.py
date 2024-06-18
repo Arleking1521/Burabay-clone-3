@@ -57,13 +57,13 @@ urlpatterns += i18n_patterns(
     path('gobmp/', include('gobmp.urls')), #получение услуг по ГОБМП
     path('strategic-partners/', include('strategic_partners.urls')),
     path('strategic-development/', include('strategicDevelopment.urls')), #Стратегическое развитие
+    path('labor-protection/', include('laborProtection.urls')),
    
     path('scientific-developments/', TemplateView.as_view(template_name='dopPages/scientificDev.html'), name='sci-dev'), #Научные достижения
     path('quality-management-standard/', TemplateView.as_view(template_name='dopPages/managment_standart.html'), name='managment_standart'), #Стандарты менеджмента качества
     path('achievments/', TemplateView.as_view(template_name='dopPages/Achievments.html'), name='achievments'),
     path('uvo/', TemplateView.as_view(template_name='dopPages/UVO.html'), name='uvo'),
     path('schedule-of-childrens-shifts/', TemplateView.as_view(template_name='dopPages/kidsSchedule.html'), name='kidsSchedule'),
-    path('labor-protection/', TemplateView.as_view(template_name='dopPages/laborProtection.html'), name='laborProtection'),
     path('leisure/', TemplateView.as_view(template_name='dopPages/leisure.html'), name='leisure'),
     path('transit/', TemplateView.as_view(template_name='dopPages/transit.html'), name='transit'),
     

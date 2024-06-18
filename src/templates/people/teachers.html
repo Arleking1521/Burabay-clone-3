@@ -3,8 +3,8 @@
 {% block content %}
 <div class="content-split">
     <div class="navigation">
-        <a href="{% url 'doctors' %}" >Наши врачи</a>
-        <a href="{% url 'teachers'%}" class='selected'>Наши педагоги</a>
+        <a href="{% url 'doctors' %}" >{%trans 'Наши врачи'%}</a>
+        <a href="{% url 'teachers'%}" class='selected'>{%trans 'Наши педагоги'%}</a>
     </div>
     <div class="rules">
         {%if datas%}

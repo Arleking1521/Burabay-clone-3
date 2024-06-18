@@ -67,6 +67,7 @@ INSTALLED_APPS = [
     'scienceBlock',
     'booking',
     'gobmp',
+    'laborProtection',
 ]
 
 MIDDLEWARE = [

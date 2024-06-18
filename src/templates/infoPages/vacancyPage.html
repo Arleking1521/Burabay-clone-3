@@ -4,15 +4,15 @@
 <div class="content-split">
     <div class="navigation">
         <a href="{% url 'viewSovet'%}">{% trans 'Наблюдательный совет' %}</a>
-        <a href="{% url 'ceo-info'%}" class='selected'> Руководство</a>
+        <a href="{% url 'ceo-info'%}"> {%trans 'Руководство'%}</a>
         <a href="{% url 'orgStruct' %}">{% trans 'Структура' %}</a>
-        <a href="{% url 'vacancies' %}"  class='selected'>Кадровая политика</a>
+        <a href="{% url 'vacancies' %}" class='selected'>{%trans 'Вакансии'%}</a>
         <a href="{% url 'strategic-dev'%}">{% trans 'Стратегическое развитие' %}</a>
         <a href="{% url 'ads'%}">{% trans 'Государственные закупки' %}</a>
         <a href="{% url 'managment_standart'%}">{% trans 'Стандарт менеджемента' %}</a>
         <a href="{% url 'antiCor'%}">{% trans 'Противодействие коррупции' %}</a>
         <a href="{% url 'accreditation'%}">{% trans 'Аккредитация' %}</a>
-        <a href="{% url 'error505' %}">Охрана труда</a>
+        <a href="{% url 'laborProtection' %}">{%trans 'Охрана труда'%}</a>
     </div>
     <div class="rules">
         <span class="Title">{% trans 'Вакансии' %}</span>
@@ -29,7 +29,7 @@
             <p>{% trans 'Место проведения конкурса' %}: {{info.compAddress}}</p>
             {% endif %}
             {% if info.enterprise %}
-            <p>{% trans 'Место нахождения предпрятия' %}: {{info.enterprise}}</p>
+            <p>{% trans 'Место нахождения предприятия' %}: {{info.enterprise}}</p>
             {% endif %}
             {% if info.description %}
                 <p>{%trans 'Краткое описание основной деятельности предприятия'%}: </p>

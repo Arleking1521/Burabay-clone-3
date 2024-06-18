@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load  i18n %}
+{% block content %}
+<div class="content-split">
+    <div class="navigation">
+        <a href="{% url 'viewSovet'%}">{% trans 'Наблюдательный совет' %}</a>
+        <a href="{% url 'ceo-info'%}"> {%trans 'Руководство'%}</a>
+        <a href="{% url 'orgStruct' %}">{% trans 'Структура' %}</a>
+        <a href="{% url 'vacancies' %}">{%trans 'Вакансии'%}</a>
+        <a href="{% url 'strategic-dev'%}">{% trans 'Стратегическое развитие' %}</a>
+        <a href="{% url 'ads'%}">{% trans 'Государственные закупки' %}</a>
+        <a href="{% url 'managment_standart'%}">{% trans 'Стандарт менеджемента' %}</a>
+        <a href="{% url 'antiCor'%}">{% trans 'Противодействие коррупции' %}</a>
+        <a href="{% url 'accreditation'%}">{% trans 'Аккредитация' %}</a>
+        <a href="{% url 'laborProtection' %}" class='selected'>{%trans 'Охрана труда'%}</a>
+    </div>
+    <div class="rules">
+        <span class="Title">{% trans 'Охрана труда' %}</span>
+        
+        <div class="rule-plates">
+            
+            <div class="new-frame">
+                <div>
+                    <b><p>{{ data.title }}</p></b>
+                </div>
+                {% for part in data.content %}
+                    <p>{{ part }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

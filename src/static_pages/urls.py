@@ -6,4 +6,5 @@ urlpatterns = [
     path('site-map/', views.site_map, name = 'site_map'),
     path('symbols/', views.symbols, name = 'symbols'),
     path('messages/', views.messages, name = 'messages'),
+    path('open-info/', views.OpenInfo, name='openInfo')
 ]

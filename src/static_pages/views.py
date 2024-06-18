@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import index_page
+from .models import index_page, openInfo
 from ceoInfo.models import CeoDatas
 # Create your views here.
 
@@ -16,3 +16,7 @@ def messages(request):
 
 def symbols(request):
     return render(request, 'MainPage/symbols.html')
+
+def OpenInfo(request):
+    data = openInfo.objects.order_by('-id').first()
+    return render(request, 'infoPages/openInfoDoc.html', {'data' : data})

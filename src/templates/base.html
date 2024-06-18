@@ -101,13 +101,13 @@
         <div class="sub-header" id="sub-header">
             <div class="sub-menu">
                 <div class="dropmenu">
-                    <a href="{% url 'viewSovet'%}" class="rubric">Об институте</a>
+                    <a href="{% url 'viewSovet'%}" class="rubric">{%trans 'Об институте'%}</a>
                     <div class="dropcontent wide">
                         <div class="multicol">
                             <a href="{% url 'viewSovet'%}">{% trans 'Наблюдательный совет' %}</a>
-                            <a href="{% url 'ceo-info'%}"> Руководство</a>
+                            <a href="{% url 'ceo-info'%}"> {%trans 'Руководство'%}</a>
                             <a href="{% url 'orgStruct' %}">{% trans 'Структура' %}</a>
-                            <a href="{% url 'vacancies' %}">Вакансии</a>
+                            <a href="{% url 'vacancies' %}">{%trans 'Вакансии'%}</a>
                             <a href="{% url 'strategic-dev'%}">{% trans 'Стратегическое развитие' %}</a>
                         </div>
                         <div class="multicol">
@@ -115,23 +115,23 @@
                             <a href="{% url 'managment_standart'%}">{% trans 'Стандарт менеджемента' %}</a>
                             <a href="{% url 'antiCor'%}">{% trans 'Противодействие коррупции' %}</a>
                             <a href="{% url 'accreditation'%}">{% trans 'Аккредитация' %}</a>
-                            <a href="{% url 'error505' %}">Охрана труда</a>
+                            <a href="{% url 'laborProtection' %}">{%trans 'Охрана труда'%}</a>
                         </div>
                     </div>
                 </div>
                 <div class="dropmenu">
-                    <a class="rubric" href="{% url 'science'%}" class="dropbtn">Наука и Достижения</a>
+                    <a class="rubric" href="{% url 'science'%}" class="dropbtn">{%trans 'Наука и Достижения'%}</a>
                     <div class="dropcontent">
                         <div>
-                            <a href="{% url 'science'%}">Научные разработки</a>
-                            <a href="{% url 'scienceSovet'%}">Научно-технический совет</a>
-                            <a href="{% url 'plans'%}">Планы</a>
-                            <a href="{% url 'science_achievments'%}">Достижения</a>
+                            <a href="{% url 'science'%}">{%trans 'Научные разработки'%}</a>
+                            <a href="{% url 'scienceSovet'%}">{%trans 'Научно-технический совет'%}</a>
+                            <a href="{% url 'plans'%}">{%trans 'Планы'%}</a>
+                            <a href="{% url 'science_achievments'%}">{%trans 'Достижения'%}</a>
                         </div>
                     </div>
                 </div>
                 <div class="dropmenu">
-                    <a class="rubric" href="{% url 'med-services'%}" class="dropbtn">Медицинские услуги</a>
+                    <a class="rubric" href="{% url 'med-services'%}" class="dropbtn">{%trans 'Медицинские услуги'%}</a>
                     <!-- <div class="dropcontent">
                         <div>
                             <a href="{% url 'med-services'%}">Платные услуги</a>
@@ -140,52 +140,52 @@
                     </div> -->
                 </div>
                 <div class="dropmenu">
-                    <a class="rubric" href="{% url 'strategic_partners'%}">Стратегические партнеры</a>
+                    <a class="rubric" href="{% url 'strategic_partners'%}">{%trans 'Стратегические партнеры'%}</a>
                 </div>
                 <div class="dropmenu">
-                    <a class="rubric" href="{% url 'gobmp'%}">Пациентам</a>
+                    <a class="rubric" href="{% url 'gobmp'%}">{%trans 'Пациентам'%}</a>
                     <div class="dropcontent">
                         <div>
-                            <a href="{% url 'gobmp'%}">Механизм получения путевки по ГОБМП</a>
-                            <a href="{% url 'rules' %}">Правила санатория</a> 
+                            <a href="{% url 'gobmp'%}">{%trans 'Механизм получения путевки по ГОБМП'%}</a>
+                            <a href="{% url 'rules' %}">{%trans 'Правила санатория'%}</a> 
                         </div>
                     </div>
                 </div>
                 <div class="dropmenu">
-                    <a class="rubric" href="{% url 'news'%}">Пресс-центр</a>
+                    <a class="rubric" href="{% url 'news'%}">{%trans 'Пресс-центр'%}</a>
                     <div class="dropcontent">
                         <div>
-                            <a href="{% url 'news'%}">Новости</a>
-                            <a href="{% url 'error505'%}">Медиагалерея</a>
+                            <a href="{% url 'news'%}">{%trans 'Новости'%}</a>
+                            <a href="{% url 'error505'%}">{%trans 'Медиагалерея'%}</a>
                         </div>
                     </div>
                 </div>
                 <div class="dropmenu">
-                    <a class="rubric" href="{% url 'doctors' %}">Персонал</a>
+                    <a class="rubric" href="{% url 'doctors' %}">{%trans 'Персонал'%}</a>
                     <div class="dropcontent">
                         <div>
                             <!-- <a href="{% url 'people'%}">Лица НИИ</a> -->
-                            <a href="{% url 'doctors' %}">Наши врачи</a>
-                            <a href="{% url 'teachers'%}">Наши педагоги</a>
+                            <a href="{% url 'doctors' %}">{%trans 'Наши врачи'%}</a>
+                            <a href="{% url 'teachers'%}">{%trans 'Наши педагоги'%}</a>
                         </div>
                     </div>
                 </div>
                 <div class="dropmenu">
-                    <a class="rubric" href="{% url 'error505'%}" ">Досуг</a>
+                    <a class="rubric" href="{% url 'error505'%}">Досуг</a>
                 </div>
                 <div class="dropmenu">
-                    <a href="{% url 'blogCEO'%}" class="rubric">Обратная связь</a>
+                    <a href="{% url 'blogCEO'%}" class="rubric">{%trans 'Обратная связь'%}</a>
                     <div class="dropcontent">
                         <div>
                             <a href="{% url 'blogCEO'%}">{% trans 'Блог Руководителя' %}</a>
                             <a href="{% url 'appeal'%}">{% trans 'Для Обращений' %}</a>
-                            <a href="{% url 'contacts'%}">Контакты</a>
-                            <a href="{% url 'reviews'%}">Отзывы</a>
+                            <a href="{% url 'contacts'%}">{%trans 'Контакты'%}</a>
+                            <a href="{% url 'reviews'%}">{%trans 'Отзывы'%}</a>
                         </div>
                     </div>
                 </div>
                 <div class="dropmenu">
-                    <a class="rubric" href="{% url 'transit'%}">Проезд</a>
+                    <a class="rubric" href="{% url 'transit'%}">{%trans 'Проезд'%}</a>
                 </div>
                 <!-- <div class="dropmenu">
                     <a class="rubric" href="{% url 'gobmp'%}" class="dropbtn">Пациентам</a>
