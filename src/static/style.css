@@ -1651,6 +1651,31 @@ width: 30%;
     html{
         font-size: 14px;
     }
+    
+
+    
+
+    .content{
+        padding-top: 100px;
+    }
+
+    
+    .form-card{
+        width: 50%;
+    }
+    .banner-text{
+        width: 100%;
+    }
+
+    .banner-content{
+        font-size: 2.145rem;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        display: none !important;
+    }
+  }
+
+  @media screen and (max-width:1024px){
     .header-title{
         display: none;
     }
@@ -1686,16 +1711,10 @@ width: 30%;
         align-items: center;
         justify-content: center;
     }
-
     .sub-header{
         display: none;
         min-height: auto;
     }
-
-    .content{
-        padding-top: 100px;
-    }
-
     .socials-header{
         display: none;
     }
@@ -1703,23 +1722,12 @@ width: 30%;
     .main-header{
         display: grid;
         grid-template-columns: calc(50% - 33px) 66px calc(50% - 33px);
-    } 
-    .form-card{
-        width: 50%;
+        padding: 0px 5%;
+        width: 90%;
     }
-    .banner-text{
-        width: 100%;
+    .content{
+        padding-top: 80px;
     }
-
-    .banner-content{
-        font-size: 2.145rem;
-    }
-    .swiper-button-next, .swiper-button-prev{
-        display: none !important;
-    }
-  }
-
-  @media screen and (max-width:1024px){
     .news-list{
         grid-template-columns: 30% 30% 30%;
     }
@@ -1728,10 +1736,6 @@ width: 30%;
     }
     .map-button{
         width: 25%;
-    }
-    .main-header{
-        padding: 10px 5%;
-        width: 90%;
     }
     .content-split{
         padding: 0 5%;
@@ -1788,6 +1792,17 @@ width: 30%;
         padding: 20px 5%;
         margin: 0;
         width: 90%;
+    }
+
+    .ban{
+        flex-direction: column;
+    }
+    .ban span{
+        width: 100%;
+    }
+    .ban a{
+        margin-top: 20px;
+        width: calc(100% - 40px);
     }
 
     footer{
