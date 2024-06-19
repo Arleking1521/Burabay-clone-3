@@ -55,6 +55,16 @@
         здравоохранения Республики Казахстан руководствуется принципом прозрачности и открытости в своей деятельности.</span>
         <a href="{% url 'openInfo' %}"  class="btn">{%trans 'Посмотреть приказ'%}</a>
     </div>
+    {% comment %} <div class="news-list">
+        {% for post in news %}
+        <a class="news-item" href="{% url 'new_detail' pid=post.pk %}">
+            <div class="news-pic" {% if post.att.type == 'img' %} style="background-image: url(/media/{{post.att.file}});" {% else %} style="background-image: url(../../static/assets/no-content-banner.jpg);" {%endif%}>
+            </div>
+            <p class="news-date">{{post.date}}</p>
+            <p class="news-title">{{post.title}}</p>
+        </a>
+        {%endfor%}
+    </div> {% endcomment %}
 </div>
 
 <div class="small-banners">
