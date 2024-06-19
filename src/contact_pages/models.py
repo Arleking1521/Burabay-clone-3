@@ -26,3 +26,15 @@ class Contacts(models.Model):
 
     def __str__ (self) -> str:
         return f'{self.title}: {self.info}'
+    
+class InfoAccessFaces(models.Model):
+    name = models.CharField(max_length=128, verbose_name='ФИО') 
+    post = models.TextField(verbose_name='Должность')
+    phone = models.CharField(verbose_name='Телефон')
+    
+    class Meta:
+        verbose_name_plural = "Уполномоченые лица по вопросам доступа информации"
+        verbose_name='Уполномоченное лицо'
+
+    def __str__ (self) -> str:
+        return f'{self.name}: {self.post}'

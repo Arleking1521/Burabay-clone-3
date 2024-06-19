@@ -21,6 +21,21 @@
                 </table>
             </div>
             
+            <p class="table-title">{%trans 'Уполномоченные лица по вопросам доступа к информации'%}:</p>
+            <div class="tables">
+                <table >
+                
+                    <tr>
+                        <th>{% trans 'ФИО' %}</th> <th>{% trans 'Должность' %}</th> <th>{% trans 'Тел. номер' %}</th> 
+                    </tr>
+                    {% for person in infoAccess %}
+                        <tr>
+                            <td>{{person.name}}</td> <td>{{person.post}}</td> <td>{{person.phone}}</td> 
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+
             <p class="table-title">{% trans 'График личного приема директора, заместителей директора на 2024 год' %}:</p>
             <div class="tables">
                 <table >
