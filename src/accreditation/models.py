@@ -4,8 +4,8 @@ from django.db import models
 class Accreditation(models.Model):
     title = models.CharField(max_length=500, verbose_name='Заголовок')
     file = models.FileField(verbose_name='Документ', upload_to='accreditation/')
-    medicine = models.BooleanField(default=False)
-    science = models.BooleanField(default=False)
+    medicine = models.BooleanField(default=False, verbose_name='Медицинская аккредитация')
+    science = models.BooleanField(default=False, verbose_name='Научная аккредитация')
     type = models.CharField(max_length = 6, blank=True, null=True, verbose_name='Тип файла' )
 
     def save(self, *args, **kwargs):
