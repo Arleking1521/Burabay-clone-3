@@ -93,6 +93,16 @@ a:hover{
     color: rgba(0, 0, 0, 0.2) !important;
 }
 
+.slider-wrapper{
+    align-items: center;
+}
+
+
+.slider-item{
+    margin: 20px 40px;
+    align-self: stretch;
+}
+
 .slider-content{
     width: 100%;
     align-items: center;
@@ -1045,6 +1055,7 @@ footer{
 }
 
 .news-item{
+    display: block;
     margin-bottom: 30px;
     background-color: white;
     border-radius: 8px;
@@ -1833,7 +1844,10 @@ width: 30%;
   }
 
   @media screen and (max-width:768px){
-    
+    .slider-item{
+        margin: 20px 20px;
+        align-self: stretch;
+    }
     .news-list{
         grid-template-columns: 45% 45%;
     }

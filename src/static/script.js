@@ -13,6 +13,50 @@ const swiper = new Swiper('.sw', {
     },
 });
 
+if(window.innerWidth >= 1024){
+  const swiper3 = new Swiper('.sw3', {
+    // Optional parameters
+    slidesPerView: 3,
+    loop: true,
+    autoplay:{
+        delay: 5000,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+}
+else if(window.innerWidth >= 768){
+  const swiper3 = new Swiper('.sw3', {
+    // Optional parameters
+    slidesPerView: 2,
+    loop: true,
+    autoplay:{
+        delay: 5000,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+}
+else{
+  const swiper3 = new Swiper('.sw3', {
+    // Optional parameters
+    slidesPerView: 1,
+    loop: true,
+    autoplay:{
+        delay: 5000,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+}
+
+
 const swiper2 = new Swiper('.sw2', {
   // Optional parameters
   loop: true,

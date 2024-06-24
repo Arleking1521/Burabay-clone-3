@@ -28,7 +28,7 @@
     </div>
 </div>
 <div class="question-block">
-    <div class="ban">
+    {% comment %} <div class="ban"> {% endcomment %}
         {% comment %} <div class="info">
             <p class="header">
                 {% trans 'Руководитель' %}
@@ -47,7 +47,7 @@
         <div class="photo">
             <img src="../media/{{ ceo.photo }}" alt="" />
         </div> {% endcomment %}
-        <span>В соответствии с пунктом 4 Правил размещения информации на интернет-портале Открытых
+        {% comment %} <span>В соответствии с пунктом 4 Правил размещения информации на интернет-портале Открытых
         данных, утвержденных приказом Министра информации и общественного развития Республики Казахстан от 28 апреля
         2021 года № 144, и во исполнение поручения Министерства здравоохранения Республики Казахстан от 22 августа 2023
         года № 14-1-14/8699-И, а также в соответствии со статьей 16 Закона Республики Казахстан от 16 ноября 2015 года №
@@ -55,16 +55,29 @@
         здравоохранения Республики Казахстан руководствуется принципом прозрачности и открытости в своей деятельности.</span>
         <a href="{% url 'openInfo' %}"  class="btn">{%trans 'Посмотреть приказ'%}</a>
     </div>
-    {% comment %} <div class="news-list">
-        {% for post in news %}
-        <a class="news-item" href="{% url 'new_detail' pid=post.pk %}">
-            <div class="news-pic" {% if post.att.type == 'img' %} style="background-image: url(/media/{{post.att.file}});" {% else %} style="background-image: url(../../static/assets/no-content-banner.jpg);" {%endif%}>
+    <div> {% endcomment %}
+    <div class="swiper sw3">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper slider-wrapper">
+            <!-- Slides -->
+            {% for post in news %}
+            <div class="swiper-slide">
+                <a class="news-item slider-item" href="{% url 'new_detail' pid=post.pk %}">
+                    <div class="news-pic" {% if post.att.type == 'img' %} style="background-image: url(/media/{{post.att.file}});" {% else %} style="background-image: url(../../static/assets/no-content-banner.jpg);" {% endif %}>
+                    </div>
+                    <p class="news-date">{{post.date}}</p>
+                    <p class="news-title">{{post.title}}</p>
+                </a>
             </div>
-            <p class="news-date">{{post.date}}</p>
-            <p class="news-title">{{post.title}}</p>
-        </a>
-        {%endfor%}
-    </div> {% endcomment %}
+            {%endfor%}
+            
+        </div>
+        <!-- If we need pagination -->
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
 </div>
 
 <div class="small-banners">
