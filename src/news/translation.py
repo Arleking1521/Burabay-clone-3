@@ -5,6 +5,3 @@ from .models import Post, PostAttachment
 class PostTranslationoptions(TranslationOptions):
     fields = ( 'title', 'content')
 
-@register(PostAttachment)
-class PostAttachmentAdmin(TranslationOptions):
-    fields = ('file', 'post', 'type')

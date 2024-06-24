@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import *
+from .models import Booking
 from modeltranslation.admin import TranslationAdmin
 from django.utils.translation import gettext_lazy as _
 # Register your models here.

@@ -22,7 +22,6 @@ class PostAttachment(models.Model):
 
     def save(self, *args, **kwargs):
         file_extension = self.file.name.split('.')[-1].lower()
-        print(file_extension)
         if file_extension in ['jpg', 'jpeg', 'png', 'gif']:
             self.type = 'img'
         else:
