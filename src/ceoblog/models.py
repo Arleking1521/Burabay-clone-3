@@ -5,9 +5,9 @@ from logRegisPages.models import CustomUser
 
 class PostCeo(models.Model):
     author = models.ForeignKey(CustomUser, on_delete=models.DO_NOTHING, verbose_name='Автор')
-    title = models.CharField(max_length = 128, verbose_name='Title')
-    date = models.DateTimeField(default=timezone.now)
-    content = models.TextField(verbose_name='Content')
+    title = models.CharField(max_length = 128, verbose_name='Заголовок')
+    date = models.DateTimeField(default=timezone.now, verbose_name='Дата')
+    content = models.TextField(verbose_name='Информация')
 
     class Meta:
         verbose_name_plural = "Посты руководителя"
@@ -18,9 +18,9 @@ class PostCeo(models.Model):
 # Create your models here.
 
 class PostAttachment(models.Model):
-    file = models.FileField(upload_to='images/')
-    post = models.ForeignKey(PostCeo, on_delete=models.CASCADE)
-    type = models.CharField(max_length = 6, blank=True, null=True )
+    file = models.FileField(upload_to='images/', verbose_name='Файл')
+    post = models.ForeignKey(PostCeo, on_delete=models.CASCADE , verbose_name='Сообщение')
+    type = models.CharField(max_length = 6, blank=True, null=True , verbose_name='Тип файла')
 
     def save(self, *args, **kwargs):
         file_extension = self.file.name.split('.')[-1].lower()
