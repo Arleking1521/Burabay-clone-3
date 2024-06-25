@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-19 18:26+0500\n"
+"POT-Creation-Date: 2024-06-26 02:35+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,15 +43,11 @@ msgstr "Медицина"
 msgid "Бронирование"
 msgstr "Брондау"
 
-#: .\templates\MainPage\index.html:57
-msgid "Посмотреть приказ"
-msgstr "Бұйрықты қарау"
-
-#: .\templates\MainPage\index.html:76
+#: .\templates\MainPage\index.html:91
 msgid "Государственные символы"
 msgstr "Мемлекеттік рәміздер"
 
-#: .\templates\MainPage\index.html:118
+#: .\templates\MainPage\index.html:133
 msgid "Послание Главы государства Касым-Жомарта Токаева народу Казахстана"
 msgstr "Мемлекет Басшысы Қасым-Жомарт Тоқаевтың Қазақстан халқына Жолдауы"
 
@@ -63,14 +59,15 @@ msgstr "Сайт картасы"
 msgid "Главная"
 msgstr "Басты бет"
 
-#: .\templates\MainPage\site_map.html:21 .\templates\base.html:104
+#: .\templates\MainPage\site_map.html:21 .\templates\base.html:106
 msgid "Об институте"
 msgstr "Институт туралы"
 
 #: .\templates\MainPage\site_map.html:22
 #: .\templates\accreditation\accreditation.html:6
 #: .\templates\antiCorPages\antiCorList.html:6 .\templates\base.html:54
-#: .\templates\base.html:107 .\templates\ceoInfo\ceoInfoPage.html:6
+#: .\templates\base.html:109 .\templates\ceoInfo\ceoInfoPage.html:6
+#: .\templates\complianceService\compServiceList.html:6
 #: .\templates\dopPages\managment_standart.html:6
 #: .\templates\infoPages\advertisement.html:6
 #: .\templates\infoPages\laborProtection.html:6
@@ -86,8 +83,9 @@ msgstr "Бақылау кеңесі"
 
 #: .\templates\MainPage\site_map.html:23
 #: .\templates\accreditation\accreditation.html:7
-#: .\templates\antiCorPages\antiCorList.html:7 .\templates\base.html:108
+#: .\templates\antiCorPages\antiCorList.html:7 .\templates\base.html:110
 #: .\templates\ceoInfo\ceoInfoPage.html:7
+#: .\templates\complianceService\compServiceList.html:7
 #: .\templates\dopPages\managment_standart.html:7
 #: .\templates\infoPages\advertisement.html:7
 #: .\templates\infoPages\laborProtection.html:7
@@ -101,7 +99,8 @@ msgstr "Басшылық"
 #: .\templates\MainPage\site_map.html:24
 #: .\templates\accreditation\accreditation.html:8
 #: .\templates\antiCorPages\antiCorList.html:8 .\templates\base.html:37
-#: .\templates\base.html:109 .\templates\ceoInfo\ceoInfoPage.html:8
+#: .\templates\base.html:111 .\templates\ceoInfo\ceoInfoPage.html:8
+#: .\templates\complianceService\compServiceList.html:8
 #: .\templates\dopPages\managment_standart.html:8
 #: .\templates\infoPages\advertisement.html:8
 #: .\templates\infoPages\laborProtection.html:8
@@ -114,8 +113,9 @@ msgstr "Құрылымы"
 
 #: .\templates\MainPage\site_map.html:25
 #: .\templates\accreditation\accreditation.html:9
-#: .\templates\antiCorPages\antiCorList.html:9 .\templates\base.html:110
+#: .\templates\antiCorPages\antiCorList.html:9 .\templates\base.html:112
 #: .\templates\ceoInfo\ceoInfoPage.html:9
+#: .\templates\complianceService\compServiceList.html:9
 #: .\templates\dopPages\managment_standart.html:9
 #: .\templates\infoPages\advertisement.html:9
 #: .\templates\infoPages\laborProtection.html:9
@@ -131,7 +131,8 @@ msgstr "Бос жұмыс орындары"
 #: .\templates\MainPage\site_map.html:26
 #: .\templates\accreditation\accreditation.html:10
 #: .\templates\antiCorPages\antiCorList.html:10 .\templates\base.html:50
-#: .\templates\base.html:111 .\templates\ceoInfo\ceoInfoPage.html:10
+#: .\templates\base.html:113 .\templates\ceoInfo\ceoInfoPage.html:10
+#: .\templates\complianceService\compServiceList.html:10
 #: .\templates\dopPages\managment_standart.html:10
 #: .\templates\infoPages\advertisement.html:10
 #: .\templates\infoPages\laborProtection.html:10
@@ -146,7 +147,8 @@ msgstr "Стратегиялық даму"
 #: .\templates\MainPage\site_map.html:27
 #: .\templates\accreditation\accreditation.html:11
 #: .\templates\antiCorPages\antiCorList.html:11 .\templates\base.html:52
-#: .\templates\base.html:114 .\templates\ceoInfo\ceoInfoPage.html:11
+#: .\templates\base.html:116 .\templates\ceoInfo\ceoInfoPage.html:11
+#: .\templates\complianceService\compServiceList.html:11
 #: .\templates\dopPages\managment_standart.html:11
 #: .\templates\infoPages\advertisement.html:11
 #: .\templates\infoPages\laborProtection.html:11
@@ -160,22 +162,23 @@ msgstr "Мемлекеттік сатып алу"
 #: .\templates\MainPage\site_map.html:28
 #: .\templates\accreditation\accreditation.html:12
 #: .\templates\antiCorPages\antiCorList.html:12 .\templates\base.html:53
-#: .\templates\base.html:115 .\templates\ceoInfo\ceoInfoPage.html:12
-#: .\templates\dopPages\managment_standart.html:12
-#: .\templates\dopPages\managment_standart.html:18
+#: .\templates\base.html:117 .\templates\ceoInfo\ceoInfoPage.html:12
+#: .\templates\complianceService\compServiceList.html:12
+#: .\templates\complianceService\compServiceList.html:18
 #: .\templates\infoPages\advertisement.html:12
 #: .\templates\infoPages\laborProtection.html:12
 #: .\templates\infoPages\vacancyPage.html:12
 #: .\templates\orgStructure\orgStruct.html:12
 #: .\templates\strategicDevelopment\strategic_development.html:12
 #: .\templates\viewSovet\viewSovet.html:22
-msgid "Стандарт менеджемента"
-msgstr "Менеджмент Стандарты"
+msgid "Комплаенс служба"
+msgstr "Сәйкестік қызметі"
 
 #: .\templates\MainPage\site_map.html:29
 #: .\templates\accreditation\accreditation.html:13
 #: .\templates\antiCorPages\antiCorList.html:13 .\templates\base.html:51
-#: .\templates\base.html:116 .\templates\ceoInfo\ceoInfoPage.html:13
+#: .\templates\base.html:118 .\templates\ceoInfo\ceoInfoPage.html:13
+#: .\templates\complianceService\compServiceList.html:13
 #: .\templates\dopPages\managment_standart.html:13
 #: .\templates\infoPages\advertisement.html:13
 #: .\templates\infoPages\laborProtection.html:13
@@ -191,8 +194,8 @@ msgstr "Сыбайлас жемқорлыққа қарсы іс-қимыл"
 #: .\templates\accreditation\accreditation.html:14
 #: .\templates\accreditation\accreditation.html:18
 #: .\templates\antiCorPages\antiCorList.html:14 .\templates\base.html:55
-#: .\templates\base.html:117 .\templates\ceoInfo\ceoInfoPage.html:14
-#: .\templates\dopPages\accreditation.html:11
+#: .\templates\base.html:119 .\templates\ceoInfo\ceoInfoPage.html:14
+#: .\templates\complianceService\compServiceList.html:14
 #: .\templates\dopPages\managment_standart.html:14
 #: .\templates\infoPages\advertisement.html:14
 #: .\templates\infoPages\laborProtection.html:14
@@ -205,9 +208,9 @@ msgstr "Аккредиттеу"
 
 #: .\templates\MainPage\site_map.html:31
 #: .\templates\accreditation\accreditation.html:15
-#: .\templates\antiCorPages\antiCorList.html:15 .\templates\base.html:118
+#: .\templates\antiCorPages\antiCorList.html:15 .\templates\base.html:120
 #: .\templates\ceoInfo\ceoInfoPage.html:15
-#: .\templates\dopPages\laborProtection.html:11
+#: .\templates\complianceService\compServiceList.html:15
 #: .\templates\dopPages\managment_standart.html:15
 #: .\templates\infoPages\advertisement.html:15
 #: .\templates\infoPages\laborProtection.html:15
@@ -219,11 +222,11 @@ msgstr "Аккредиттеу"
 msgid "Охрана труда"
 msgstr "Еңбекті қорғау"
 
-#: .\templates\MainPage\site_map.html:35 .\templates\base.html:123
+#: .\templates\MainPage\site_map.html:35 .\templates\base.html:125
 msgid "Наука и Достижения"
 msgstr "Ғылым және жетістіктер"
 
-#: .\templates\MainPage\site_map.html:36 .\templates\base.html:126
+#: .\templates\MainPage\site_map.html:36 .\templates\base.html:128
 #: .\templates\sciencificBlock\achievments.html:6
 #: .\templates\sciencificBlock\scienceAcievments.html:6
 #: .\templates\sciencificBlock\scienceDev.html:6
@@ -232,7 +235,7 @@ msgstr "Ғылым және жетістіктер"
 msgid "Научные разработки"
 msgstr "Ғылыми әзірлемелер"
 
-#: .\templates\MainPage\site_map.html:37 .\templates\base.html:127
+#: .\templates\MainPage\site_map.html:37 .\templates\base.html:129
 #: .\templates\sciencificBlock\achievments.html:7
 #: .\templates\sciencificBlock\scienceAcievments.html:7
 #: .\templates\sciencificBlock\scienceDev.html:7
@@ -241,8 +244,7 @@ msgstr "Ғылыми әзірлемелер"
 msgid "Научно-технический совет"
 msgstr "Ғылыми-техникалық кеңес"
 
-#: .\templates\MainPage\site_map.html:38 .\templates\base.html:128
-#: .\templates\dopPages\plans.html:11
+#: .\templates\MainPage\site_map.html:38 .\templates\base.html:130
 #: .\templates\sciencificBlock\achievments.html:8
 #: .\templates\sciencificBlock\scienceAcievments.html:8
 #: .\templates\sciencificBlock\scienceDev.html:8
@@ -251,8 +253,7 @@ msgstr "Ғылыми-техникалық кеңес"
 msgid "Планы"
 msgstr "Жоспарлар"
 
-#: .\templates\MainPage\site_map.html:39 .\templates\base.html:129
-#: .\templates\dopPages\Achievments.html:11
+#: .\templates\MainPage\site_map.html:39 .\templates\base.html:131
 #: .\templates\sciencificBlock\achievments.html:9
 #: .\templates\sciencificBlock\scienceAcievments.html:9
 #: .\templates\sciencificBlock\scienceDev.html:9
@@ -261,17 +262,14 @@ msgstr "Жоспарлар"
 msgid "Достижения"
 msgstr "Жетістіктер"
 
-#: .\templates\MainPage\site_map.html:43 .\templates\base.html:146
+#: .\templates\MainPage\site_map.html:43 .\templates\base.html:148
 msgid "Пациентам"
 msgstr "Науқастарға"
 
-#: .\templates\MainPage\site_map.html:44 .\templates\base.html:134
-#: .\templates\dopPages\UVO.html:6 .\templates\dopPages\accreditation.html:6
+#: .\templates\MainPage\site_map.html:44 .\templates\base.html:136
+#: .\templates\dopPages\UVO.html:6
 #: .\templates\dopPages\ethicsRegulations.html:6
-#: .\templates\dopPages\gobmp.html:6 .\templates\dopPages\kidsSchedule.html:6
-#: .\templates\dopPages\laborProtection.html:6
-#: .\templates\dopPages\leisure.html:6 .\templates\dopPages\mediagallery.html:6
-#: .\templates\dopPages\strategic_development.html:6
+#: .\templates\dopPages\kidsSchedule.html:6 .\templates\dopPages\leisure.html:6
 #: .\templates\medServices\medServices.html:7
 #: .\templates\mediaGalleryPage\mediagallery.html:6
 msgid "Медицинские услуги"
@@ -281,52 +279,49 @@ msgstr "Медициналық қызметтер"
 msgid "Механизм получения путевки по ГОМБП"
 msgstr "ТМККК бойынша жолдама алу тетігі"
 
-#: .\templates\MainPage\site_map.html:46 .\templates\base.html:150
-#: .\templates\dopPages\UVO.html:7 .\templates\dopPages\accreditation.html:7
+#: .\templates\MainPage\site_map.html:46 .\templates\base.html:152
+#: .\templates\dopPages\UVO.html:7
 #: .\templates\dopPages\ethicsRegulations.html:7
-#: .\templates\dopPages\gobmp.html:7 .\templates\dopPages\kidsSchedule.html:7
-#: .\templates\dopPages\laborProtection.html:7
-#: .\templates\dopPages\leisure.html:7 .\templates\dopPages\mediagallery.html:7
-#: .\templates\dopPages\strategic_development.html:7
+#: .\templates\dopPages\kidsSchedule.html:7 .\templates\dopPages\leisure.html:7
 #: .\templates\infoPages\gobmp.html:7 .\templates\infoPages\rulesPage.html:7
 #: .\templates\mediaGalleryPage\mediagallery.html:7
 msgid "Правила санатория"
 msgstr "Санаторий ережелері"
 
-#: .\templates\MainPage\site_map.html:50 .\templates\base.html:155
+#: .\templates\MainPage\site_map.html:50 .\templates\base.html:157
 msgid "Пресс-центр"
 msgstr "Баспасөз орталығы"
 
-#: .\templates\MainPage\site_map.html:51 .\templates\base.html:158
+#: .\templates\MainPage\site_map.html:51 .\templates\base.html:160
 #: .\templates\posts\post_list.html:7
 msgid "Новости"
 msgstr "Жаңалықтар"
 
-#: .\templates\MainPage\site_map.html:52 .\templates\base.html:159
+#: .\templates\MainPage\site_map.html:52 .\templates\base.html:161
 #: .\templates\mediaGalleryPage\mediagallery.html:11
 msgid "Медиагалерея"
 msgstr "Медиагалерея"
 
-#: .\templates\MainPage\site_map.html:56 .\templates\base.html:164
+#: .\templates\MainPage\site_map.html:56 .\templates\base.html:166
 msgid "Персонал"
 msgstr "Қызметкерлер"
 
-#: .\templates\MainPage\site_map.html:57 .\templates\base.html:168
+#: .\templates\MainPage\site_map.html:57 .\templates\base.html:170
 #: .\templates\people\doctors.html:6 .\templates\people\teachers.html:6
 msgid "Наши врачи"
 msgstr "Біздің дәрігерлер"
 
-#: .\templates\MainPage\site_map.html:58 .\templates\base.html:169
+#: .\templates\MainPage\site_map.html:58 .\templates\base.html:171
 #: .\templates\people\doctors.html:7 .\templates\people\teachers.html:7
 msgid "Наши педагоги"
 msgstr "Біздің педагогтар"
 
-#: .\templates\MainPage\site_map.html:62 .\templates\base.html:177
+#: .\templates\MainPage\site_map.html:62 .\templates\base.html:179
 msgid "Обратная связь"
 msgstr "Кері байланыс"
 
 #: .\templates\MainPage\site_map.html:63 .\templates\base.html:62
-#: .\templates\base.html:180 .\templates\ceoblog\blogCEO.html:6
+#: .\templates\base.html:182 .\templates\ceoblog\blogCEO.html:6
 #: .\templates\ceoblog\blogCEO.html:13 .\templates\feedback\thank_you.html:8
 #: .\templates\feedback\user_feedback_form.html:6
 #: .\templates\reviewsPages\reviews_list.html:6
@@ -334,7 +329,7 @@ msgid "Блог Руководителя"
 msgstr "Басшының Блогы"
 
 #: .\templates\MainPage\site_map.html:64 .\templates\base.html:63
-#: .\templates\base.html:181 .\templates\ceoblog\blogCEO.html:7
+#: .\templates\base.html:183 .\templates\ceoblog\blogCEO.html:7
 #: .\templates\feedback\thank_you.html:9
 #: .\templates\feedback\user_feedback_form.html:7
 #: .\templates\reviewsPages\reviews_list.html:7
@@ -342,7 +337,7 @@ msgid "Для Обращений"
 msgstr "Өтініштер Үшін"
 
 #: .\templates\MainPage\site_map.html:65 .\templates\MainPage\site_map.html:71
-#: .\templates\base.html:182 .\templates\ceoblog\blogCEO.html:8
+#: .\templates\base.html:184 .\templates\ceoblog\blogCEO.html:8
 #: .\templates\feedback\user_feedback_form.html:8
 #: .\templates\infoPages\contacts.html:8
 #: .\templates\infoPages\rightActs.html:12
@@ -350,7 +345,7 @@ msgstr "Өтініштер Үшін"
 msgid "Контакты"
 msgstr "Байланыс"
 
-#: .\templates\MainPage\site_map.html:66 .\templates\base.html:183
+#: .\templates\MainPage\site_map.html:66 .\templates\base.html:185
 #: .\templates\ceoblog\blogCEO.html:9
 #: .\templates\feedback\user_feedback_form.html:9
 #: .\templates\infoPages\rightActs.html:11
@@ -359,7 +354,7 @@ msgstr "Байланыс"
 msgid "Отзывы"
 msgstr "Пікірлер"
 
-#: .\templates\MainPage\site_map.html:69 .\templates\base.html:143
+#: .\templates\MainPage\site_map.html:69 .\templates\base.html:145
 msgid "Стратегические партнеры"
 msgstr "Стратегиялық серіктестер"
 
@@ -367,7 +362,7 @@ msgstr "Стратегиялық серіктестер"
 msgid "Досуг"
 msgstr "Бос уақыт"
 
-#: .\templates\MainPage\site_map.html:72 .\templates\base.html:188
+#: .\templates\MainPage\site_map.html:72 .\templates\base.html:190
 #: .\templates\dopPages\transit.html:7
 msgid "Проезд"
 msgstr "Жол жүру"
@@ -392,33 +387,30 @@ msgstr ""
 "ҚР ДСМ «курортология және медициналық оңалту ғылыми-зерттеу институты» ШЖҚ "
 "РМК"
 
-#: .\templates\base.html:94
+#: .\templates\base.html:96
 msgid "Выйти"
 msgstr "Шығу"
 
-#: .\templates\base.html:96 .\templates\registration\login.html:14
+#: .\templates\base.html:98 .\templates\registration\login.html:14
 #: .\templates\registration\pass_remember.html:11
 #: .\templates\registration\registration.html:63
 msgid "Войти"
 msgstr "Кіру"
 
-#: .\templates\base.html:97 .\templates\registration\login.html:17
+#: .\templates\base.html:99 .\templates\registration\login.html:17
 #: .\templates\registration\registration.html:5
 msgid "Регистрация"
 msgstr "Тіркеу"
 
-#: .\templates\base.html:149 .\templates\dopPages\ethicsRegulations.html:11
-#: .\templates\dopPages\gobmp.html:11 .\templates\dopPages\mediagallery.html:11
-#: .\templates\dopPages\scientificDev.html:11
-#: .\templates\dopPages\strategic_development.html:11
+#: .\templates\base.html:151 .\templates\dopPages\ethicsRegulations.html:11
 msgid "Механизм получения путевки по ГОБМП"
 msgstr "ТМККК бойынша жолдама алу тетігі"
 
-#: .\templates\base.html:285
+#: .\templates\base.html:289
 msgid "Телефон доверия"
 msgstr "Сенім телефоны"
 
-#: .\templates\base.html:290
+#: .\templates\base.html:294
 msgid ""
 "Казахстан, Акмолинская область, Бурабайский район, Боровская п.а., п."
 "Бурабай, ул.Кенесары 1"
@@ -503,12 +495,9 @@ msgstr "Бет қол жетімді емес"
 msgid "Производятся технические работы"
 msgstr "Техникалық жұмыстар жүргізілуде"
 
-#: .\templates\dopPages\UVO.html:8 .\templates\dopPages\accreditation.html:8
+#: .\templates\dopPages\UVO.html:8
 #: .\templates\dopPages\ethicsRegulations.html:8
-#: .\templates\dopPages\gobmp.html:8 .\templates\dopPages\kidsSchedule.html:8
-#: .\templates\dopPages\laborProtection.html:8
-#: .\templates\dopPages\leisure.html:8 .\templates\dopPages\mediagallery.html:8
-#: .\templates\dopPages\strategic_development.html:8
+#: .\templates\dopPages\kidsSchedule.html:8 .\templates\dopPages\leisure.html:8
 #: .\templates\infoPages\gobmp.html:6 .\templates\infoPages\rulesPage.html:6
 #: .\templates\mediaGalleryPage\mediagallery.html:8
 msgid "Путевки по ГОБМП"
@@ -522,12 +511,10 @@ msgstr "УВО"
 msgid "Расписание детских смен"
 msgstr "Балалардың ауысым кестесі"
 
-#: .\templates\dopPages\strategicPartners.html:7
-#: .\templates\strategic_partners\strategicPartners.html:7
-#, fuzzy
-#| msgid "Стратегические партнеры"
-msgid "Стратегические партнеры и международное сотрудничество"
-msgstr "Стратегиялық серіктестер"
+#: .\templates\dopPages\managment_standart.html:12
+#: .\templates\dopPages\managment_standart.html:18
+msgid "Стандарт менеджемента"
+msgstr "Менеджмент Стандарты"
 
 #: .\templates\dopPages\transit.html:10
 msgid "Схема расположения реабилитационных отделов"
@@ -867,3 +854,12 @@ msgid ""
 msgstr ""
 "Курортология және қалпына келтіру лечения саласындағы ғылыми зерттеулер және "
 "ғылыми-әдістемелік қамтамасыз ету"
+
+#: .\templates\strategic_partners\strategicPartners.html:7
+#, fuzzy
+#| msgid "Стратегические партнеры"
+msgid "Стратегические партнеры и международное сотрудничество"
+msgstr "Стратегиялық серіктестер"
+
+#~ msgid "Посмотреть приказ"
+#~ msgstr "Бұйрықты қарау"

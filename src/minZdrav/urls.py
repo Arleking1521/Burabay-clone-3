@@ -58,6 +58,7 @@ urlpatterns += i18n_patterns(
     path('strategic-partners/', include('strategic_partners.urls')),
     path('strategic-development/', include('strategicDevelopment.urls')), #Стратегическое развитие
     path('labor-protection/', include('laborProtection.urls')),
+    path('compliance-service/', include('compliensService.urls')),
    
     path('scientific-developments/', TemplateView.as_view(template_name='dopPages/scientificDev.html'), name='sci-dev'), #Научные достижения
     path('quality-management-standard/', TemplateView.as_view(template_name='dopPages/managment_standart.html'), name='managment_standart'), #Стандарты менеджмента качества

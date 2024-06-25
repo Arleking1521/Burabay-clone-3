@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     'booking',
     'gobmp',
     'laborProtection',
+    'compliensService',
 ]
 
 MIDDLEWARE = [
