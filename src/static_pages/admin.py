@@ -5,7 +5,7 @@ from .models import index_page, openInfo
 
 @admin.register(index_page)
 class indexPageAdmin(TranslationAdmin):
-    list_display = ( 'bannerContent', 'ceo_appeal')
+    list_display = ( 'mission', 'view')
 
 @admin.register(openInfo)
 class openInfoAdmin(TranslationAdmin):

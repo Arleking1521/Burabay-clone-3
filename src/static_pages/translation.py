@@ -3,7 +3,7 @@ from .models import index_page, openInfo
 
 @register(index_page)
 class indexPageTranslationoptions(TranslationOptions):
-    fields = ( 'bannerContent', 'ceo_appeal')
+    fields = ( 'mission', 'view')
 
 
 @register(openInfo)
