@@ -11,15 +11,15 @@ from django.template import loader
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
 from django.utils.translation import gettext as _
-
+from django_recaptcha.fields import ReCaptchaField 
 
 class RegistrationForm(UserCreationForm):
     password1 = forms.CharField(widget=forms.PasswordInput)
     password2 = forms.CharField(widget=forms.PasswordInput)
-
+    captcha = ReCaptchaField()
     class Meta:
         model = CustomUser
-        fields = ['name', 'surename', 'email', 'phone']
+        fields = ['name', 'surename', 'email', 'phone','captcha']
 
     def save(self, commit=True):
         user = super().save(commit=False)

@@ -58,6 +58,7 @@
         <p style="color: red">{{ error }}</p> 
         {% endfor %}
         {% endif %}
+        {{form.captcha}}
         <span class="form-inputs">
             <button class="btn" type="submit">{%trans 'Зарегестрироваться'%}</button>
             <a href="{% url 'login'%}">{%trans 'Войти'%}</a>

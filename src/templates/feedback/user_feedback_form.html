@@ -17,7 +17,7 @@
             {{ form.email }}
             <label for="id_review">{%trans 'Ваш отзыв'%}:</label>
             {{ form.message }}
-            
+            {{form.captcha}}
             <button class="btn" type="submit">{%trans 'Отправить отзыв'%}</button>
         </form>
     </div>
