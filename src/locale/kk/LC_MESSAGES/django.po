@@ -573,7 +573,7 @@ msgstr "ҚР ДСМ курортология және медициналық о�
 #: .\templates\infoPages\contacts.html:43
 #: .\templates\infoPages\workersInfo.html:17
 msgid "ФИО"
-msgstr "ТАӘ"
+msgstr "ТАЖ"
 
 #: .\templates\infoPages\contacts.html:14
 #: .\templates\infoPages\contacts.html:29
