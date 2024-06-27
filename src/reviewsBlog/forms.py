@@ -1,10 +1,13 @@
 from django import forms
 from .models import Reviews, Answer
+from django_recaptcha.fields import ReCaptchaField 
 
 class ReviewForm(forms.ModelForm):
+    captcha = ReCaptchaField()
+
     class Meta:
         model = Reviews
-        fields = ['author', 'IIN', 'review']
+        fields = ['author', 'IIN', 'review', 'captcha']
     
 
 class AnswerForm(forms.ModelForm):

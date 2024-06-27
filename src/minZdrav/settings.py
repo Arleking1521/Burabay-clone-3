@@ -17,7 +17,6 @@ AUTH_USER_MODEL = 'logRegisPages.CustomUser'
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -30,9 +29,9 @@ DEBUG = True
 ALLOWED_HOSTS = ['*', 'burabay-mzrk.kz']
 
 # Application definition
-
 INSTALLED_APPS = [
     'modeltranslation',
+    'django_recaptcha',  # Убедитесь, что 'captcha' здесь
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -69,6 +68,7 @@ INSTALLED_APPS = [
     'gobmp',
     'laborProtection',
     'compliensService',
+    
 ]
 
 MIDDLEWARE = [
@@ -105,12 +105,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'minZdrav.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'burabay_mzrk',
@@ -119,9 +117,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432',
     }
-
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -141,16 +137,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
 
 LANGUAGE_CODE = 'ru'
-
 TIME_ZONE = 'Asia/Almaty'
-
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
@@ -161,15 +154,18 @@ LANGUAGES = (
     ('kk', gettext('Kazakh')),
     ('en', gettext('English')),
 )
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
    os.path.join(BASE_DIR, 'static')
 ]
-LOCALE_PATHS = [ 
-    os.path.join(BASE_DIR / 'locale')]
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR / 'locale')
+]
+
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
@@ -183,8 +179,9 @@ EMAIL_HOST_USER = 'karimknewit@gmail.com'
 EMAIL_HOST_PASSWORD = 'qusd nrpb jvye crtl'
 
 LOGOUT_URL = 'login'
-
 LOGIN_URL = 'login'
-# Application definition
 
-AUTH_USER_MODEL = 'logRegisPages.CustomUser'
+# Настройки reCAPTCHA
+RECAPTCHA_PUBLIC_KEY = '6LfG8gIqAAAAAOh1cHtY6b2dg2K_IDjP6AZpKbLU'
+RECAPTCHA_PRIVATE_KEY = '6LfG8gIqAAAAABGjZCloN2O9dpSBgkQrTDGM_q94'
+RECAPTCHA_USE_SSL = True
