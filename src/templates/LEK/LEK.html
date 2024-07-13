@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{%load i18n%}
+{% block content %}
+<div class="content-split">
+    <div class="navigation">
+        {% comment %} <a href="{% url 'viewSovet'%}" class='selected'>{% trans 'Наблюдательный совет' %}</a>
+        <a href="{% url 'strategic-dev'%}" >{% trans 'Стратегическое развитие' %}</a>
+        <a href="{% url 'antiCor'%}">{% trans 'Противодействие коррупции' %}</a>
+        <a href="{% url 'ads'%}">{% trans 'Государственные закупки' %}</a>
+        <a href="{% url 'compServ'%}">{% trans 'Комплаенс служба' %}</a>
+        
+        
+        <a href="{% url 'accreditation'%}">{% trans 'Аккредитация' %}</a> {% endcomment %}
+
+        <a href="{% url 'science'%}">{%trans 'Научные разработки'%}</a>
+        <a href="{% url 'scienceSovet'%}">{%trans 'Научно-технический совет'%}</a>
+        <a href="{% url 'plans'%}">{%trans 'Планы'%}</a>
+        <a href="{% url 'science_achievments'%}">{%trans 'Достижения'%}</a>
+        <a href="{% url 'LEK-list' %}" class='selected'>ЛЭК</a>
+    </div>
+    <div class="rules">
+        <span class="Title"> {% trans 'Локальная этическая комиссия по биоэтике' %} </span>
+        <div class="new-frame">
+            <div class="rules">
+                {% for file in files %}
+                <a class="anticor-list" href = "{% url 'doc-detils' fid=file.pk%}">{{file.title}}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div> 
+{% endblock %}

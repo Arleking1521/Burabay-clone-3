@@ -68,7 +68,7 @@ INSTALLED_APPS = [
     'gobmp',
     'laborProtection',
     'compliensService',
-    
+    'LEK',
 ]
 
 MIDDLEWARE = [

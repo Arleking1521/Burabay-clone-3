@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 02:35+0500\n"
+"POT-Creation-Date: 2024-07-13 23:12+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,52 +18,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: .\templates\MainPage\index.html:8
-msgid "Миссия"
-msgstr "Миссия"
+#: .\templates\LEK\LEK.html:16 .\templates\MainPage\site_map.html:36
+#: .\templates\base.html:128 .\templates\sciencificBlock\achievments.html:6
+#: .\templates\sciencificBlock\scienceAcievments.html:6
+#: .\templates\sciencificBlock\scienceDev.html:6
+#: .\templates\sciencificBlock\sciencePlans.html:6
+#: .\templates\sciencificBlock\scienceSovet.html:6
+msgid "Научные разработки"
+msgstr "Ғылыми әзірлемелер"
 
-#: .\templates\MainPage\index.html:14
-msgid "Видение Института"
-msgstr "Институттың Көзқарасы"
+#: .\templates\LEK\LEK.html:17 .\templates\MainPage\site_map.html:37
+#: .\templates\base.html:129 .\templates\sciencificBlock\achievments.html:7
+#: .\templates\sciencificBlock\scienceAcievments.html:7
+#: .\templates\sciencificBlock\scienceDev.html:7
+#: .\templates\sciencificBlock\sciencePlans.html:7
+#: .\templates\sciencificBlock\scienceSovet.html:7
+msgid "Научно-технический совет"
+msgstr "Ғылыми-техникалық кеңес"
 
-#: .\templates\MainPage\index.html:23 .\templates\MainPage\site_map.html:8
-#: .\templates\infoPages\rightActs.html:7
-msgid "История"
-msgstr "Тарих"
+#: .\templates\LEK\LEK.html:18 .\templates\MainPage\site_map.html:38
+#: .\templates\base.html:130 .\templates\sciencificBlock\achievments.html:8
+#: .\templates\sciencificBlock\scienceAcievments.html:8
+#: .\templates\sciencificBlock\scienceDev.html:8
+#: .\templates\sciencificBlock\sciencePlans.html:8
+#: .\templates\sciencificBlock\scienceSovet.html:8
+msgid "Планы"
+msgstr "Жоспарлар"
 
-#: .\templates\MainPage\index.html:24
-msgid "Наука"
-msgstr "Ғылым"
+#: .\templates\LEK\LEK.html:19 .\templates\MainPage\site_map.html:39
+#: .\templates\base.html:131 .\templates\sciencificBlock\achievments.html:9
+#: .\templates\sciencificBlock\scienceAcievments.html:9
+#: .\templates\sciencificBlock\scienceDev.html:9
+#: .\templates\sciencificBlock\sciencePlans.html:9
+#: .\templates\sciencificBlock\scienceSovet.html:9
+msgid "Достижения"
+msgstr "Жетістіктер"
 
-#: .\templates\MainPage\index.html:25 .\templates\MainPage\site_map.html:9
-msgid "Медицина"
-msgstr "Медицина"
+#: .\templates\LEK\LEK.html:23
+msgid "Локальная этическая комиссия по биоэтике"
+msgstr "Биоэтика бойынша жергілікті этикалық комиссия"
 
-#: .\templates\MainPage\index.html:26 .\templates\MainPage\site_map.html:10
-msgid "Бронирование"
-msgstr "Брондау"
-
-#: .\templates\MainPage\index.html:91
-msgid "Государственные символы"
-msgstr "Мемлекеттік рәміздер"
-
-#: .\templates\MainPage\index.html:133
-msgid "Послание Главы государства Касым-Жомарта Токаева народу Казахстана"
-msgstr "Мемлекет Басшысы Қасым-Жомарт Тоқаевтың Қазақстан халқына Жолдауы"
-
-#: .\templates\MainPage\site_map.html:5
-msgid "Карта сайта"
-msgstr "Сайт картасы"
-
-#: .\templates\MainPage\site_map.html:7 .\templates\base.html:36
-msgid "Главная"
-msgstr "Басты бет"
-
-#: .\templates\MainPage\site_map.html:21 .\templates\base.html:106
-msgid "Об институте"
-msgstr "Институт туралы"
-
-#: .\templates\MainPage\site_map.html:22
+#: .\templates\LEK\doc-details.html:5 .\templates\MainPage\site_map.html:22
 #: .\templates\accreditation\accreditation.html:6
 #: .\templates\antiCorPages\antiCorList.html:6 .\templates\base.html:54
 #: .\templates\base.html:109 .\templates\ceoInfo\ceoInfoPage.html:6
@@ -80,6 +75,51 @@ msgstr "Институт туралы"
 #: .\templates\viewSovet\viewSovet.html:28
 msgid "Наблюдательный совет"
 msgstr "Бақылау кеңесі"
+
+#: .\templates\MainPage\index.html:8
+msgid "Миссия"
+msgstr "Миссия"
+
+#: .\templates\MainPage\index.html:12
+msgid "Видение Института"
+msgstr "Институттың Көзқарасы"
+
+#: .\templates\MainPage\index.html:17 .\templates\MainPage\site_map.html:8
+#: .\templates\infoPages\rightActs.html:7
+msgid "История"
+msgstr "Тарих"
+
+#: .\templates\MainPage\index.html:18
+msgid "Наука"
+msgstr "Ғылым"
+
+#: .\templates\MainPage\index.html:19 .\templates\MainPage\site_map.html:9
+msgid "Медицина"
+msgstr "Медицина"
+
+#: .\templates\MainPage\index.html:20 .\templates\MainPage\site_map.html:10
+msgid "Бронирование"
+msgstr "Брондау"
+
+#: .\templates\MainPage\index.html:85
+msgid "Государственные символы"
+msgstr "Мемлекеттік рәміздер"
+
+#: .\templates\MainPage\index.html:127
+msgid "Послание Главы государства Касым-Жомарта Токаева народу Казахстана"
+msgstr "Мемлекет Басшысы Қасым-Жомарт Тоқаевтың Қазақстан халқына Жолдауы"
+
+#: .\templates\MainPage\site_map.html:5
+msgid "Карта сайта"
+msgstr "Сайт картасы"
+
+#: .\templates\MainPage\site_map.html:7 .\templates\base.html:36
+msgid "Главная"
+msgstr "Басты бет"
+
+#: .\templates\MainPage\site_map.html:21 .\templates\base.html:106
+msgid "Об институте"
+msgstr "Институт туралы"
 
 #: .\templates\MainPage\site_map.html:23
 #: .\templates\accreditation\accreditation.html:7
@@ -226,47 +266,11 @@ msgstr "Еңбекті қорғау"
 msgid "Наука и Достижения"
 msgstr "Ғылым және жетістіктер"
 
-#: .\templates\MainPage\site_map.html:36 .\templates\base.html:128
-#: .\templates\sciencificBlock\achievments.html:6
-#: .\templates\sciencificBlock\scienceAcievments.html:6
-#: .\templates\sciencificBlock\scienceDev.html:6
-#: .\templates\sciencificBlock\sciencePlans.html:6
-#: .\templates\sciencificBlock\scienceSovet.html:6
-msgid "Научные разработки"
-msgstr "Ғылыми әзірлемелер"
-
-#: .\templates\MainPage\site_map.html:37 .\templates\base.html:129
-#: .\templates\sciencificBlock\achievments.html:7
-#: .\templates\sciencificBlock\scienceAcievments.html:7
-#: .\templates\sciencificBlock\scienceDev.html:7
-#: .\templates\sciencificBlock\sciencePlans.html:7
-#: .\templates\sciencificBlock\scienceSovet.html:7
-msgid "Научно-технический совет"
-msgstr "Ғылыми-техникалық кеңес"
-
-#: .\templates\MainPage\site_map.html:38 .\templates\base.html:130
-#: .\templates\sciencificBlock\achievments.html:8
-#: .\templates\sciencificBlock\scienceAcievments.html:8
-#: .\templates\sciencificBlock\scienceDev.html:8
-#: .\templates\sciencificBlock\sciencePlans.html:8
-#: .\templates\sciencificBlock\scienceSovet.html:8
-msgid "Планы"
-msgstr "Жоспарлар"
-
-#: .\templates\MainPage\site_map.html:39 .\templates\base.html:131
-#: .\templates\sciencificBlock\achievments.html:9
-#: .\templates\sciencificBlock\scienceAcievments.html:9
-#: .\templates\sciencificBlock\scienceDev.html:9
-#: .\templates\sciencificBlock\sciencePlans.html:9
-#: .\templates\sciencificBlock\scienceSovet.html:9
-msgid "Достижения"
-msgstr "Жетістіктер"
-
-#: .\templates\MainPage\site_map.html:43 .\templates\base.html:148
+#: .\templates\MainPage\site_map.html:43 .\templates\base.html:149
 msgid "Пациентам"
 msgstr "Науқастарға"
 
-#: .\templates\MainPage\site_map.html:44 .\templates\base.html:136
+#: .\templates\MainPage\site_map.html:44 .\templates\base.html:137
 #: .\templates\dopPages\UVO.html:6
 #: .\templates\dopPages\ethicsRegulations.html:6
 #: .\templates\dopPages\kidsSchedule.html:6 .\templates\dopPages\leisure.html:6
@@ -279,7 +283,7 @@ msgstr "Медициналық қызметтер"
 msgid "Механизм получения путевки по ГОМБП"
 msgstr "ТМККК бойынша жолдама алу тетігі"
 
-#: .\templates\MainPage\site_map.html:46 .\templates\base.html:152
+#: .\templates\MainPage\site_map.html:46 .\templates\base.html:153
 #: .\templates\dopPages\UVO.html:7
 #: .\templates\dopPages\ethicsRegulations.html:7
 #: .\templates\dopPages\kidsSchedule.html:7 .\templates\dopPages\leisure.html:7
@@ -288,40 +292,40 @@ msgstr "ТМККК бойынша жолдама алу тетігі"
 msgid "Правила санатория"
 msgstr "Санаторий ережелері"
 
-#: .\templates\MainPage\site_map.html:50 .\templates\base.html:157
+#: .\templates\MainPage\site_map.html:50 .\templates\base.html:158
 msgid "Пресс-центр"
 msgstr "Баспасөз орталығы"
 
-#: .\templates\MainPage\site_map.html:51 .\templates\base.html:160
+#: .\templates\MainPage\site_map.html:51 .\templates\base.html:161
 #: .\templates\posts\post_list.html:7
 msgid "Новости"
 msgstr "Жаңалықтар"
 
-#: .\templates\MainPage\site_map.html:52 .\templates\base.html:161
+#: .\templates\MainPage\site_map.html:52 .\templates\base.html:162
 #: .\templates\mediaGalleryPage\mediagallery.html:11
 msgid "Медиагалерея"
 msgstr "Медиагалерея"
 
-#: .\templates\MainPage\site_map.html:56 .\templates\base.html:166
+#: .\templates\MainPage\site_map.html:56 .\templates\base.html:167
 msgid "Персонал"
 msgstr "Қызметкерлер"
 
-#: .\templates\MainPage\site_map.html:57 .\templates\base.html:170
+#: .\templates\MainPage\site_map.html:57 .\templates\base.html:171
 #: .\templates\people\doctors.html:6 .\templates\people\teachers.html:6
 msgid "Наши врачи"
 msgstr "Біздің дәрігерлер"
 
-#: .\templates\MainPage\site_map.html:58 .\templates\base.html:171
+#: .\templates\MainPage\site_map.html:58 .\templates\base.html:172
 #: .\templates\people\doctors.html:7 .\templates\people\teachers.html:7
 msgid "Наши педагоги"
 msgstr "Біздің педагогтар"
 
-#: .\templates\MainPage\site_map.html:62 .\templates\base.html:179
+#: .\templates\MainPage\site_map.html:62 .\templates\base.html:180
 msgid "Обратная связь"
 msgstr "Кері байланыс"
 
 #: .\templates\MainPage\site_map.html:63 .\templates\base.html:62
-#: .\templates\base.html:182 .\templates\ceoblog\blogCEO.html:6
+#: .\templates\base.html:183 .\templates\ceoblog\blogCEO.html:6
 #: .\templates\ceoblog\blogCEO.html:13 .\templates\feedback\thank_you.html:8
 #: .\templates\feedback\user_feedback_form.html:6
 #: .\templates\reviewsPages\reviews_list.html:6
@@ -329,7 +333,7 @@ msgid "Блог Руководителя"
 msgstr "Басшының Блогы"
 
 #: .\templates\MainPage\site_map.html:64 .\templates\base.html:63
-#: .\templates\base.html:183 .\templates\ceoblog\blogCEO.html:7
+#: .\templates\base.html:184 .\templates\ceoblog\blogCEO.html:7
 #: .\templates\feedback\thank_you.html:9
 #: .\templates\feedback\user_feedback_form.html:7
 #: .\templates\reviewsPages\reviews_list.html:7
@@ -337,7 +341,7 @@ msgid "Для Обращений"
 msgstr "Өтініштер Үшін"
 
 #: .\templates\MainPage\site_map.html:65 .\templates\MainPage\site_map.html:71
-#: .\templates\base.html:184 .\templates\ceoblog\blogCEO.html:8
+#: .\templates\base.html:185 .\templates\ceoblog\blogCEO.html:8
 #: .\templates\feedback\user_feedback_form.html:8
 #: .\templates\infoPages\contacts.html:8
 #: .\templates\infoPages\rightActs.html:12
@@ -345,7 +349,7 @@ msgstr "Өтініштер Үшін"
 msgid "Контакты"
 msgstr "Байланыс"
 
-#: .\templates\MainPage\site_map.html:66 .\templates\base.html:185
+#: .\templates\MainPage\site_map.html:66 .\templates\base.html:186
 #: .\templates\ceoblog\blogCEO.html:9
 #: .\templates\feedback\user_feedback_form.html:9
 #: .\templates\infoPages\rightActs.html:11
@@ -354,7 +358,7 @@ msgstr "Байланыс"
 msgid "Отзывы"
 msgstr "Пікірлер"
 
-#: .\templates\MainPage\site_map.html:69 .\templates\base.html:145
+#: .\templates\MainPage\site_map.html:69 .\templates\base.html:146
 msgid "Стратегические партнеры"
 msgstr "Стратегиялық серіктестер"
 
@@ -362,7 +366,7 @@ msgstr "Стратегиялық серіктестер"
 msgid "Досуг"
 msgstr "Бос уақыт"
 
-#: .\templates\MainPage\site_map.html:72 .\templates\base.html:190
+#: .\templates\MainPage\site_map.html:72 .\templates\base.html:191
 #: .\templates\dopPages\transit.html:7
 msgid "Проезд"
 msgstr "Жол жүру"
@@ -393,7 +397,7 @@ msgstr "Шығу"
 
 #: .\templates\base.html:98 .\templates\registration\login.html:14
 #: .\templates\registration\pass_remember.html:11
-#: .\templates\registration\registration.html:63
+#: .\templates\registration\registration.html:64
 msgid "Войти"
 msgstr "Кіру"
 
@@ -402,15 +406,15 @@ msgstr "Кіру"
 msgid "Регистрация"
 msgstr "Тіркеу"
 
-#: .\templates\base.html:151 .\templates\dopPages\ethicsRegulations.html:11
+#: .\templates\base.html:152 .\templates\dopPages\ethicsRegulations.html:11
 msgid "Механизм получения путевки по ГОБМП"
 msgstr "ТМККК бойынша жолдама алу тетігі"
 
-#: .\templates\base.html:289
+#: .\templates\base.html:290
 msgid "Телефон доверия"
 msgstr "Сенім телефоны"
 
-#: .\templates\base.html:294
+#: .\templates\base.html:295
 msgid ""
 "Казахстан, Акмолинская область, Бурабайский район, Боровская п.а., п."
 "Бурабай, ул.Кенесары 1"
@@ -551,7 +555,7 @@ msgid "Ваш отзыв"
 msgstr "Сіздің пікіріңіз"
 
 #: .\templates\feedback\user_feedback_form.html:21
-#: .\templates\reviewsPages\add_review.html:14
+#: .\templates\reviewsPages\add_review.html:15
 msgid "Отправить отзыв"
 msgstr "Пікір жіберу"
 
@@ -570,14 +574,12 @@ msgstr "ҚР ДСМ курортология және медициналық о�
 
 #: .\templates\infoPages\contacts.html:14
 #: .\templates\infoPages\contacts.html:29
-#: .\templates\infoPages\contacts.html:43
 #: .\templates\infoPages\workersInfo.html:17
 msgid "ФИО"
 msgstr "ТАЖ"
 
 #: .\templates\infoPages\contacts.html:14
 #: .\templates\infoPages\contacts.html:29
-#: .\templates\infoPages\contacts.html:43
 #: .\templates\infoPages\workersInfo.html:17
 msgid "Должность"
 msgstr "Лауазымы"
@@ -591,21 +593,15 @@ msgstr "Тел. нөмірі"
 msgid "Эл. почта"
 msgstr "Эл. пошта"
 
+#: .\templates\infoPages\contacts.html:14
+msgid "Дни и время приема"
+msgstr "Қабылдау күндері мен уақыты"
+
 #: .\templates\infoPages\contacts.html:24
 msgid "Уполномоченные лица по вопросам доступа к информации"
 msgstr "Ақпаратқа қол жеткізу мәселелері жөніндегі уәкілетті тұлғалар"
 
 #: .\templates\infoPages\contacts.html:39
-msgid "График личного приема директора, заместителей директора на 2024 год"
-msgstr ""
-"Директордың, директордың орынбасарларының 2024 жылға арналған жеке қабылдау "
-"кестесі"
-
-#: .\templates\infoPages\contacts.html:43
-msgid "Дни и время приема"
-msgstr "Қабылдау күндері мен уақыты"
-
-#: .\templates\infoPages\contacts.html:55
 msgid "Контакты РГП на ПХВ НИИ курортологии и медицинской реабилитации МЗ РК"
 msgstr "ҚР ДСМ курортология және медициналық оңалту ҒЗИ ШЖҚ РМК байланыстары"
 
@@ -810,7 +806,7 @@ msgid "отправлено письмо для активации аккаун�
 msgstr ""
 "электрондық пошта мекенжайына тіркелгіні белсендіру үшін хат жіберілді."
 
-#: .\templates\registration\registration.html:62
+#: .\templates\registration\registration.html:63
 msgid "Зарегестрироваться"
 msgstr "Тіркелу"
 
@@ -846,8 +842,8 @@ msgstr "Жауап беру"
 msgid "Ответ"
 msgstr "Жауап"
 
-#: .\templates\sciencificBlock\achievments.html:12
-#: .\templates\sciencificBlock\scienceDev.html:12
+#: .\templates\sciencificBlock\achievments.html:13
+#: .\templates\sciencificBlock\scienceDev.html:13
 msgid ""
 "Научные исследования и научно-методическое обеспечение в сфере курортологии "
 "и восстановительного лечения"
@@ -860,6 +856,11 @@ msgstr ""
 #| msgid "Стратегические партнеры"
 msgid "Стратегические партнеры и международное сотрудничество"
 msgstr "Стратегиялық серіктестер"
+
+#~ msgid "График личного приема директора, заместителей директора на 2024 год"
+#~ msgstr ""
+#~ "Директордың, директордың орынбасарларының 2024 жылға арналған жеке "
+#~ "қабылдау кестесі"
 
 #~ msgid "Посмотреть приказ"
 #~ msgstr "Бұйрықты қарау"
