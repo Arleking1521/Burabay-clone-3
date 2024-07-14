@@ -25,7 +25,7 @@
             <span class="frame-content">{{post.content}} </span>
             <div class="frame-btn">
                 <p class="date">{{post.date}}</p>
-                <a href="{% url 'new_detail' pid=post.pk %}" class="btn">{%trans 'Читать далее'%}...</a>
+                <a href="{% url 'post_detail' pid=post.pk %}" class="btn">{%trans 'Читать далее'%}...</a>
             </div>
             
         </div>
