@@ -752,7 +752,7 @@ msgstr "Teachers"
 
 #: .\templates\posts\post_list.html:9
 msgid "Добавить объявление"
-msgstr "To add an advert"
+msgstr "Add a news"
 
 #: .\templates\posts\post_new.html:8
 msgid "Заголовок на русском"
