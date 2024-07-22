@@ -7,25 +7,39 @@
         <a href="{% url 'rules'%}">{% trans 'Правила санатория' %}</a>
     </div>
     <div class="rules">
-        <span class="Title">{{data.title}}:</span>
-        <div class="new-frame">
-            {%for info in data.info_parts%}
-            <p>{{info}}</p>
-            {%endfor%}
-            <h3>{%trans 'Кто имеет право на бесплатную реабилитацию:'%}</h3>
-            <h3>{%trans 'Взрослые:'%}</h3>
-            {%for info in data.adults%}
-            <p>{{info}}</p>
-            {%endfor%}
-            <h3>{%trans 'Дети:'%}</h3>
-            {%for info in data.children%}
-            <p>{{info}}</p>
-            {%endfor%}
-            <h3>{%trans 'Для получения бесплатной путевки в рамках ОСМС необходимо:'%}</h3>
-            {%for info in data.add%}
-            <p>{{info}}</p>
-            {%endfor%}
-        </div>
+        {%if data%}
+            {% if data.title %}
+            <span class="Title">{{data.title}}:</span>
+            {%endif%}
+            <div class="new-frame">
+                {% if data.info_parts %}
+                    {%for info in data.info_parts%}
+                    <p>{{info}}</p>
+                    {%endfor%}
+                {%endif%}
+                {% if data.adults or data.children %}
+                    <h3>{%trans 'Кто имеет право на бесплатную реабилитацию:'%}</h3>
+                    {% if data.adults %}
+                        <h3>{%trans 'Взрослые:'%}</h3>
+                        {%for info in data.adults%}
+                        <p>{{info}}</p>
+                        {%endfor%}
+                    {%endif%}
+                    {% if data.children %}
+                        <h3>{%trans 'Дети:'%}</h3>
+                        {%for info in data.children%}
+                        <p>{{info}}</p>
+                        {%endfor%}
+                    {%endif%}
+                {%endif%}
+                {% if data.add %}
+                    <h3>{%trans 'Для получения бесплатной путевки в рамках ОСМС необходимо:'%}</h3>
+                    {%for info in data.add%}
+                    <p>{{info}}</p>
+                    {%endfor%}
+                {%endif%}
+            </div>
+        {%endif%}
     </div>
 </div>
 </div>

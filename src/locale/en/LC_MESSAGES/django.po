@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 02:37+0500\n"
+"POT-Creation-Date: 2024-07-22 23:34+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,52 +18,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\templates\MainPage\index.html:8
-msgid "Миссия"
-msgstr ""
+#: .\templates\LEK\LEK.html:16 .\templates\MainPage\site_map.html:36
+#: .\templates\base.html:128 .\templates\sciencificBlock\achievments.html:6
+#: .\templates\sciencificBlock\scienceAcievments.html:6
+#: .\templates\sciencificBlock\scienceDev.html:6
+#: .\templates\sciencificBlock\sciencePlans.html:6
+#: .\templates\sciencificBlock\scienceSovet.html:6
+msgid "Научные разработки"
+msgstr "Scientific developments"
 
-#: .\templates\MainPage\index.html:14
-msgid "Видение Института"
-msgstr ""
+#: .\templates\LEK\LEK.html:17 .\templates\MainPage\site_map.html:37
+#: .\templates\base.html:129 .\templates\sciencificBlock\achievments.html:7
+#: .\templates\sciencificBlock\scienceAcievments.html:7
+#: .\templates\sciencificBlock\scienceDev.html:7
+#: .\templates\sciencificBlock\sciencePlans.html:7
+#: .\templates\sciencificBlock\scienceSovet.html:7
+msgid "Научно-технический совет"
+msgstr "Scientific and Technical Council"
 
-#: .\templates\MainPage\index.html:23 .\templates\MainPage\site_map.html:8
-#: .\templates\infoPages\rightActs.html:7
-msgid "История"
-msgstr ""
+#: .\templates\LEK\LEK.html:18 .\templates\MainPage\site_map.html:38
+#: .\templates\base.html:130 .\templates\sciencificBlock\achievments.html:8
+#: .\templates\sciencificBlock\scienceAcievments.html:8
+#: .\templates\sciencificBlock\scienceDev.html:8
+#: .\templates\sciencificBlock\sciencePlans.html:8
+#: .\templates\sciencificBlock\scienceSovet.html:8
+msgid "Планы"
+msgstr "Plans"
 
-#: .\templates\MainPage\index.html:24
-msgid "Наука"
-msgstr ""
+#: .\templates\LEK\LEK.html:19 .\templates\MainPage\site_map.html:39
+#: .\templates\base.html:131 .\templates\sciencificBlock\achievments.html:9
+#: .\templates\sciencificBlock\scienceAcievments.html:9
+#: .\templates\sciencificBlock\scienceDev.html:9
+#: .\templates\sciencificBlock\sciencePlans.html:9
+#: .\templates\sciencificBlock\scienceSovet.html:9
+msgid "Достижения"
+msgstr "Progress"
 
-#: .\templates\MainPage\index.html:25 .\templates\MainPage\site_map.html:9
-msgid "Медицина"
-msgstr ""
+#: .\templates\LEK\LEK.html:23
+msgid "Локальная этическая комиссия по биоэтике"
+msgstr "Local Ethical Commission on Bioethics"
 
-#: .\templates\MainPage\index.html:26 .\templates\MainPage\site_map.html:10
-msgid "Бронирование"
-msgstr ""
-
-#: .\templates\MainPage\index.html:91
-msgid "Государственные символы"
-msgstr ""
-
-#: .\templates\MainPage\index.html:133
-msgid "Послание Главы государства Касым-Жомарта Токаева народу Казахстана"
-msgstr ""
-
-#: .\templates\MainPage\site_map.html:5
-msgid "Карта сайта"
-msgstr ""
-
-#: .\templates\MainPage\site_map.html:7 .\templates\base.html:36
-msgid "Главная"
-msgstr ""
-
-#: .\templates\MainPage\site_map.html:21 .\templates\base.html:106
-msgid "Об институте"
-msgstr ""
-
-#: .\templates\MainPage\site_map.html:22
+#: .\templates\LEK\doc-details.html:5 .\templates\MainPage\site_map.html:22
 #: .\templates\accreditation\accreditation.html:6
 #: .\templates\antiCorPages\antiCorList.html:6 .\templates\base.html:54
 #: .\templates\base.html:109 .\templates\ceoInfo\ceoInfoPage.html:6
@@ -79,7 +74,58 @@ msgstr ""
 #: .\templates\viewSovet\viewSovet.html:16
 #: .\templates\viewSovet\viewSovet.html:28
 msgid "Наблюдательный совет"
+msgstr "The Supervisory Board"
+
+#: .\templates\MainPage\index.html:8
+msgid "Миссия"
+msgstr "Mission"
+
+#: .\templates\MainPage\index.html:12
+msgid "Видение Института"
+msgstr "Institute Vision"
+
+#: .\templates\MainPage\index.html:17 .\templates\MainPage\site_map.html:8
+#: .\templates\infoPages\rightActs.html:7
+msgid "История"
+msgstr "History"
+
+#: .\templates\MainPage\index.html:18
+msgid "Наука"
+msgstr "The science"
+
+#: .\templates\MainPage\index.html:19 .\templates\MainPage\site_map.html:9
+msgid "Медицина"
+msgstr "Medicine"
+
+#: .\templates\MainPage\index.html:20 .\templates\MainPage\site_map.html:10
+msgid "Бронирование"
+msgstr "Booking"
+
+#: .\templates\MainPage\index.html:56
+msgid "Последние новости"
+msgstr "Latest news"
+
+#: .\templates\MainPage\index.html:85
+msgid "Государственные символы"
+msgstr "State symbols"
+
+#: .\templates\MainPage\index.html:127
+msgid "Послание Главы государства Касым-Жомарта Токаева народу Казахстана"
 msgstr ""
+"Message of the Head of State Kassym-Jomart Tokayev to the people of "
+"Kazakhstan"
+
+#: .\templates\MainPage\site_map.html:5
+msgid "Карта сайта"
+msgstr "Site map"
+
+#: .\templates\MainPage\site_map.html:7 .\templates\base.html:36
+msgid "Главная"
+msgstr "Main page"
+
+#: .\templates\MainPage\site_map.html:21 .\templates\base.html:106
+msgid "Об институте"
+msgstr "About the Institute"
 
 #: .\templates\MainPage\site_map.html:23
 #: .\templates\accreditation\accreditation.html:7
@@ -94,7 +140,7 @@ msgstr ""
 #: .\templates\strategicDevelopment\strategic_development.html:7
 #: .\templates\viewSovet\viewSovet.html:17
 msgid "Руководство"
-msgstr ""
+msgstr "Guide"
 
 #: .\templates\MainPage\site_map.html:24
 #: .\templates\accreditation\accreditation.html:8
@@ -109,7 +155,7 @@ msgstr ""
 #: .\templates\strategicDevelopment\strategic_development.html:8
 #: .\templates\viewSovet\viewSovet.html:18
 msgid "Структура"
-msgstr ""
+msgstr "Structure"
 
 #: .\templates\MainPage\site_map.html:25
 #: .\templates\accreditation\accreditation.html:9
@@ -126,7 +172,7 @@ msgstr ""
 #: .\templates\strategicDevelopment\strategic_development.html:9
 #: .\templates\viewSovet\viewSovet.html:19
 msgid "Вакансии"
-msgstr ""
+msgstr "Vacancy"
 
 #: .\templates\MainPage\site_map.html:26
 #: .\templates\accreditation\accreditation.html:10
@@ -142,7 +188,7 @@ msgstr ""
 #: .\templates\strategicDevelopment\strategic_development.html:18
 #: .\templates\viewSovet\viewSovet.html:20
 msgid "Стратегическое развитие"
-msgstr ""
+msgstr "Strategic development"
 
 #: .\templates\MainPage\site_map.html:27
 #: .\templates\accreditation\accreditation.html:11
@@ -157,7 +203,7 @@ msgstr ""
 #: .\templates\strategicDevelopment\strategic_development.html:11
 #: .\templates\viewSovet\viewSovet.html:21
 msgid "Государственные закупки"
-msgstr ""
+msgstr "Public procurement"
 
 #: .\templates\MainPage\site_map.html:28
 #: .\templates\accreditation\accreditation.html:12
@@ -172,7 +218,7 @@ msgstr ""
 #: .\templates\strategicDevelopment\strategic_development.html:12
 #: .\templates\viewSovet\viewSovet.html:22
 msgid "Комплаенс служба"
-msgstr ""
+msgstr "Compliance service"
 
 #: .\templates\MainPage\site_map.html:29
 #: .\templates\accreditation\accreditation.html:13
@@ -188,7 +234,7 @@ msgstr ""
 #: .\templates\strategicDevelopment\strategic_development.html:13
 #: .\templates\viewSovet\viewSovet.html:23
 msgid "Противодействие коррупции"
-msgstr ""
+msgstr "Anti-corruption measures"
 
 #: .\templates\MainPage\site_map.html:30
 #: .\templates\accreditation\accreditation.html:14
@@ -204,7 +250,7 @@ msgstr ""
 #: .\templates\strategicDevelopment\strategic_development.html:14
 #: .\templates\viewSovet\viewSovet.html:24
 msgid "Аккредитация"
-msgstr ""
+msgstr "Accreditation"
 
 #: .\templates\MainPage\site_map.html:31
 #: .\templates\accreditation\accreditation.html:15
@@ -220,276 +266,250 @@ msgstr ""
 #: .\templates\strategicDevelopment\strategic_development.html:15
 #: .\templates\viewSovet\viewSovet.html:25
 msgid "Охрана труда"
-msgstr ""
+msgstr "Labor protection"
 
 #: .\templates\MainPage\site_map.html:35 .\templates\base.html:125
 msgid "Наука и Достижения"
-msgstr ""
+msgstr "Science and achievements"
 
-#: .\templates\MainPage\site_map.html:36 .\templates\base.html:128
-#: .\templates\sciencificBlock\achievments.html:6
-#: .\templates\sciencificBlock\scienceAcievments.html:6
-#: .\templates\sciencificBlock\scienceDev.html:6
-#: .\templates\sciencificBlock\sciencePlans.html:6
-#: .\templates\sciencificBlock\scienceSovet.html:6
-msgid "Научные разработки"
-msgstr ""
-
-#: .\templates\MainPage\site_map.html:37 .\templates\base.html:129
-#: .\templates\sciencificBlock\achievments.html:7
-#: .\templates\sciencificBlock\scienceAcievments.html:7
-#: .\templates\sciencificBlock\scienceDev.html:7
-#: .\templates\sciencificBlock\sciencePlans.html:7
-#: .\templates\sciencificBlock\scienceSovet.html:7
-msgid "Научно-технический совет"
-msgstr ""
-
-#: .\templates\MainPage\site_map.html:38 .\templates\base.html:130
-#: .\templates\sciencificBlock\achievments.html:8
-#: .\templates\sciencificBlock\scienceAcievments.html:8
-#: .\templates\sciencificBlock\scienceDev.html:8
-#: .\templates\sciencificBlock\sciencePlans.html:8
-#: .\templates\sciencificBlock\scienceSovet.html:8
-msgid "Планы"
-msgstr ""
-
-#: .\templates\MainPage\site_map.html:39 .\templates\base.html:131
-#: .\templates\sciencificBlock\achievments.html:9
-#: .\templates\sciencificBlock\scienceAcievments.html:9
-#: .\templates\sciencificBlock\scienceDev.html:9
-#: .\templates\sciencificBlock\sciencePlans.html:9
-#: .\templates\sciencificBlock\scienceSovet.html:9
-msgid "Достижения"
-msgstr ""
-
-#: .\templates\MainPage\site_map.html:43 .\templates\base.html:148
+#: .\templates\MainPage\site_map.html:44 .\templates\base.html:149
 msgid "Пациентам"
-msgstr ""
+msgstr "For patients"
 
-#: .\templates\MainPage\site_map.html:44 .\templates\base.html:136
+#: .\templates\MainPage\site_map.html:45 .\templates\base.html:137
 #: .\templates\dopPages\UVO.html:6
 #: .\templates\dopPages\ethicsRegulations.html:6
 #: .\templates\dopPages\kidsSchedule.html:6 .\templates\dopPages\leisure.html:6
 #: .\templates\medServices\medServices.html:7
 #: .\templates\mediaGalleryPage\mediagallery.html:6
 msgid "Медицинские услуги"
-msgstr ""
+msgstr "Medical services"
 
-#: .\templates\MainPage\site_map.html:45
+#: .\templates\MainPage\site_map.html:46
 msgid "Механизм получения путевки по ГОМБП"
-msgstr ""
+msgstr "The mechanism of obtaining a vouchers under the GVFMC"
 
-#: .\templates\MainPage\site_map.html:46 .\templates\base.html:152
+#: .\templates\MainPage\site_map.html:47 .\templates\base.html:153
 #: .\templates\dopPages\UVO.html:7
 #: .\templates\dopPages\ethicsRegulations.html:7
 #: .\templates\dopPages\kidsSchedule.html:7 .\templates\dopPages\leisure.html:7
 #: .\templates\infoPages\gobmp.html:7 .\templates\infoPages\rulesPage.html:7
 #: .\templates\mediaGalleryPage\mediagallery.html:7
 msgid "Правила санатория"
-msgstr ""
+msgstr "The rules of the sanatorium"
 
-#: .\templates\MainPage\site_map.html:50 .\templates\base.html:157
+#: .\templates\MainPage\site_map.html:51 .\templates\base.html:158
 msgid "Пресс-центр"
-msgstr ""
-
-#: .\templates\MainPage\site_map.html:51 .\templates\base.html:160
-#: .\templates\posts\post_list.html:7
-msgid "Новости"
-msgstr ""
+msgstr "Press Center"
 
 #: .\templates\MainPage\site_map.html:52 .\templates\base.html:161
+#: .\templates\posts\post_list.html:7
+msgid "Новости"
+msgstr "News"
+
+#: .\templates\MainPage\site_map.html:53 .\templates\base.html:162
 #: .\templates\mediaGalleryPage\mediagallery.html:11
 msgid "Медиагалерея"
-msgstr ""
+msgstr "Media Gallery"
 
-#: .\templates\MainPage\site_map.html:56 .\templates\base.html:166
+#: .\templates\MainPage\site_map.html:57 .\templates\base.html:167
 msgid "Персонал"
-msgstr ""
-
-#: .\templates\MainPage\site_map.html:57 .\templates\base.html:170
-#: .\templates\people\doctors.html:6 .\templates\people\teachers.html:6
-msgid "Наши врачи"
-msgstr ""
+msgstr "Staff"
 
 #: .\templates\MainPage\site_map.html:58 .\templates\base.html:171
+#: .\templates\people\doctors.html:6 .\templates\people\teachers.html:6
+msgid "Наши врачи"
+msgstr "Our doctors"
+
+#: .\templates\MainPage\site_map.html:59 .\templates\base.html:172
 #: .\templates\people\doctors.html:7 .\templates\people\teachers.html:7
 msgid "Наши педагоги"
-msgstr ""
+msgstr "Our teachers"
 
-#: .\templates\MainPage\site_map.html:62 .\templates\base.html:179
+#: .\templates\MainPage\site_map.html:63 .\templates\base.html:180
 msgid "Обратная связь"
-msgstr ""
+msgstr "Feedback"
 
-#: .\templates\MainPage\site_map.html:63 .\templates\base.html:62
-#: .\templates\base.html:182 .\templates\ceoblog\blogCEO.html:6
+#: .\templates\MainPage\site_map.html:64 .\templates\base.html:62
+#: .\templates\base.html:183 .\templates\ceoblog\blogCEO.html:6
 #: .\templates\ceoblog\blogCEO.html:13 .\templates\feedback\thank_you.html:8
 #: .\templates\feedback\user_feedback_form.html:6
 #: .\templates\reviewsPages\reviews_list.html:6
 msgid "Блог Руководителя"
-msgstr ""
+msgstr "The Head's blog"
 
-#: .\templates\MainPage\site_map.html:64 .\templates\base.html:63
-#: .\templates\base.html:183 .\templates\ceoblog\blogCEO.html:7
+#: .\templates\MainPage\site_map.html:65 .\templates\base.html:63
+#: .\templates\base.html:184 .\templates\ceoblog\blogCEO.html:7
 #: .\templates\feedback\thank_you.html:9
 #: .\templates\feedback\user_feedback_form.html:7
 #: .\templates\reviewsPages\reviews_list.html:7
 msgid "Для Обращений"
-msgstr ""
+msgstr "For Appeals"
 
-#: .\templates\MainPage\site_map.html:65 .\templates\MainPage\site_map.html:71
-#: .\templates\base.html:184 .\templates\ceoblog\blogCEO.html:8
+#: .\templates\MainPage\site_map.html:66 .\templates\MainPage\site_map.html:72
+#: .\templates\base.html:185 .\templates\ceoblog\blogCEO.html:8
 #: .\templates\feedback\user_feedback_form.html:8
 #: .\templates\infoPages\contacts.html:8
 #: .\templates\infoPages\rightActs.html:12
 #: .\templates\reviewsPages\reviews_list.html:8
 msgid "Контакты"
-msgstr ""
+msgstr "Contacts"
 
-#: .\templates\MainPage\site_map.html:66 .\templates\base.html:185
+#: .\templates\MainPage\site_map.html:67 .\templates\base.html:186
 #: .\templates\ceoblog\blogCEO.html:9
 #: .\templates\feedback\user_feedback_form.html:9
 #: .\templates\infoPages\rightActs.html:11
 #: .\templates\reviewsPages\reviews_list.html:9
 #: .\templates\reviewsPages\reviews_list.html:13
 msgid "Отзывы"
-msgstr ""
+msgstr "Reviews"
 
-#: .\templates\MainPage\site_map.html:69 .\templates\base.html:145
+#: .\templates\MainPage\site_map.html:70 .\templates\base.html:146
 msgid "Стратегические партнеры"
-msgstr ""
+msgstr "Strategic partners"
 
-#: .\templates\MainPage\site_map.html:70 .\templates\dopPages\leisure.html:11
+#: .\templates\MainPage\site_map.html:71 .\templates\base.html:177
+#: .\templates\dopPages\leisure.html:11
 msgid "Досуг"
-msgstr ""
+msgstr "Leisure"
 
-#: .\templates\MainPage\site_map.html:72 .\templates\base.html:190
+#: .\templates\MainPage\site_map.html:73 .\templates\base.html:191
 #: .\templates\dopPages\transit.html:7
 msgid "Проезд"
-msgstr ""
+msgstr "Transit"
 
 #: .\templates\accreditation\accreditation.html:21
 msgid "Научная аккредитация:"
-msgstr ""
+msgstr "Scientific accreditation"
 
 #: .\templates\accreditation\accreditation.html:31
 msgid "Медицинская аккредитация:"
-msgstr ""
+msgstr "Medical accreditation"
 
 #: .\templates\antiCorPages\antiCorList.html:18
 msgid "План по противодействию коррупции"
-msgstr ""
+msgstr "Anti-corruption plan"
 
 #: .\templates\base.html:32
 msgid ""
 "РГП на ПХВ  «Научно-исследовательский институт курортологии и медицинской "
 "реабилитации» МЗ РК"
 msgstr ""
+"RGP on the Right of Economic Management Scientific Research Institute of "
+"Balneology and Medical Rehabilitation of the Ministry of Health of the "
+"Republic of Kazakhstan"
 
 #: .\templates\base.html:96
 msgid "Выйти"
-msgstr ""
+msgstr "Exit"
 
 #: .\templates\base.html:98 .\templates\registration\login.html:14
 #: .\templates\registration\pass_remember.html:11
-#: .\templates\registration\registration.html:63
+#: .\templates\registration\registration.html:64
 msgid "Войти"
-msgstr ""
+msgstr "Log in"
 
 #: .\templates\base.html:99 .\templates\registration\login.html:17
 #: .\templates\registration\registration.html:5
 msgid "Регистрация"
-msgstr ""
+msgstr "Registration"
 
-#: .\templates\base.html:151 .\templates\dopPages\ethicsRegulations.html:11
+#: .\templates\base.html:132
+msgid "ЛЭК"
+msgstr "LEC"
+
+#: .\templates\base.html:152 .\templates\dopPages\ethicsRegulations.html:11
 msgid "Механизм получения путевки по ГОБМП"
-msgstr ""
+msgstr "The mechanism for obtaining vouchers within the GVFMC"
 
-#: .\templates\base.html:289
+#: .\templates\base.html:290
 msgid "Телефон доверия"
-msgstr ""
+msgstr "The helpline"
 
-#: .\templates\base.html:294
+#: .\templates\base.html:295
 msgid ""
 "Казахстан, Акмолинская область, Бурабайский район, Боровская п.а., п."
 "Бурабай, ул.Кенесары 1"
 msgstr ""
+"Kazakhstan, Akmola region, Burabay district, Borovskaya village, Burabay "
+"village, Kenesary str. 1"
 
 #: .\templates\ceoInfo\ceoInfoPage.html:18
 msgid "Сведения о руководстве"
-msgstr ""
+msgstr "Information about the manual"
 
 #: .\templates\ceoInfo\ceoInfoPage.html:43
 msgid "Образование"
-msgstr ""
+msgstr "Education"
 
 #: .\templates\ceoInfo\ceoInfoPage.html:53
 msgid "Научная степень"
-msgstr ""
+msgstr "Scientific degree"
 
 #: .\templates\ceoInfo\ceoInfoPage.html:63
 msgid "Трудовая деятельность"
-msgstr ""
+msgstr "Work experience"
 
 #: .\templates\ceoInfo\ceoInfoPage.html:73
 msgid "Дополнительно"
-msgstr ""
+msgstr "Additionally"
 
 #: .\templates\ceoInfo\ceoInfoPage.html:84
 msgid "Награды"
-msgstr ""
+msgstr "Awards"
 
 #: .\templates\ceoInfo\ceoInfoPage.html:95
 msgid "Сертификаты"
-msgstr ""
+msgstr "Certificates"
 
 #: .\templates\ceoInfo\ceoInfoPage.html:106
 msgid "Публикации"
-msgstr ""
+msgstr "Publications"
 
 #: .\templates\ceoInfo\ceoInfoPage.html:117
 msgid "Должности"
-msgstr ""
+msgstr "Positions"
 
 #: .\templates\ceoblog\blogCEO.html:15
 msgid "Добавить пост"
-msgstr ""
+msgstr "Add a post"
 
 #: .\templates\ceoblog\blogCEO.html:22 .\templates\ceoblog\post_detail.html:7
 #: .\templates\posts\post_detail.html:7
 msgid "Опубликовано"
-msgstr ""
+msgstr "Published by "
 
 #: .\templates\ceoblog\blogCEO.html:28
 msgid "Читать далее"
-msgstr ""
+msgstr "Read more"
 
 #: .\templates\ceoblog\post_new.html:5 .\templates\posts\post_new.html:5
 msgid "Новое объявление"
-msgstr ""
+msgstr "New announcement"
 
 #: .\templates\ceoblog\post_new.html:8
 msgid "Заголовок"
-msgstr ""
+msgstr "Heading"
 
 #: .\templates\ceoblog\post_new.html:10
 msgid "Информация"
-msgstr ""
+msgstr "Information"
 
 #: .\templates\ceoblog\post_new.html:12 .\templates\posts\post_new.html:16
 msgid "Выбрать файл"
-msgstr ""
+msgstr "Select a file"
 
 #: .\templates\ceoblog\post_new.html:19 .\templates\posts\post_new.html:23
 msgid "Опубликовать"
-msgstr ""
+msgstr "To publish"
 
 #: .\templates\dev-works\505.html:10
 msgid "Страница недоступна"
-msgstr ""
+msgstr "The page is unavailable"
 
 #: .\templates\dev-works\505.html:11
 msgid "Производятся технические работы"
-msgstr ""
+msgstr "Technical work is being carried out"
 
 #: .\templates\dopPages\UVO.html:8
 #: .\templates\dopPages\ethicsRegulations.html:8
@@ -497,167 +517,172 @@ msgstr ""
 #: .\templates\infoPages\gobmp.html:6 .\templates\infoPages\rulesPage.html:6
 #: .\templates\mediaGalleryPage\mediagallery.html:8
 msgid "Путевки по ГОБМП"
-msgstr ""
+msgstr "Vouchers under the GVFMC"
 
 #: .\templates\dopPages\UVO.html:11
 msgid "УВО"
-msgstr ""
+msgstr "UVO"
 
 #: .\templates\dopPages\kidsSchedule.html:11
 msgid "Расписание детских смен"
-msgstr ""
+msgstr "Schedule of children's shifts"
 
 #: .\templates\dopPages\managment_standart.html:12
 #: .\templates\dopPages\managment_standart.html:18
 msgid "Стандарт менеджемента"
-msgstr ""
+msgstr "Management Standard"
 
 #: .\templates\dopPages\transit.html:10
 msgid "Схема расположения реабилитационных отделов"
-msgstr ""
+msgstr "The layout of rehabilitation departments"
 
 #: .\templates\ethica\ethicsRegulations.html:18
 #: .\templates\infoPages\advertisement.html:25
 #: .\templates\strategicDevelopment\strategic_development.html:25
 msgid "Название"
-msgstr ""
+msgstr "Title"
 
 #: .\templates\ethica\ethicsRegulations.html:18
 #: .\templates\infoPages\advertisement.html:25
 #: .\templates\strategicDevelopment\strategic_development.html:25
 msgid "Скачать"
-msgstr ""
+msgstr "Download"
 
 #: .\templates\feedback\thank_you.html:11
 msgid "Спасибо за обращение. Ждите ответа на почту."
-msgstr ""
+msgstr "Thank you for contacting us. Wait for a reply to the email."
 
 #: .\templates\feedback\user_feedback_form.html:14
 #: .\templates\reviewsPages\add_review.html:7
 msgid "Ваше имя"
-msgstr ""
+msgstr "Your name"
 
 #: .\templates\feedback\user_feedback_form.html:16
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: .\templates\feedback\user_feedback_form.html:18
 #: .\templates\reviewsPages\add_review.html:11
 msgid "Ваш отзыв"
-msgstr ""
+msgstr "Your feedback"
 
 #: .\templates\feedback\user_feedback_form.html:21
-#: .\templates\reviewsPages\add_review.html:14
+#: .\templates\reviewsPages\add_review.html:15
 msgid "Отправить отзыв"
-msgstr ""
+msgstr "Send feedback"
 
 #: .\templates\infoPages\aboutPage.html:6
 msgid "О НИИ «Курортологии и медицинской реабилитации»"
-msgstr ""
+msgstr "About the Research Institute of Balneology and Medical Rehabilitation"
 
 #: .\templates\infoPages\aboutPage.html:18
 msgid ""
 "ЛДО (Лечебно-диагностическое отделение) проводятся обследование и лечение"
 msgstr ""
+"The LDO (Medical and Diagnostic Department) is undergoing examination and "
+"treatment"
 
 #: .\templates\infoPages\contacts.html:9
 msgid "РГП на ПХВ НИИ курортологии и медицинской реабилитации МЗ РК"
 msgstr ""
+"The Research Institute of Balneology and Medical Rehabilitation held a "
+"running tournament among employees"
 
 #: .\templates\infoPages\contacts.html:14
 #: .\templates\infoPages\contacts.html:29
-#: .\templates\infoPages\contacts.html:43
 #: .\templates\infoPages\workersInfo.html:17
 msgid "ФИО"
-msgstr ""
+msgstr "Fullname"
 
 #: .\templates\infoPages\contacts.html:14
 #: .\templates\infoPages\contacts.html:29
-#: .\templates\infoPages\contacts.html:43
 #: .\templates\infoPages\workersInfo.html:17
 msgid "Должность"
-msgstr ""
+msgstr "Post"
 
 #: .\templates\infoPages\contacts.html:14
 #: .\templates\infoPages\contacts.html:29
 msgid "Тел. номер"
-msgstr ""
+msgstr "Phone number"
 
 #: .\templates\infoPages\contacts.html:14
 msgid "Эл. почта"
-msgstr ""
+msgstr "Email"
+
+#: .\templates\infoPages\contacts.html:14
+msgid "Дни и время приема"
+msgstr "Days and time of reception"
 
 #: .\templates\infoPages\contacts.html:24
 msgid "Уполномоченные лица по вопросам доступа к информации"
-msgstr ""
+msgstr "Authorized persons on access to information"
 
 #: .\templates\infoPages\contacts.html:39
-msgid "График личного приема директора, заместителей директора на 2024 год"
-msgstr ""
-
-#: .\templates\infoPages\contacts.html:43
-msgid "Дни и время приема"
-msgstr ""
-
-#: .\templates\infoPages\contacts.html:55
 msgid "Контакты РГП на ПХВ НИИ курортологии и медицинской реабилитации МЗ РК"
 msgstr ""
+"Contacts of the RSE at the Scientific Research Institute of Balneology and "
+"Medical Rehabilitation of the Ministry of Health of the Republic of "
+"Kazakhstan"
 
 #: .\templates\infoPages\gobmp.html:15
 msgid "Кто имеет право на бесплатную реабилитацию:"
-msgstr ""
+msgstr "Who is eligible for free rehabilitation:"
 
 #: .\templates\infoPages\gobmp.html:16
 msgid "Взрослые:"
-msgstr ""
+msgstr "Adults:"
 
 #: .\templates\infoPages\gobmp.html:20
 msgid "Дети:"
-msgstr ""
+msgstr "Kids:"
 
 #: .\templates\infoPages\gobmp.html:24
 msgid "Для получения бесплатной путевки в рамках ОСМС необходимо:"
 msgstr ""
+"To receive a free voucher within the framework of the compulsory medical "
+"insurance, you must:"
 
 #: .\templates\infoPages\historyPage.html:7
 msgid "История НИИ"
-msgstr ""
+msgstr "The history of the Research Institute"
 
 #: .\templates\infoPages\rightActs.html:8
 msgid "Руководитель"
-msgstr ""
+msgstr "Director"
 
 #: .\templates\infoPages\rightActs.html:10
 #: .\templates\orgStructure\orgStruct.html:18
 msgid "Организационная структура"
-msgstr ""
+msgstr "Organizational structure"
 
 #: .\templates\infoPages\rightActs.html:13
 #: .\templates\infoPages\rightActs.html:19
 msgid "Правовые акты"
-msgstr ""
+msgstr "Legal acts"
 
 #: .\templates\infoPages\rightActs.html:14
 msgid "Сведения о работниках"
-msgstr ""
+msgstr "Information about employees"
 
 #: .\templates\infoPages\rightActs.html:16
 msgid "Протокол итогов"
-msgstr ""
+msgstr "Summary protocol"
 
 #: .\templates\infoPages\rightActs.html:22
 msgid ""
 "Оказание платных услуг регламентируются следующими нормативными правовыми "
 "актами"
 msgstr ""
+"The provision of paid services is regulated by the following regulatory "
+"legal acts"
 
 #: .\templates\infoPages\rulesPage.html:10
 msgid "Информация для пациентов"
-msgstr ""
+msgstr "Information for patients"
 
 #: .\templates\infoPages\rulesPage.html:13
 msgid "Права пациентов"
-msgstr ""
+msgstr "Patients' rights"
 
 #: .\templates\infoPages\vacancyPage.html:20
 msgid ""
@@ -666,178 +691,188 @@ msgid ""
 "Министерства здравоохранения Республики Казахстан объявляет  конкурс на "
 "занятие следующих вакантных должностей"
 msgstr ""
+"The Republican state Enterprise on the right of economic management "
+"«Scientific Research Institute of Balneology and Medical Rehabilitation» of "
+"the Ministry of Health of the Republic of Kazakhstan announces a competition "
+"for the following vacant positions"
 
 #: .\templates\infoPages\vacancyPage.html:29
 msgid "Место проведения конкурса"
-msgstr ""
+msgstr "The venue of the competition"
 
 #: .\templates\infoPages\vacancyPage.html:32
 msgid "Место нахождения предприятия"
-msgstr ""
+msgstr "Location of the company"
 
 #: .\templates\infoPages\vacancyPage.html:35
 msgid "Краткое описание основной деятельности предприятия"
-msgstr ""
+msgstr "A brief description of the main activity of the company"
 
 #: .\templates\infoPages\vacancyPage.html:43
 msgid "Требование к участникам конкурса"
-msgstr ""
+msgstr "Requirements for the participants of the competition"
 
 #: .\templates\infoPages\vacancyPage.html:52
 msgid "Для участия в конкурсе не принимаются следующие лица"
 msgstr ""
+"The following persons are not accepted to participate in the competition"
 
 #: .\templates\infoPages\vacancyPage.html:58
 msgid "Для участия в конкурсе, необходимо представить следующие документы"
 msgstr ""
+"To participate in the competition, you must submit the following documents"
 
 #: .\templates\infoPages\workersInfo.html:11
 msgid "Сведения о квалификации медицинских работников"
-msgstr ""
+msgstr "Information about the qualifications of medical workers"
 
 #: .\templates\infoPages\workersInfo.html:17
 msgid "Стаж"
-msgstr ""
+msgstr "Experience"
 
 #: .\templates\infoPages\workersInfo.html:17
 msgid "Сертификат специалиста"
-msgstr ""
+msgstr "Specialist Certificate"
 
 #: .\templates\people\NIIPeople.html:12
 msgid "Люди НИИ"
-msgstr ""
+msgstr "People of the Research Institute"
 
 #: .\templates\people\NIIPeople.html:15
 msgid "Руководители"
-msgstr ""
+msgstr "Managers"
 
 #: .\templates\people\NIIPeople.html:36
 msgid "Докторы"
-msgstr ""
+msgstr "Doctors"
 
 #: .\templates\people\NIIPeople.html:56
 msgid "Педогоги"
-msgstr ""
+msgstr "Teachers"
 
 #: .\templates\posts\post_list.html:9
 msgid "Добавить объявление"
-msgstr ""
+msgstr "To add an advert"
 
 #: .\templates\posts\post_new.html:8
 msgid "Заголовок на русском"
-msgstr ""
+msgstr "The title is in Russian"
 
 #: .\templates\posts\post_new.html:10
 msgid "Заголовок на казахском"
-msgstr ""
+msgstr "The title is in Kazakh"
 
 #: .\templates\posts\post_new.html:12
 msgid "Информация на русском"
-msgstr ""
+msgstr "Information in Russian"
 
 #: .\templates\posts\post_new.html:14
 msgid "Информация на казахском"
-msgstr ""
+msgstr "Information in Kazakh"
 
 #: .\templates\registration\login.html:5
 msgid "Войти в систему"
-msgstr ""
+msgstr "Log in to the system"
 
 #: .\templates\registration\login.html:16
 #: .\templates\registration\password_reset_form.html:8
 msgid "Забыли пароль"
-msgstr ""
+msgstr "Forgot your password"
 
 #: .\templates\registration\pass_remember.html:5
 #: .\templates\registration\password_reset_confirm.html:5
 msgid "Восстановление пароля"
-msgstr ""
+msgstr "Password Recovery"
 
 #: .\templates\registration\pass_remember.html:7
 msgid "Введите адрес Вашей электронной почты"
-msgstr ""
+msgstr "Enter your email address"
 
 #: .\templates\registration\pass_remember.html:10
 msgid "Восстановить"
-msgstr ""
+msgstr "Recover"
 
 #: .\templates\registration\password_reset_complete.html:4
 msgid "Ваш пароль был успешно изменен."
-msgstr ""
+msgstr "Your password has been successfully changed."
 
 #: .\templates\registration\password_reset_confirm.html:16
 msgid "Изменить пароль"
-msgstr ""
+msgstr "Change the password"
 
 #: .\templates\registration\password_reset_done.html:4
 msgid ""
 "На указанный адрес электронной почты отправлено письмо со ссылкой для сброса "
 "пароля."
 msgstr ""
+"An email with a link to reset your password has been sent to the specified "
+"email address."
 
 #: .\templates\registration\password_reset_form.html:12
 msgid "Отправить письмо для сброса пароля"
-msgstr ""
+msgstr "Send an email to reset your password"
 
 #: .\templates\registration\registr_email_activate_fail.html:4
 msgid "Время активации аккаунта истекло. Необходимо зарегистрироваться заново."
-msgstr ""
+msgstr "The account activation time has expired. You must register again."
 
 #: .\templates\registration\registr_email_active.html:4
 msgid "Аккаунт активирован. Спасибо за регистрацию"
-msgstr ""
+msgstr "The account is activated. Thank you for registering"
 
 #: .\templates\registration\registr_email_messege.html:4
 msgid "На указанный адрес электронной почты"
-msgstr ""
+msgstr "An email has been sent to the specified email address "
 
 #: .\templates\registration\registr_email_messege.html:4
 msgid "отправлено письмо для активации аккаунта."
-msgstr ""
+msgstr "to activate the account."
 
-#: .\templates\registration\registration.html:62
+#: .\templates\registration\registration.html:63
 msgid "Зарегестрироваться"
-msgstr ""
+msgstr "Register"
 
 #: .\templates\reviewsPages\add_answer.html:6
 msgid "Ответ на отзыв"
-msgstr ""
+msgstr "Response to the review"
 
 #: .\templates\reviewsPages\add_answer.html:7
 msgid "Отзыв от"
-msgstr ""
+msgstr "Feedback by"
 
 #: .\templates\reviewsPages\add_answer.html:11
 msgid "Ответ отзыв"
-msgstr ""
+msgstr "Response feedback"
 
 #: .\templates\reviewsPages\add_answer.html:13
 msgid "Отправить ответ"
-msgstr ""
+msgstr "Send a reply"
 
 #: .\templates\reviewsPages\add_review.html:9
 msgid "ИИН"
-msgstr ""
+msgstr "IIN"
 
 #: .\templates\reviewsPages\reviews_list.html:14
 msgid "Оставить Отзыв"
-msgstr ""
+msgstr "Leave a review"
 
 #: .\templates\reviewsPages\reviews_list.html:27
 msgid "Ответить"
-msgstr ""
+msgstr "To answer"
 
 #: .\templates\reviewsPages\reviews_list.html:34
 msgid "Ответ"
-msgstr ""
+msgstr "Answer"
 
-#: .\templates\sciencificBlock\achievments.html:12
-#: .\templates\sciencificBlock\scienceDev.html:12
+#: .\templates\sciencificBlock\achievments.html:13
+#: .\templates\sciencificBlock\scienceDev.html:13
 msgid ""
 "Научные исследования и научно-методическое обеспечение в сфере курортологии "
 "и восстановительного лечения"
 msgstr ""
+"Scientific research and scientific and methodological support in the field "
+"of balneology and restorative treatment"
 
 #: .\templates\strategic_partners\strategicPartners.html:7
 msgid "Стратегические партнеры и международное сотрудничество"
-msgstr ""
+msgstr "Strategic partners and international cooperation"

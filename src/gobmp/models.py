@@ -6,7 +6,7 @@ class GOBMP(models.Model):
     info = models.TextField(verbose_name='Информация')
     adult = models.TextField(verbose_name='Взрослые', blank=True)
     children = models.TextField(verbose_name='Дети', blank=True)
-    additinaly = models.TextField(verbose_name='Для получения путевки необходимо', blank=True)
+    additinaly = models.TextField(verbose_name='Для получения путевки необходимо')
     class Meta:
         verbose_name_plural = "ГОБМП"
         verbose_name='Информация о ГОБМП'
