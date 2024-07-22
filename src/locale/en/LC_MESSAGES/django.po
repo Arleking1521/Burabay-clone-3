@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-22 23:34+0500\n"
+"POT-Creation-Date: 2024-07-23 00:35+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -495,11 +495,11 @@ msgstr "Heading"
 msgid "Информация"
 msgstr "Information"
 
-#: .\templates\ceoblog\post_new.html:12 .\templates\posts\post_new.html:16
+#: .\templates\ceoblog\post_new.html:12 .\templates\posts\post_new.html:20
 msgid "Выбрать файл"
 msgstr "Select a file"
 
-#: .\templates\ceoblog\post_new.html:19 .\templates\posts\post_new.html:23
+#: .\templates\ceoblog\post_new.html:19 .\templates\posts\post_new.html:27
 msgid "Опубликовать"
 msgstr "To publish"
 
@@ -624,19 +624,19 @@ msgstr ""
 "Medical Rehabilitation of the Ministry of Health of the Republic of "
 "Kazakhstan"
 
-#: .\templates\infoPages\gobmp.html:15
+#: .\templates\infoPages\gobmp.html:21
 msgid "Кто имеет право на бесплатную реабилитацию:"
 msgstr "Who is eligible for free rehabilitation:"
 
-#: .\templates\infoPages\gobmp.html:16
+#: .\templates\infoPages\gobmp.html:23
 msgid "Взрослые:"
 msgstr "Adults:"
 
-#: .\templates\infoPages\gobmp.html:20
+#: .\templates\infoPages\gobmp.html:29
 msgid "Дети:"
 msgstr "Kids:"
 
-#: .\templates\infoPages\gobmp.html:24
+#: .\templates\infoPages\gobmp.html:36
 msgid "Для получения бесплатной путевки в рамках ОСМС необходимо:"
 msgstr ""
 "To receive a free voucher within the framework of the compulsory medical "
@@ -763,12 +763,20 @@ msgid "Заголовок на казахском"
 msgstr "The title is in Kazakh"
 
 #: .\templates\posts\post_new.html:12
+msgid "Заголовок на английском"
+msgstr "The title is in English"
+
+#: .\templates\posts\post_new.html:14
 msgid "Информация на русском"
 msgstr "Information in Russian"
 
-#: .\templates\posts\post_new.html:14
+#: .\templates\posts\post_new.html:16
 msgid "Информация на казахском"
 msgstr "Information in Kazakh"
+
+#: .\templates\posts\post_new.html:18
+msgid "Информация на английском"
+msgstr "Information in English"
 
 #: .\templates\registration\login.html:5
 msgid "Войти в систему"

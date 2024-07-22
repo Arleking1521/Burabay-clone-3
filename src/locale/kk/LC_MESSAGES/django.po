@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-22 23:34+0500\n"
+"POT-Creation-Date: 2024-07-23 00:35+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -492,11 +492,11 @@ msgstr "Тақырып"
 msgid "Информация"
 msgstr "Ақпарат"
 
-#: .\templates\ceoblog\post_new.html:12 .\templates\posts\post_new.html:16
+#: .\templates\ceoblog\post_new.html:12 .\templates\posts\post_new.html:20
 msgid "Выбрать файл"
 msgstr "Файлды таңдаңыз"
 
-#: .\templates\ceoblog\post_new.html:19 .\templates\posts\post_new.html:23
+#: .\templates\ceoblog\post_new.html:19 .\templates\posts\post_new.html:27
 msgid "Опубликовать"
 msgstr "Жариялау"
 
@@ -614,19 +614,19 @@ msgstr "Ақпаратқа қол жеткізу мәселелері жөнін
 msgid "Контакты РГП на ПХВ НИИ курортологии и медицинской реабилитации МЗ РК"
 msgstr "ҚР ДСМ курортология және медициналық оңалту ҒЗИ ШЖҚ РМК байланыстары"
 
-#: .\templates\infoPages\gobmp.html:15
+#: .\templates\infoPages\gobmp.html:21
 msgid "Кто имеет право на бесплатную реабилитацию:"
 msgstr "Тегін оңалтуға кім құқылы:"
 
-#: .\templates\infoPages\gobmp.html:16
+#: .\templates\infoPages\gobmp.html:23
 msgid "Взрослые:"
 msgstr "Ересектер:"
 
-#: .\templates\infoPages\gobmp.html:20
+#: .\templates\infoPages\gobmp.html:29
 msgid "Дети:"
 msgstr "Балалар:"
 
-#: .\templates\infoPages\gobmp.html:24
+#: .\templates\infoPages\gobmp.html:36
 msgid "Для получения бесплатной путевки в рамках ОСМС необходимо:"
 msgstr "МӘМС шеңберінде тегін жолдама алу үшін:"
 
@@ -749,12 +749,20 @@ msgid "Заголовок на казахском"
 msgstr "Қазақша атауы"
 
 #: .\templates\posts\post_new.html:12
+msgid "Заголовок на английском"
+msgstr "Ағылшын тіліндегі тақырып"
+
+#: .\templates\posts\post_new.html:14
 msgid "Информация на русском"
 msgstr "Орыс тіліндегі ақпарат"
 
-#: .\templates\posts\post_new.html:14
+#: .\templates\posts\post_new.html:16
 msgid "Информация на казахском"
 msgstr "Қазақ тіліндегі ақпарат"
+
+#: .\templates\posts\post_new.html:18
+msgid "Информация на английском"
+msgstr "Ағылшын тіліндегі ақпарат"
 
 #: .\templates\registration\login.html:5
 msgid "Войти в систему"
