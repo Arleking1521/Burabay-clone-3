@@ -15,7 +15,7 @@ def add_review(request):
         form = ReviewForm()
     else:
         form = ReviewForm(request.POST)
-        if form.is_valid():
+        if form.is_valid() and form.cleaned_data['IIN'].isdigit():
             form.save()
 
             author = form.cleaned_data['author']
