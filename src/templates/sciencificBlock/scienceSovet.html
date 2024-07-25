@@ -15,12 +15,33 @@
         {%endif%}
         <div class="rule-plates">
                 <div class="new-frame">
-                {%if datas.content %}
-                <div class="rule-block">
-                    {% for info in datas.content %}
-                        <p>{{ info }}</p>
-                    {% endfor %}
-                </div>
+                {%if datas.description %}
+                <h3>Описание Научно-технического совета</h3>
+                        <p>{{ datas.description }}</p>
+                {%endif%}
+                {% if datas.creation %}
+                    <h3>Приказ о создании НТС</h3>
+                    <a class="anticor-list" href = "{% url 'creation_details' fid=datas.pk %}">{{datas.creation_name}}</a>
+                {% endif %}
+                {% if datas.regulation %}
+                    <h3>Положение</h3>
+                    <a class="anticor-list" href = "{% url 'regulation_details' fid=datas.pk%}">{{datas.regulation_name}}</a>
+                {% endif %}
+                {%if plans %}
+                <h3>Планы</h3>
+                    <div class="rule-block">
+                        {%for plan in plans%}
+                            <a class="anticor-list" href = "{% url 'plan_details' fid=plan.pk%}">{{plan.title}}</a>
+                        {%endfor%}
+                    </div>
+                {%endif%}
+                {% if datas.meetings %}
+                    <h3>Заседания</h3>
+                    <div class="rule-block">
+                        {%for meet in datas.meetings%}
+                           <p>{{meet}}</p>
+                        {%endfor%}
+                    </div>
                 {%endif%}
             </div>
         </div>

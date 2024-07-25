@@ -12,8 +12,11 @@ class ScienceTranslationoptions(TranslationOptions):
 
 @register(ScienceSovet)
 class ScienceSovetTranslationoptions(TranslationOptions):
-    fields = ( 'title', 'content')
+    fields = ( 'title', 'description', 'meetings')
 
+@register(ScienceSovetPlans)
+class ScienceSovetPlansTranslationoptions(TranslationOptions):
+    fields = ( 'title', )
 
 @register(SciencePlans)
 class SciencePlansTranslationoptions(TranslationOptions):
