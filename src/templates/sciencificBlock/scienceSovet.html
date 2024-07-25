@@ -17,7 +17,9 @@
                 <div class="new-frame">
                 {%if datas.description %}
                 <h3>Описание Научно-технического совета</h3>
-                        <p>{{ datas.description }}</p>
+                    {%for data in datas.description%}
+                        <p>{{data}}</p>
+                    {%endfor%}
                 {%endif%}
                 {% if datas.creation %}
                     <h3>Приказ о создании Научно-технического совета</h3>
