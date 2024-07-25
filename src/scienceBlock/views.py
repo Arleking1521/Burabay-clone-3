@@ -27,7 +27,7 @@ def scienceSovet(request):
     datas = {
         'pk': infos.pk if infos else None,
         'title': infos.title if infos else None,
-        'description': infos.description if infos else None,
+        'description': infos.description.split('\n') if infos.description else None,
         'creation_name': ' '.join(infos.creation.name.split('/')[-1].split('_')).capitalize() if infos else None,
         'creation': infos.creation if infos else None,
         'regulation_name': ' '.join(infos.regulation.name.split('/')[-1].split('_')).capitalize() if infos else None,
