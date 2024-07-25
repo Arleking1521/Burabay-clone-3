@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# FIRST AUTHOR Karim <abdukarim600@gmail.com>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-23 00:35+0500\n"
+"POT-Creation-Date: 2024-07-25 23:26+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,7 @@ msgstr "Ғылыми әзірлемелер"
 
 #: .\templates\LEK\LEK.html:17 .\templates\MainPage\site_map.html:37
 #: .\templates\base.html:129 .\templates\sciencificBlock\achievments.html:7
+#: .\templates\sciencificBlock\doc-details.html:5
 #: .\templates\sciencificBlock\scienceAcievments.html:7
 #: .\templates\sciencificBlock\scienceDev.html:7
 #: .\templates\sciencificBlock\sciencePlans.html:7
@@ -42,6 +43,7 @@ msgstr "Ғылыми-техникалық кеңес"
 #: .\templates\sciencificBlock\scienceDev.html:8
 #: .\templates\sciencificBlock\sciencePlans.html:8
 #: .\templates\sciencificBlock\scienceSovet.html:8
+#: .\templates\sciencificBlock\scienceSovet.html:33
 msgid "Планы"
 msgstr "Жоспарлар"
 
@@ -868,11 +870,25 @@ msgstr ""
 "Курортология және қалпына келтіру лечения саласындағы ғылыми зерттеулер және "
 "ғылыми-әдістемелік қамтамасыз ету"
 
+#: .\templates\sciencificBlock\scienceSovet.html:19
+msgid "Описание Научно-технического совета"
+msgstr "Ғылыми-техникалық кеңестің сипаттамасы"
+
+#: .\templates\sciencificBlock\scienceSovet.html:25
+msgid "Приказ о создании Научно-технического совета"
+msgstr "Ғылыми-техникалық кеңес құру туралы бұйрық"
+
+#: .\templates\sciencificBlock\scienceSovet.html:29
+msgid "Положение"
+msgstr "Ереже"
+
+#: .\templates\sciencificBlock\scienceSovet.html:41
+msgid "Заседания"
+msgstr "Отырыстар"
+
 #: .\templates\strategic_partners\strategicPartners.html:7
-#, fuzzy
-#| msgid "Стратегические партнеры"
 msgid "Стратегические партнеры и международное сотрудничество"
-msgstr "Стратегиялық серіктестер"
+msgstr "Стратегиялық серіктестер және халықаралық ынтымақтастық"
 
 #~ msgid "График личного приема директора, заместителей директора на 2024 год"
 #~ msgstr ""
