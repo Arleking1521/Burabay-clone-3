@@ -32,7 +32,7 @@ def scienceSovet(request):
         'creation': infos.creation if infos else None,
         'regulation_name': ' '.join(infos.regulation.name.split('/')[-1].split('_')).capitalize() if infos else None,
         'regulation': infos.regulation if infos else None,
-        'meetings': infos.meetings.split('\n') if infos else None, 
+        'meetings': infos.meetings.split('\n') if infos.meetings else None, 
     }
     
     return render(request, 'sciencificBlock/scienceSovet.html', {'datas': datas, 'plans': plans})

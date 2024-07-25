@@ -20,7 +20,7 @@
                         <p>{{ datas.description }}</p>
                 {%endif%}
                 {% if datas.creation %}
-                    <h3>Приказ о создании НТС</h3>
+                    <h3>Приказ о создании Научно-технического совета</h3>
                     <a class="anticor-list" href = "{% url 'creation_details' fid=datas.pk %}">{{datas.creation_name}}</a>
                 {% endif %}
                 {% if datas.regulation %}
