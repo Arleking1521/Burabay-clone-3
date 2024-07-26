@@ -10,7 +10,7 @@
         {{ form.IIN }}
         <label for="id_review">{%trans 'Ваш отзыв'%}:</label>
         {{ form.review }}
-        0
+        {{form.captcha}}
         
         <button class="btn" type="submit">{%trans 'Отправить отзыв'%}</button>
     </form>
