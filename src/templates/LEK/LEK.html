@@ -19,12 +19,73 @@
         <a href="{% url 'LEK-list' %}" class='selected'>ЛЭК</a>
     </div>
     <div class="rules">
-        <span class="Title"> {% trans 'Локальная этическая комиссия по биоэтике' %} </span>
-        <div class="new-frame">
-            <div class="rules">
-                {% for file in files %}
-                <a class="anticor-list" href = "{% url 'Lek-doc-detils' fid=file.pk%}">{{file.title}}</a>
-                {% endfor %}
+        {%if datas.title%}
+        <span class="Title">{{datas.title}}</span>
+        {%endif%}
+        <div class="rule-plates">
+            <div class="new-frame">
+                {%if datas.description %}
+                <h3>{%trans 'Описание локальной этической комиссии'%}</h3>
+                    {%for data in datas.description%}
+                        <p>{{data}}</p>
+                    {%endfor%}
+                {%endif%}
+                {% if datas.creation %}
+                    <h3>{%trans 'Приказ о создании локальной этической комиссии'%}</h3>
+                    <a class="anticor-list" href = "{% url 'lek_creation_details' fid=datas.pk %}">{{datas.creation_name}}</a>
+                {% endif %}
+                {% if datas.regulation %}
+                    <h3>{%trans 'Положение'%}</h3>
+                    <a class="anticor-list" href = "{% url 'lek_regulation_details' fid=datas.pk%}">{{datas.regulation_name}}</a>
+                {% endif %}
+                {%if plans %}
+                <h3>{%trans 'Планы'%}</h3>
+                    <div class="rule-block">
+                        {%for plan in plans%}
+                            <p><a class="anticor-list" href = "{% url 'lek_plan_details' fid=plan.pk%}">{{plan.title}}</a></p>
+                        {%endfor%}
+                    </div>
+                {%endif%}
+                {% if datas.meetings %}
+                    <h3>{%trans 'Заседания'%}</h3>
+                    <div class="rule-block">
+                        {%for meet in datas.meetings%}
+                           <p>{{meet}}</p>
+                        {%endfor%}
+                    </div>
+                {%endif%}
+                {% if datas.instructions %}
+                    <h3>{%trans 'Инструкция по обращению в ЛЭК'%}</h3>
+                    <div class="rule-block">
+                        {%for data in datas.instructions%}
+                           <p>{{data}}</p>
+                        {%endfor%}
+                    </div>
+                {%endif%}
+                {% if datas.standarts %}
+                    <h3>{%trans 'Стандартные операционные процедуры'%}</h3>
+                    <div class="rule-block">
+                        {%for data in datas.standarts%}
+                           <p>{{data}}</p>
+                        {%endfor%}
+                    </div>
+                {%endif%}
+                {% if datas.contacts %}
+                    <h3>{%trans 'Контакты секретариата ЛЭК'%}</h3>
+                    <div class="rule-block">
+                        {%for data in datas.contacts%}
+                           <p>{{data}}</p>
+                        {%endfor%}
+                    </div>
+                {%endif%}
+                {% if forms %}
+                    <h3>{%trans 'Формы документов для прохождения экспертизы ЛЭК'%}</h3>
+                    <div class="rule-block">
+                        {%for form in forms%}
+                        <p><a class="anticor-list" href = {{form.link}}>{{form.title}}</a></p>
+                        {%endfor%}
+                    </div>
+                {%endif%}
             </div>
         </div>
     </div>
