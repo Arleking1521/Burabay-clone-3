@@ -10,8 +10,8 @@ class LEK(models.Model):
     contacts = models.TextField(verbose_name='Контакты секретариата', blank=True)
     standarts = models.TextField(verbose_name='Стандартные операционные процедуры', blank=True)
     class Meta:
-        verbose_name_plural = "Публикации"
-        verbose_name='Публикация'
+        verbose_name_plural = "Информация"
+        verbose_name='Информация'
     def __str__(self) -> str:
         return f'{self.title}'
 
