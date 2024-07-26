@@ -9,15 +9,15 @@ def lek(request):
     datas = {
         'pk': Lek.pk if Lek else None,
         'title': Lek.title if Lek else None,
-        'description': Lek.description.split('\n') if Lek else None,
+        'description': Lek.description.split('\n') if Lek.description else None,
         'creation_name': ' '.join(Lek.creation.name.split('/')[-1].split('_')).capitalize() if Lek else None,
         'creation': Lek.creation if Lek else None,
         'regulation_name': ' '.join(Lek.regulation.name.split('/')[-1].split('_')).capitalize() if Lek else None,
         'regulation': Lek.regulation if Lek else None,
-        'meetings': Lek.meetings.split('\n') if Lek else None, 
-        'instructions': Lek.instructions.split('\n') if Lek else None, 
-        'contacts': Lek.contacts.split('\n') if Lek else None, 
-        'standarts': Lek.standarts.split('\n') if Lek else None, 
+        'meetings': Lek.meetings.split('\n') if Lek.meetings else None, 
+        'instructions': Lek.instructions.split('\n') if Lek.instructions else None, 
+        'contacts': Lek.contacts.split('\n') if Lek.contacts else None, 
+        'standarts': Lek.standarts.split('\n') if Lek.standarts else None, 
     }
     return render(request, 'LEK/LEK.html', {'datas':datas, 'plans':Plans, 'forms': Forms})
 
