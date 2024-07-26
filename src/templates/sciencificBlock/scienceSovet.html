@@ -33,7 +33,7 @@
                 <h3>{%trans 'Планы'%}</h3>
                     <div class="rule-block">
                         {%for plan in plans%}
-                            <a class="anticor-list" href = "{% url 'plan_details' fid=plan.pk%}">{{plan.title}}</a>
+                            <p><a class="anticor-list" href = "{% url 'plan_details' fid=plan.pk%}">{{plan.title}}</a></p>
                         {%endfor%}
                     </div>
                 {%endif%}
