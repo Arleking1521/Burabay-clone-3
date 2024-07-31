@@ -19,8 +19,16 @@ class ScienceAchievmentsAdmin(TranslationAdmin):
     
 @admin.register(ScienceSovet)
 class ScienceSovetAdmin(TranslationAdmin):
-    list_display = ( 'title', 'description', 'creation', 'regulation', 'meetings')
+    list_display = ( 'title', 'description', 'creation_title', 'creation')
     
 @admin.register(ScienceSovetPlans)
 class ScienceSovetPlansAdmin(TranslationAdmin):
     list_display = ( 'sovet', 'title', 'document')
+
+@admin.register(ScienceSovetMeetings)
+class ScienceSovetMeetingsAdmin(TranslationAdmin):
+    list_display = ( 'title', 'document') 
+
+@admin.register(ScienceSovetRegulation)
+class ScienceSovetRegulationAdmin(TranslationAdmin):
+    list_display = ( 'title', 'document') 

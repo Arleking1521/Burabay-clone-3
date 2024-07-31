@@ -24,18 +24,17 @@ def scienceDev(request):
 def scienceSovet(request):
     infos = ScienceSovet.objects.order_by('id').first()
     plans = ScienceSovetPlans.objects.filter(sovet_id=infos.pk)
+    meetings = ScienceSovetMeetings.objects.order_by('id')
+    regulations = ScienceSovetRegulation.objects.order_by('id')
     datas = {
         'pk': infos.pk if infos else None,
         'title': infos.title if infos else None,
         'description': infos.description.split('\n') if infos.description else None,
-        'creation_name': ' '.join(infos.creation.name.split('/')[-1].split('_')).capitalize() if infos else None,
+        'creation_name': infos.creation_title if infos else None,
         'creation': infos.creation if infos else None,
-        'regulation_name': ' '.join(infos.regulation.name.split('/')[-1].split('_')).capitalize() if infos else None,
-        'regulation': infos.regulation if infos else None,
-        'meetings': infos.meetings.split('\n') if infos.meetings else None, 
     }
     
-    return render(request, 'sciencificBlock/scienceSovet.html', {'datas': datas, 'plans': plans})
+    return render(request, 'sciencificBlock/scienceSovet.html', {'datas': datas, 'plans': plans, 'meetings': meetings, 'regulations' : regulations})
 
 def creation_details(request, fid):
     data = ScienceSovet.objects.get(id = fid)
@@ -60,3 +59,9 @@ def sciencePlans(request):
     }
     
     return render(request, 'sciencificBlock/sciencePlans.html', {'datas': datas})
+
+def meetings_detail(request, fid):
+    data = ScienceSovetMeetings.objects.get(id = fid)
+    file = data.document
+    return render(request, 'sciencificBlock/doc-details.html', {'file':file})
+

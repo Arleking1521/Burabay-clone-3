@@ -20,7 +20,7 @@ class Science(models.Model):
     addInfoTitle = models.CharField(verbose_name='Заголовок подпунктов', blank=True)
     addInfo = models.TextField(verbose_name='Подпункты', blank=True)
     class Meta:
-        verbose_name_plural = "Наукачные разработки"
+        verbose_name_plural = "Научные разработки"
         verbose_name='Информация'
 
     def __str__(self) -> str:
@@ -41,9 +41,8 @@ class SciencePlans(models.Model):
 class ScienceSovet(models.Model):
     title=models.CharField(verbose_name='Заголовок', blank=True)
     description = models.TextField(verbose_name='Описание', blank=True)
+    creation_title = models.CharField(verbose_name = 'Название приказа')
     creation = models.FileField(upload_to='science', verbose_name='Приказ о создании', blank=True)
-    regulation = models.FileField(upload_to='science', verbose_name='Положение', blank=True)
-    meetings = models.TextField(verbose_name='Заседания', blank=True)
     class Meta:
         verbose_name_plural = "Научно-Технический Совет"
         verbose_name='Информация'
@@ -58,6 +57,26 @@ class ScienceSovetPlans(models.Model):
     class Meta:
         verbose_name_plural = "Планы Научно-Технического Совета"
         verbose_name='План'
+
+    def __str__(self) -> str:
+        return f'{self.title}'
+    
+class ScienceSovetMeetings(models.Model):
+    title = models.CharField(verbose_name='Название документа')
+    document = models.FileField(upload_to='science', verbose_name='Документ', blank=True)
+    class Meta:
+        verbose_name_plural = "Заседания НТС"
+        verbose_name='Заседание'
+
+    def __str__(self) -> str:
+        return f'{self.title}'
+    
+class ScienceSovetRegulation(models.Model):
+    title = models.CharField(verbose_name='Название документа')
+    document = models.FileField(upload_to='science', verbose_name='Документ', blank=True)
+    class Meta:
+        verbose_name_plural = "Положения НТС"
+        verbose_name='Положение'
 
     def __str__(self) -> str:
         return f'{self.title}'
