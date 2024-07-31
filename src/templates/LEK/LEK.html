@@ -24,7 +24,7 @@
         {%endif%}
         <div class="rule-plates">
             <div class="new-frame">
-                {%if datas.description %}
+                {%if datas.description%}
                 <h3>{%trans 'Описание локальной этической комиссии'%}</h3>
                     {%for data in datas.description%}
                         <p>{{data}}</p>
@@ -34,9 +34,11 @@
                     <h3>{%trans 'Приказ о создании локальной этической комиссии'%}</h3>
                     <a class="anticor-list" href = "{% url 'lek_creation_details' fid=datas.pk %}">{{datas.creation_name}}</a>
                 {% endif %}
-                {% if datas.regulation %}
+                {% if regulation %}
                     <h3>{%trans 'Положение'%}</h3>
-                    <a class="anticor-list" href = "{% url 'lek_regulation_details' fid=datas.pk%}">{{datas.regulation_name}}</a>
+                    {%for data in regulation%}
+                        <a class="anticor-list" href = "{% url 'lek_regulation_details' fid=data.pk%}">{{data.title}}</a>
+                    {%endfor%}
                 {% endif %}
                 {%if plans %}
                 <h3>{%trans 'Планы'%}</h3>
@@ -46,11 +48,11 @@
                         {%endfor%}
                     </div>
                 {%endif%}
-                {% if datas.meetings %}
+                {% if meetings %}
                     <h3>{%trans 'Заседания'%}</h3>
                     <div class="rule-block">
-                        {%for meet in datas.meetings%}
-                           <p>{{meet}}</p>
+                        {%for data in meetings%}
+                            <p><a class="anticor-list" href = "{% url 'lek_meetings_details' fid=data.pk%}">{{data.title}}</a></p>
                         {%endfor%}
                     </div>
                 {%endif%}

@@ -1,9 +1,9 @@
 from modeltranslation.translator import register, TranslationOptions
-from .models import LEK, LEKPlans, LEKDocForms
+from .models import *
 
 @register(LEK)
 class LEKTranslationoptions(TranslationOptions):
-    fields = ( 'title', 'description', 'meetings', 'instructions','contacts','standarts')
+    fields = ( 'title', 'description', 'creation_title', 'instructions','contacts','standarts')
 
 @register(LEKPlans)
 class LEKPlansTranslationoptions(TranslationOptions):
@@ -11,4 +11,12 @@ class LEKPlansTranslationoptions(TranslationOptions):
 
 @register(LEKDocForms)
 class LEKDocFormsTranslationoptions(TranslationOptions):
+    fields = ( 'title',)
+
+@register(LEKMeetings)
+class LEKMeetingsTranslationoptions(TranslationOptions):
+    fields = ( 'title',)
+
+@register(LEKRegulation)
+class LEKRegulationTranslationoptions(TranslationOptions):
     fields = ( 'title',)

@@ -7,4 +7,5 @@ urlpatterns = [
     path('regulation/<int:fid>/', views.regulation_details, name = 'lek_regulation_details'),
     path('<int:fid>/', views.file_detail, name = 'Lek-doc-detils'),
     path('plan/<int:fid>/', views.plan_detail, name = 'lek_plan_details'),
+    path('meeting/<int:fid>/', views.meetings_detail, name = 'lek_meetings_details'),
 ]
