@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-25 23:26+0500\n"
+"POT-Creation-Date: 2024-08-01 00:16+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,13 +37,14 @@ msgstr "Ғылыми әзірлемелер"
 msgid "Научно-технический совет"
 msgstr "Ғылыми-техникалық кеңес"
 
-#: .\templates\LEK\LEK.html:18 .\templates\MainPage\site_map.html:38
-#: .\templates\base.html:130 .\templates\sciencificBlock\achievments.html:8
+#: .\templates\LEK\LEK.html:18 .\templates\LEK\LEK.html:45
+#: .\templates\MainPage\site_map.html:38 .\templates\base.html:130
+#: .\templates\sciencificBlock\achievments.html:8
 #: .\templates\sciencificBlock\scienceAcievments.html:8
 #: .\templates\sciencificBlock\scienceDev.html:8
 #: .\templates\sciencificBlock\sciencePlans.html:8
 #: .\templates\sciencificBlock\scienceSovet.html:8
-#: .\templates\sciencificBlock\scienceSovet.html:33
+#: .\templates\sciencificBlock\scienceSovet.html:35
 msgid "Планы"
 msgstr "Жоспарлар"
 
@@ -56,27 +57,51 @@ msgstr "Жоспарлар"
 msgid "Достижения"
 msgstr "Жетістіктер"
 
-#: .\templates\LEK\LEK.html:23
+#: .\templates\LEK\LEK.html:20 .\templates\LEK\doc-details.html:5
+#: .\templates\MainPage\site_map.html:40 .\templates\base.html:132
+#: .\templates\sciencificBlock\achievments.html:10
+#: .\templates\sciencificBlock\scienceAcievments.html:10
+#: .\templates\sciencificBlock\scienceDev.html:10
+#: .\templates\sciencificBlock\sciencePlans.html:10
+#: .\templates\sciencificBlock\scienceSovet.html:10
 msgid "Локальная этическая комиссия по биоэтике"
 msgstr "Биоэтика бойынша жергілікті этикалық комиссия"
 
-#: .\templates\LEK\doc-details.html:5 .\templates\MainPage\site_map.html:22
-#: .\templates\accreditation\accreditation.html:6
-#: .\templates\antiCorPages\antiCorList.html:6 .\templates\base.html:54
-#: .\templates\base.html:109 .\templates\ceoInfo\ceoInfoPage.html:6
-#: .\templates\complianceService\compServiceList.html:6
-#: .\templates\dopPages\managment_standart.html:6
-#: .\templates\infoPages\advertisement.html:6
-#: .\templates\infoPages\laborProtection.html:6
-#: .\templates\infoPages\rightActs.html:6
-#: .\templates\infoPages\vacancyPage.html:6
-#: .\templates\orgStructure\orgStruct.html:6
-#: .\templates\strategicDevelopment\strategic_development.html:6
-#: .\templates\viewSovet\doc-details.html:5
-#: .\templates\viewSovet\viewSovet.html:16
-#: .\templates\viewSovet\viewSovet.html:28
-msgid "Наблюдательный совет"
-msgstr "Бақылау кеңесі"
+#: .\templates\LEK\LEK.html:29
+msgid "Описание локальной этической комиссии"
+msgstr "Жергілікті этикалық комиссияның сипаттамасы"
+
+#: .\templates\LEK\LEK.html:35
+msgid "Приказ о создании локальной этической комиссии"
+msgstr "Жергілікті этикалық комиссия құру туралы бұйрық"
+
+#: .\templates\LEK\LEK.html:39 .\templates\sciencificBlock\scienceSovet.html:29
+msgid "Положение"
+msgstr "Ереже"
+
+#: .\templates\LEK\LEK.html:53 .\templates\sciencificBlock\scienceSovet.html:43
+msgid "Заседания"
+msgstr "Отырыстар"
+
+#: .\templates\LEK\LEK.html:61
+msgid "Инструкция по обращению в ЛЭК"
+msgstr ""
+"Биоэтика жөніндегі жергілікті этикалық комиссияға жүгіну жөніндегі Нұсқаулық"
+
+#: .\templates\LEK\LEK.html:69
+msgid "Стандартные операционные процедуры"
+msgstr "Стандартты операциялық процедуралар"
+
+#: .\templates\LEK\LEK.html:77
+msgid "Контакты секретариата ЛЭК"
+msgstr ""
+"Биоэтика жөніндегі жергілікті этикалық комиссия хатшылығының байланыстары"
+
+#: .\templates\LEK\LEK.html:85
+msgid "Формы документов для прохождения экспертизы ЛЭК"
+msgstr ""
+"Биоэтика жөніндегі жергілікті этикалық комиссияның сараптамасынан өтуге "
+"арналған құжаттар нысандары"
 
 #: .\templates\MainPage\index.html:8
 msgid "Миссия"
@@ -126,6 +151,24 @@ msgstr "Басты бет"
 #: .\templates\MainPage\site_map.html:21 .\templates\base.html:106
 msgid "Об институте"
 msgstr "Институт туралы"
+
+#: .\templates\MainPage\site_map.html:22
+#: .\templates\accreditation\accreditation.html:6
+#: .\templates\antiCorPages\antiCorList.html:6 .\templates\base.html:54
+#: .\templates\base.html:109 .\templates\ceoInfo\ceoInfoPage.html:6
+#: .\templates\complianceService\compServiceList.html:6
+#: .\templates\dopPages\managment_standart.html:6
+#: .\templates\infoPages\advertisement.html:6
+#: .\templates\infoPages\laborProtection.html:6
+#: .\templates\infoPages\rightActs.html:6
+#: .\templates\infoPages\vacancyPage.html:6
+#: .\templates\orgStructure\orgStruct.html:6
+#: .\templates\strategicDevelopment\strategic_development.html:6
+#: .\templates\viewSovet\doc-details.html:5
+#: .\templates\viewSovet\viewSovet.html:16
+#: .\templates\viewSovet\viewSovet.html:28
+msgid "Наблюдательный совет"
+msgstr "Бақылау кеңесі"
 
 #: .\templates\MainPage\site_map.html:23
 #: .\templates\accreditation\accreditation.html:7
@@ -412,10 +455,6 @@ msgstr "Кіру"
 #: .\templates\registration\registration.html:5
 msgid "Регистрация"
 msgstr "Тіркеу"
-
-#: .\templates\base.html:132
-msgid "ЛЭК"
-msgstr "ЖЭК"
 
 #: .\templates\base.html:152 .\templates\dopPages\ethicsRegulations.html:11
 msgid "Механизм получения путевки по ГОБМП"
@@ -878,22 +917,6 @@ msgstr "Ғылыми-техникалық кеңестің сипаттамас�
 msgid "Приказ о создании Научно-технического совета"
 msgstr "Ғылыми-техникалық кеңес құру туралы бұйрық"
 
-#: .\templates\sciencificBlock\scienceSovet.html:29
-msgid "Положение"
-msgstr "Ереже"
-
-#: .\templates\sciencificBlock\scienceSovet.html:41
-msgid "Заседания"
-msgstr "Отырыстар"
-
 #: .\templates\strategic_partners\strategicPartners.html:7
 msgid "Стратегические партнеры и международное сотрудничество"
 msgstr "Стратегиялық серіктестер және халықаралық ынтымақтастық"
-
-#~ msgid "График личного приема директора, заместителей директора на 2024 год"
-#~ msgstr ""
-#~ "Директордың, директордың орынбасарларының 2024 жылға арналған жеке "
-#~ "қабылдау кестесі"
-
-#~ msgid "Посмотреть приказ"
-#~ msgstr "Бұйрықты қарау"
