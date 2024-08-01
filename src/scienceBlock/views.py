@@ -42,8 +42,8 @@ def creation_details(request, fid):
     return render(request, 'sciencificBlock/doc-details.html', {'file':file})
 
 def regulation_details(request, fid):
-    data = ScienceSovet.objects.get(id = fid)
-    file = data.regulation
+    data = ScienceSovetRegulation.objects.get(id = fid)
+    file = data.document
     return render(request, 'sciencificBlock/doc-details.html', {'file':file})
 
 def plan_detail(request, fid):
