@@ -262,6 +262,7 @@ li{
     color: white;
     text-decoration: none;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     transition: 0.3s;
     cursor: pointer;
     border-radius: 8px;
