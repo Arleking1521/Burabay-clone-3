@@ -15,7 +15,7 @@ from pathlib import Path
 AUTH_USER_MODEL = 'logRegisPages.CustomUser'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -90,7 +90,7 @@ ROOT_URLCONF = 'minZdrav.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [BASE_DIR , 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -163,7 +163,7 @@ STATICFILES_DIRS = [
 ]
 
 LOCALE_PATHS = [
-    os.path.join(BASE_DIR/'locale')
+    os.path.join(BASE_DIR, 'locale')
 ]
 
 MEDIA_URL = '/media/'
