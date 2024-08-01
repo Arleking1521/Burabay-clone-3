@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class ScienceAchievments(models.Model):
     name = models.CharField(verbose_name='Название презентации')
-    info = models.FileField(upload_to='science', verbose_name='Презентация')
+    info = models.FileField(upload_to='science/', verbose_name='Презентация')
 
     class Meta:
         verbose_name_plural = "Достижения"
@@ -42,7 +42,7 @@ class ScienceSovet(models.Model):
     title=models.CharField(verbose_name='Заголовок', blank=True)
     description = models.TextField(verbose_name='Описание', blank=True)
     creation_title = models.CharField(verbose_name = 'Название приказа')
-    creation = models.FileField(upload_to='science', verbose_name='Приказ о создании', blank=True)
+    creation = models.FileField(upload_to='science/', verbose_name='Приказ о создании', blank=True)
     class Meta:
         verbose_name_plural = "Научно-Технический Совет"
         verbose_name='Информация'
@@ -53,7 +53,7 @@ class ScienceSovet(models.Model):
 class ScienceSovetPlans(models.Model):
     sovet=models.ForeignKey(ScienceSovet, on_delete=models.CASCADE, verbose_name='Научно-технический совет')
     title = models.CharField(verbose_name='Название документа')
-    document = models.FileField(upload_to='science', verbose_name='Документ', blank=True)
+    document = models.FileField(upload_to='science/', verbose_name='Документ', blank=True)
     class Meta:
         verbose_name_plural = "Планы Научно-Технического Совета"
         verbose_name='План'
@@ -63,7 +63,7 @@ class ScienceSovetPlans(models.Model):
     
 class ScienceSovetMeetings(models.Model):
     title = models.CharField(verbose_name='Название документа')
-    document = models.FileField(upload_to='science', verbose_name='Документ', blank=True)
+    document = models.FileField(upload_to='science/', verbose_name='Документ', blank=True)
     class Meta:
         verbose_name_plural = "Заседания НТС"
         verbose_name='Заседание'
@@ -73,7 +73,7 @@ class ScienceSovetMeetings(models.Model):
     
 class ScienceSovetRegulation(models.Model):
     title = models.CharField(verbose_name='Название документа')
-    document = models.FileField(upload_to='science', verbose_name='Документ', blank=True)
+    document = models.FileField(upload_to='science/', verbose_name='Документ', blank=True)
     class Meta:
         verbose_name_plural = "Положения НТС"
         verbose_name='Положение'

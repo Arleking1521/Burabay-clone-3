@@ -4,7 +4,7 @@ class LEK(models.Model):
     title = models.CharField(verbose_name = 'Название')
     description = models.TextField(verbose_name='Описание', blank=True)
     creation_title = models.CharField(verbose_name = 'Название приказа')
-    creation = models.FileField(upload_to='LEK', verbose_name='Приказ о создании', blank=True)
+    creation = models.FileField(upload_to='LEK/', verbose_name='Приказ о создании', blank=True)
     instructions = models.TextField(verbose_name='Инструкции по обращению', blank=True)
     contacts = models.TextField(verbose_name='Контакты секретариата', blank=True)
     standarts = models.TextField(verbose_name='Стандартные операционные процедуры', blank=True)
@@ -16,7 +16,7 @@ class LEK(models.Model):
 
 class LEKRegulation(models.Model):
     title = models.CharField(verbose_name='Название документа')
-    document = models.FileField(upload_to='LEK', verbose_name='Документ', blank=True)
+    document = models.FileField(upload_to='LEK/', verbose_name='Документ', blank=True)
     class Meta:
         verbose_name_plural = "Положения ЛЭК"
         verbose_name='Положение'
@@ -26,7 +26,7 @@ class LEKRegulation(models.Model):
 
 class LEKMeetings(models.Model):
     title = models.CharField(verbose_name='Название документа')
-    document = models.FileField(upload_to='LEK', verbose_name='Документ', blank=True)
+    document = models.FileField(upload_to='LEK/', verbose_name='Документ', blank=True)
     class Meta:
         verbose_name_plural = "Заседания ЛЭК"
         verbose_name='Заседание'
@@ -36,7 +36,7 @@ class LEKMeetings(models.Model):
 
 class LEKPlans(models.Model):
     title = models.CharField(verbose_name='Название документа')
-    document = models.FileField(upload_to='LEK', verbose_name='Документ', blank=True)
+    document = models.FileField(upload_to='LEK/', verbose_name='Документ', blank=True)
     class Meta:
         verbose_name_plural = "Планы ЛЭК"
         verbose_name='План'
