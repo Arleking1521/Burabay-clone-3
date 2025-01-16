@@ -1077,11 +1077,15 @@ footer{
 }
 
 .news-title{
+    display: inline-block;
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 0;
-    margin-bottom: 5px;
-    padding: 0 10px 15px 10px;
+    margin-bottom: 15px;
+    padding: 0 10px 0px 10px;
+    line-height: 1.5;
+    overflow: hidden;
+    height: 4.5rem;
 }
 
 .news-pic{
@@ -1477,7 +1481,6 @@ width: 30%;
   }
 
   .sw2{
-    width: 70%;
     margin: 30px 0;
   }
   .ssl{

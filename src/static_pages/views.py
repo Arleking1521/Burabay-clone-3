@@ -5,14 +5,14 @@ from news.models import Post, PostAttachment
 
 def index(request):
     content = index_page.objects.order_by('-id').first()
-    posts = Post.objects.order_by('-date')
+    posts = Post.objects.order_by('-date')[:10]
     post_list = []
     for post in posts:
-        original_content = post.content
-        post.content = ' '.join(original_content.split()[:40])
+        original_title = post.title
+        post.title = ' '.join(original_title.split()[:8])
         # Если содержимое было сокращено, добавляем многоточие в конец строки
-        if original_content != post.content:
-            post.content += ' ...'
+        if original_title != post.title:
+            post.title += ' ...'
         att = PostAttachment.objects.filter(post_id = post.pk).first()
         post_obj = {
             'pk': post.pk if post else None,
