@@ -4,7 +4,7 @@ from django.utils import timezone
 from logRegisPages.models import CustomUser
 
 class Post(models.Model):
-    author = models.ForeignKey(CustomUser, on_delete=models.CASCADE, verbose_name='Автор')
+    author = models.ForeignKey(CustomUser, on_delete=models.SET_NULL, null=True, verbose_name='Автор')
     title = models.CharField(max_length = 1000, verbose_name='Заголовок')
     date = models.DateTimeField(default=timezone.now, verbose_name='Дата')
     content = models.TextField(verbose_name='Контент')

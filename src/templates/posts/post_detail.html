@@ -4,7 +4,9 @@
 <div class="content-inner">
     <div class="new-frame">
         <h1 class="fame-header">{{post.title}}</h1>
+        {% if post.author %}
         <p style="font-weight: 300; font-size: 15px;">{%trans 'Опубликовано'%}: <b>{{post.author.name}}</b></p>
+        {% endif %}
         <p class="big_content">
             {% for info_part in post.content %}
                 <p>{{info_part}}</p>
