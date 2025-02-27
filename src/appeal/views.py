@@ -16,8 +16,8 @@ def user_feedback(request):
             # Создание объекта EmailMessage
             subject = 'Новое обращение от пользователя'
             body = f'Автор: {author}\nEmail: {email}\nОбращение: {message}'
-            from_email = 'karimknewit@gmail.com'  # Отправитель по умолчанию
-            recipient_list = ['abdukarim600@gmail.com',]  # Список получателей
+            from_email = 'marlan-esilbaev@mail.ru'  # Отправитель по умолчанию
+            recipient_list = ['marlanyessilbaev@gmail.com',]  # Список получателей
 
             email = EmailMessage(subject, body, from_email, recipient_list)
             email.send()

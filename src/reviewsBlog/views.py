@@ -25,8 +25,8 @@ def add_review(request):
             # Отправка письма на почту компании
             subject = f"Новый отзыв от {author}"
             body = f"Автор: {author}\nИИН: {iin}\nОтзыв: {message}"
-            from_email = 'karimknewit@gmail.com'
-            recipient_list = ['abdukarim600@gmail.com',]  # Список получателей
+            from_email = 'marlan-esilbaev@mail.ru'
+            recipient_list = ['marlanyessilbaev@gmail.com',]  # Список получателей
 
             send_mail(subject, body, from_email, recipient_list, fail_silently=False)
 
